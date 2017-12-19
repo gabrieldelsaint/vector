@@ -1,33 +1,81 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Mono:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic|Cabin:400,400italic,500,500italic,600,600italic,700,700italic&subset=latin,greek,cyrillic,greek-ext,vietnamese,cyrillic-ext,latin-ext");
-body, html, input, select  {
-	font-family: Roboto, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-weight: 400;
+
+/* Vector */
+
+body.skin-vector,
+body.skin-vector html,
+body.skin-vector input,
+body.skin-vector select  {
+    font-family: Roboto, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
-body {
+body.skin-vector {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-body, #left-navigation, #right-navigation, #mw-panel, .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {padding-top: 64px !important;}
-.mw-body-content {text-align: justify;}
-.mw-body-content p {hyphens: auto;}
-.mw-body-content p, .mw-body-content ul, .mw-body-content ol, .hatnote {font-size: 0.95rem;}
-b, strong, #toctitle {font-weight: 500;}
-textarea, pre, code, span.comment, .wikEdFrameBodySyntax, .ace_editor, #wpSummary, .ve-ce-paragraphNode, .CodeMirror, .diff-context, .diff-deletedline, .diff-addedline {font-family: "Roboto Mono", Courier, monospace !important;}
-.mw-headline, .mw-continue-editing, .mw-body .mw-editsection, .mw-body .mw-editsection-like {font-family: Roboto, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif !important;}
-h2 span.mw-headline {
+body.skin-vector,
+body.skin-vector #left-navigation,
+body.skin-vector #right-navigation,     
+body.skin-vector #mw-panel,
+body.skin-vector .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
+    padding-top: 64px !important;
+}
+body.skin-vector .mw-body-content {
+    text-align: justify;
+}
+body.skin-vector .mw-body-content p {
+    hyphens: auto;
+}
+body.skin-vector .mw-body-content p,
+body.skin-vector .mw-body-content ul,
+body.skin-vector .mw-body-content ol,
+body.skin-vector .hatnote {
+    font-size: 0.95rem;
+}
+body.skin-vector b,
+body.skin-vector strong,
+body.skin-vector #toctitle {
+    font-weight: 500;
+}
+body.skin-vector textarea,
+body.skin-vector pre,
+body.skin-vector code,
+body.skin-vector span.comment,
+body.skin-vector .wikEdFrameBodySyntax,
+body.skin-vector .ace_editor,
+body.skin-vector #wpSummary,
+body.skin-vector .ve-ce-paragraphNode,
+body.skin-vector .CodeMirror,
+body.skin-vector .diff-context,
+body.skin-vector .diff-deletedline,
+body.skin-vector .diff-addedline {
+    font-family: "Roboto Mono", Courier, monospace !important;
+}
+body.skin-vector .mw-headline,
+body.skin-vector .mw-continue-editing,
+body.skin-vector .mw-body .mw-editsection,
+body.skin-vector .mw-body .mw-editsection-like {
+    font-family: Roboto, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif !important;
+}
+body.skin-vector h2 span.mw-headline {
     font-size: 24px !important;
     font-weight: 400;
     line-height: 32px;
 }
-.mw-body-content h2, .diff-currentversion-title {font-family: Roboto, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif !important;}
-.diff-currentversion-title {
+body.skin-vector  .mw-body-content h2,
+body.skin-vector .diff-currentversion-title {
+    font-family: Roboto, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+body.skin-vector .diff-currentversion-title {
     font-size: 24px !important;
     font-weight: 400 !important;
     line-height: 32px !important;
 }
-.firstHeading, .mw-body h1, .cx-column__title {
+body.skin-vector firstHeading,
+body.skin-vector .mw-body h1,
+body.skin-vector .cx-column__title {
     margin-top: 48px;
     font-family: Roboto, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -36,41 +84,58 @@ h2 span.mw-headline {
     margin: 24px 0;
     padding: 0;
 }
-.mw-headline, #mw-previewheader {
-	font-size: 1.25em !important;
-	font-weight: 500;
+body.skin-vector .mw-headline,
+body.skin-vector #mw-previewheader {
+    font-size: 1.25em !important;
+    font-weight: 500;
 }
-#wpTextbox1 {font-size: 12px;}
-.toc {font-size: 0.9em;}
-.mw-body fieldset {
+body.skin-vector #wpTextbox1 {
+    font-size: 12px;
+}
+body.skin-vector .toc {
+    font-size: 0.9em;
+}
+body.skin-vector .mw-body fieldset {
     border: 0px none;
     padding: 24px 16px !important;
     margin: 0 !important;
 }
-.mw-body form {
+body.skin-vector .mw-body form {
     box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
     margin-bottom: 24px;
     border-radius: 2px;
     text-align: left;
 }
-.mw-changeslist-legend, .hatnote img {display: none;}
-span.updatedmarker {
-	font-style: italic;
-	background-color: transparent !important;
-	color: #000 !important;
+body.skin-vector .mw-changeslist-legend,
+body.skin-vector .hatnote img {
+    display: none;
 }
-.wikitable, .mw-datatable, .gallerytext, .special {text-align: left;}
-body .ui-dialog .ui-widget-header {background: none !important;}
-body .ui-dialog .ui-dialog-titlebar {padding: none !important;}
-.ui-widget-header {
-	border: none !important;
-	background: none !important;
+body.skin-vector span.updatedmarker {
+    font-style: italic;
+    background-color: transparent !important;
+    color: #000 !important;
 }
-.ui-widget-content {
-	background-color: #fff !important;
-	background-image: none !important;
+body.skin-vector .wikitable,
+body.skin-vector .mw-datatable,
+body.skin-vector .gallerytext,
+body.skin-vector .special {
+    text-align: left;
+}
+body.skin-vector .ui-dialog .ui-widget-header {
+    background: none !important;
+}
+body.skin-vector .ui-dialog .ui-dialog-titlebar {
+    padding: none !important;
+}
+body.skin-vector .ui-widget-header {
+    border: none !important;
+    background: none !important;
+}
+body.skin-vector .ui-widget-content {
+    background-color: #fff !important;
+    background-image: none !important;
 } 
-.ui-dialog .ui-dialog-buttonpane button {
+body.skin-vector .ui-dialog .ui-dialog-buttonpane button {
     background-color: #fff !important;
     background-image: none !important;
     background-position: 50% 50% !important;
@@ -93,20 +158,20 @@ body .ui-dialog .ui-dialog-titlebar {padding: none !important;}
     font-weight: 500;
     white-space: nowrap;
 }
-.ui-dialog .ui-dialog-title {
-	float: left;
-	display: block;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 28px;
-	margin-top: 24px;
-	margin-bottom: 24px;
+body.skin-vector .ui-dialog .ui-dialog-title {
+    float: left;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
-.ui-dialog {
-	font-family: Roboto, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif !important;
-	font-weight: 400;
+body.skin-vector .ui-dialog {
+    font-family: Roboto, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif !important;
+    font-weight: 400;
 }
-.ui-dialog {
+body.skin-vector .ui-dialog {
     box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
     border: 0px none !important;
     margin-top: 24px !important;
@@ -115,37 +180,49 @@ body .ui-dialog .ui-dialog-titlebar {padding: none !important;}
     text-align: left;
     padding: 24px 16px !important;
 }
-.mw-body legend {
-	font-size: 20px;
-	font-weight: 400;
-	display: block;
-	line-height: 28px;
-	padding: 24px 0 0 !important;
+body.skin-vector .mw-body legend {
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    line-height: 28px;
+    padding: 24px 0 0 !important;
 }
-#mw-watchlist-resetbutton, #mw-history-compare {
-	box-shadow: none;
-	padding: 0;
+body.skin-vector #mw-watchlist-resetbutton,
+body.skin-vector #mw-history-compare {
+    box-shadow: none;
+    padding: 0;
 }
-#toc, .toc, #catlinks, .catlinks {
+body.skin-vector #toc,
+body.skin-vector .toc,
+body.skin-vector #catlinks,
+body.skin-vector .catlinks {
     background-color: #fff;
     color: #555555 !important;
     border: 0;
     border-radius: 2px;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.noprint.top-link, .toc a {
-	color: #555;
-	text-decoration: none;
+body.skin-vector .noprint.top-link,
+body.skin-vector .toc a {
+    color: #555;
+    text-decoration: none;
 }
-#toctitle {color: #555555 !important;}
-#toctitle h2 {
+body.skin-vector #toctitle {
+    color: #555555 !important;
+}
+body.skin-vector #toctitle h2 {
     font-family: Roboto, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: 500;
     color: #555555 !important;
 }
-.oo-ui-layout.oo-ui-panelLayout.oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {border: 0; box-shadow: unset; margin: 0; padding: 0;}
-span.comment {
-	color: #222;
+body.skin-vector .oo-ui-layout.oo-ui-panelLayout.oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
+    border: 0;
+    box-shadow: unset;
+    margin: 0;
+    padding: 0;
+}
+body.skin-vector span.comment {
+    color: #222;
     font-size: 0.75em;
     background-color: #f8f8f8;
     border: 1px solid #eaecf0;
@@ -153,37 +230,51 @@ span.comment {
     padding: 0.25em;
     white-space: pre-wrap;
 }
-.mw-tag-markers {font-size: smaller;}
-.mw-htmlform-submit {margin: 0 0 20px 15px !important;}
-#siteSub {
+body.skin-vector .mw-tag-markers {
+    font-size: smaller;
+}
+body.skin-vector .mw-htmlform-submit {
+    margin: 0 0 20px 15px !important;
+}
+    #siteSub {
     display: block;
     font-size: inherit;
     color: #9e9e9e;
     font-style: italic;
 }
-h1, h2, h3, h4, h5, h6 {
+body.skin-vector h1,
+body.skin-vector h2,
+body.skin-vector h3,
+body.skin-vector h4,
+body.skin-vector h5,
+body.skin-vector h6 {
     border-bottom: none;
 }
-h3 span.mw-headline {
+body.skin-vector h3 span.mw-headline {
     font-size: 20px !important;
     font-weight: 500;
     line-height: 1;
     letter-spacing: .02em;
 }
-h4 span.mw-headline, h5 span.mw-headline, h6 span.mw-headline {
+body.skin-vector h4 span.mw-headline,
+body.skin-vector h5 span.mw-headline,
+body.skin-vector h6 span.mw-headline {
     font-weight: 500;
 }
-.toctoggle {
+body.skin-vector .toctoggle {
     font-size: smaller;
     font-weight: 400;
 }
-#contentSub, #contentSub2 {
+body.skin-vector #contentSub,
+body.skin-vector #contentSub2 {
     line-height: inherit !important;
     letter-spacing: 0;
     margin: 0.5em 0;
 }
-#editform {box-shadow: none;}
-#p-personal {
+body.skin-vector #editform {
+    box-shadow: none;
+}
+body.skin-vector #p-personal {
     right: 0;
     background-color: #eaecf0;
     width: 100%;
@@ -201,11 +292,11 @@ h4 span.mw-headline, h5 span.mw-headline, h6 span.mw-headline {
     flex-direction: column;
     box-sizing: border-box;
 }
-#p-personal a {
+body.skin-vector #p-personal a {
     color: #000;
     text-decoration: none;
 }
-#p-personal ul {
+body.skin-vector #p-personal ul {
     padding: 16px;
     height: 56px;
     width: 100%;
@@ -213,10 +304,18 @@ h4 span.mw-headline, h5 span.mw-headline, h6 span.mw-headline {
     box-sizing: border-box;
     justify-content: flex-end;
 }
-#pt-uls {display: none;}
-#pt-userpage, #pt-anonuserpage {background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/14px-OOjs_UI_icon_userAvatar.svg.png') !important;}
-#pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read, #pt-notifications-notice .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {opacity: 1 !important;}
-.wikEdLogo {
+body.skin-vector #pt-uls {
+    display: none;
+}
+body.skin-vector #pt-userpage,
+body.skin-vector #pt-anonuserpage {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/14px-OOjs_UI_icon_userAvatar.svg.png') !important;
+}
+body.skin-vector #pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read,
+body.skin-vector #pt-notifications-notice .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {
+    opacity: 1 !important;
+}
+body.skin-vector .wikEdLogo {
     cursor: pointer;
     position: relative;
     display: block;
@@ -225,11 +324,11 @@ h4 span.mw-headline, h5 span.mw-headline, h6 span.mw-headline {
     top: -5px;
     margin-left: 0;
 }
-.ltr .mw-rtrc-navtoggle {
+body.skin-vector .ltr .mw-rtrc-navtoggle {
     border-width: 0 !important;
     padding-top: 120px;
 }
-div#simpleSearch {
+body.skin-vector div#simpleSearch {
     position: fixed;
     width: auto;
     max-width: none;
@@ -244,36 +343,61 @@ div#simpleSearch {
     top: 5px;
     border-radius: 0;
 }
-#left-navigation {margin-right: -1px;}
-#right-navigation {float: left;}
-div#simpleSearch, .suggestions {box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);}
-div.thumbinner {
+body.skin-vector #left-navigation {
+    margin-right: -1px;
+}
+body.skin-vector #right-navigation {
+    float: left;
+}
+body.skin-vector div#simpleSearch,
+body.skin-vector .suggestions {
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+body.skin-vector div.thumbinner {
     border: 0;
     padding: 0;
     overflow: hidden;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
-img, html .thumbimage {border: 0;}
-html .thumbcaption {padding: 8px 16px;}
-.mw-body .mw-indicators {bottom: 3.25rem;}
-.referencetooltip li {border: 0;}
-.referencetooltip li + li {border-top: 12px #fff solid;}
-.RTsettings {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/OOjs_UI_icon_advanced.svg/16px-OOjs_UI_icon_advanced.svg.png);}
-.wikiEditor-ui .wikiEditor-ui-top {
+body.skin-vector img,
+body.skin-vector html .thumbimage {
+    border: 0;
+}
+body.skin-vector html .thumbcaption {
+    padding: 8px 16px;
+}
+body.skin-vector .mw-body .mw-indicators {
+    bottom: 3.25rem;
+}
+body.skin-vector .referencetooltip li {
+    border: 0;
+}
+body.skin-vector .referencetooltip li + li {
+    border-top: 12px #fff solid;
+}
+body.skin-vector .RTsettings {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/OOjs_UI_icon_advanced.svg/16px-OOjs_UI_icon_advanced.svg.png');
+}
+body.skin-vector .wikiEditor-ui .wikiEditor-ui-top {
     border-bottom: 1px solid #c8ccd1;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
     z-index: 2;
 }
-.wikiEditor-ui-toolbar {
-	background-image: none;
-	background-color: #eaf3ff;
+body.skin-vector .wikiEditor-ui-toolbar {
+    background-image: none;
+    background-color: #eaf3ff;
 }
-li#ca-view, li#ca-edit, li#ca-viewsource {float: right;}
-.wikiEditor-ui-toolbar .sections .section {
+body.skin-vector li#ca-view,
+body.skin-vector li#ca-edit,
+body.skin-vector li#ca-viewsource {
+    float: right;
+}
+body.skin-vector .wikiEditor-ui-toolbar .sections .section {
     border-top: 0;
     background-color: #fff;
 }
-.wikiEditor-ui-toolbar .tabs span.tab a, .wikiEditor-ui-toolbar .tabs span.tab a:visited {
+body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
+body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
     background-image: none;
     background-color: #eaf3ff;
     text-transform: uppercase;
@@ -281,7 +405,8 @@ li#ca-view, li#ca-edit, li#ca-viewsource {float: right;}
     padding-top: 3px;
     padding-left: 12px;
 }
-.wikiEditor-ui-toolbar .tabs span.tab a.current, .wikiEditor-ui-toolbar .tabs span.tab a.current:visited {
+body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
+body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited {
     background-image: none;
     background-color: #fff;
     text-transform: uppercase;
@@ -290,14 +415,22 @@ li#ca-view, li#ca-edit, li#ca-viewsource {float: right;}
     padding-left: 12px;
     height: 32px;
 }
-.wikiEditor-ui-toolbar .tabs {
+body.skin-vector .wikiEditor-ui-toolbar .tabs {
     height: 32px;
     margin: 0;
 }
-.wikEdButtonBarWrapper {background-color: #d4d0cc;}
-#proveit-header {background-color: #fc3;}
-#proveit-left-bracket, #proveit-right-bracket {color: #fc3 !important;}
-#proveit-list-tab, #proveit-add-tab {
+body.skin-vector .wikEdButtonBarWrapper {
+    background-color: #d4d0cc;
+}
+body.skin-vector #proveit-header {
+    background-color: #fc3;
+}
+body.skin-vector #proveit-left-bracket,
+body.skin-vector #proveit-right-bracket {
+    color: #fc3 !important;
+}
+body.skin-vector #proveit-list-tab,
+body.skin-vector #proveit-add-tab {
     border: 0 !important;
     top: 0 !important;
     padding: 15px 30px !important;
@@ -305,17 +438,20 @@ li#ca-view, li#ca-edit, li#ca-viewsource {float: right;}
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
-#proveit-list-tab.active, #proveit-add-tab.active {
+body.skin-vector #proveit-list-tab.active,
+body.skin-vector #proveit-add-tab.active {
     background: #f4f4f4;
     border-bottom-color: #f4f4f4;
     color: #000;
 }
-#proveit-content {border: 0 !important;}
-#proveit-footer {
+body.skin-vector #proveit-content {
+    border: 0 !important;
+}
+body.skin-vector #proveit-footer {
     background: #000 !important;
     border-top: 0 !important;
 }
-#proveit-footer button {
+body.skin-vector #proveit-footer button {
     background: #fc3 !important;
     color: #000;
     font-weight: 500;
@@ -323,42 +459,80 @@ li#ca-view, li#ca-edit, li#ca-viewsource {float: right;}
     text-transform: uppercase;
     font-size: smaller;
 }
-.editButtons, .oo-ui-inputWidget-input, .editHelp a {text-transform: uppercase;}
-.editHelp, .oo-ui-textInputWidget.oo-ui-widget-enabled input, .oo-ui-textInputWidget.oo-ui-widget-enabled textarea {text-transform: none;}
-.suggestions {border-top: 1px #a2a9b1 solid;}
-.suggestions-results, .suggestions-result-current {border: 0;}
-.suggestions-result-current {
+body.skin-vector .editButtons,
+body.skin-vector .oo-ui-inputWidget-input,
+body.skin-vector .editHelp a {
+    text-transform: uppercase;
+}
+body.skin-vector .editHelp,
+body.skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled input,
+body.skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled textarea {
+    text-transform: none;
+}
+body.skin-vector .suggestions {
+    border-top: 1px #a2a9b1 solid;
+}
+body.skin-vector .suggestions-results,
+body.skin-vector .suggestions-result-current {
+    border: 0;
+}
+body.skin-vector .suggestions-result-current {
     background-color: #36c;
     color: #fff;
 }
-.suggestions-special {
+body.skin-vector .suggestions-special {
     border: 0;
     border-top: 1px solid #a2a9b1;
 }
-div.vectorMenu:hover div.menu, div.vectorMenu.menuForceShow div.menu {
+body.skin-vector div.vectorMenu:hover div.menu,
+body.skin-vector div.vectorMenu.menuForceShow div.menu {
     box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
     border: 0;
 }
-div.vectorMenu li a:hover {
+body.skin-vector div.vectorMenu li a:hover {
     background-color: #36c;
     color: #fff;
     text-decoration: none;
 }
-#ca-view a, #ca-edit a, #ca-addsection a, #ca-viewsource a, #ca-history a, #ca-watch a, #ca-unwatch a {width: 122px;}
-#ca-watch a {text-transform: capitalize;}
-.selected a:hover {background-color: transparent !important;}
-.mwe-popups-extract {
-	hyphens: auto;
-	text-align: justify;
+body.skin-vector #ca-view a,
+body.skin-vector #ca-edit a,
+body.skin-vector #ca-addsection a,
+body.skin-vector #ca-viewsource a,
+body.skin-vector #ca-history a,
+body.skin-vector #ca-watch a,
+body.skin-vector #ca-unwatch a {
+    width: 122px;
 }
-table ul, table ol, table p, .reflist ul, .reflist ol, ul.references, ol.references, .toc, .toc ul, .catlinks, .catlinks ul {font-size: inherit !important}
-.cx-header__title {
+body.skin-vector #ca-watch a {
+    text-transform: capitalize;
+}
+body.skin-vector .selected a:hover {
+    background-color: transparent !important;
+}
+body.skin-vector .mwe-popups-extract {
+    hyphens: auto;
+    text-align: justify;
+}
+body.skin-vector table ul,
+body.skin-vector table ol,
+body.skin-vector table p,
+body.skin-vector .reflist ul,
+body.skin-vector .reflist ol,
+body.skin-vector ul.references,
+body.skin-vector ol.references,
+body.skin-vector .toc,
+body.skin-vector .toc ul,
+body.skin-vector .catlinks,
+body.skin-vector .catlinks ul {
+    font-size: inherit !important
+}
+body.skin-vector .cx-header__title {
     position: fixed;
     left: 10px;
     top: 12px;
     z-index: 36;
 }
-.cx-header__bar {
+body.skin-vector .cx-header__bar {
     margin-top: 30px;
     border-top: none !important;
 }
