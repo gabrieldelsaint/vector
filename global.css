@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Mono:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic|Cabin:400,400italic,500,500italic,600,600italic,700,700italic&subset=latin,greek,cyrillic,greek-ext,vietnamese,cyrillic-ext,latin-ext");
 
-/* Vector */
-
 body.skin-vector,
 body.skin-vector html,
 body.skin-vector input,
@@ -46,12 +44,25 @@ body.skin-vector span.comment,
 body.skin-vector .wikEdFrameBodySyntax,
 body.skin-vector .ace_editor,
 body.skin-vector #wpSummary,
-body.skin-vector .ve-ce-paragraphNode,
+body.skin-vector .mw-editfont-monospace,
 body.skin-vector .CodeMirror,
 body.skin-vector .diff-context,
 body.skin-vector .diff-deletedline,
 body.skin-vector .diff-addedline {
     font-family: "Roboto Mono", Courier, monospace !important;
+}
+body.skin-vector code {
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    padding: .2rem .4rem;
+    word-break: break-word;
+    font-size: 87.5%;
+    color: #555;
+    border: 0;
+}
+body.skin-vector code a {
+    color: #555;
+    text-decoration-line: underline;
 }
 body.skin-vector .mw-headline,
 body.skin-vector .mw-continue-editing,
@@ -158,14 +169,15 @@ body.skin-vector .ui-dialog .ui-dialog-buttonpane button {
     font-weight: 500;
     white-space: nowrap;
 }
-body.skin-vector .ui-dialog .ui-dialog-title {
-    float: left;
-    display: block;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+body.skin-vector .ui-dialog-title {
+    font-size: 1.25rem !important;
+    font-weight: 500 !important;
+    letter-spacing: .02em;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+}
+body.skin-vector .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
+    border: none;
 }
 body.skin-vector .ui-dialog {
     font-family: Roboto, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif !important;
@@ -307,8 +319,8 @@ body.skin-vector #p-personal ul {
 body.skin-vector #pt-uls {
     display: none;
 }
-body.skin-vector #pt-userpage,
-body.skin-vector #pt-anonuserpage {
+body.skin-vector #pt-userpage a,
+body.skin-vector #pt-anonuserpage a {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/14px-OOjs_UI_icon_userAvatar.svg.png') !important;
 }
 body.skin-vector #pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read,
@@ -353,6 +365,10 @@ body.skin-vector div#simpleSearch,
 body.skin-vector .suggestions {
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+body.skin-vector #searchInput, body.skin-vector #searchInput:hover, body.skin-vector #searchInput:focus {
+	border: 0;
+    box-shadow: none;
+}
 body.skin-vector div.thumbinner {
     border: 0;
     padding: 0;
@@ -375,9 +391,6 @@ body.skin-vector .referencetooltip li {
 body.skin-vector .referencetooltip li + li {
     border-top: 12px #fff solid;
 }
-body.skin-vector .RTsettings {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/OOjs_UI_icon_advanced.svg/16px-OOjs_UI_icon_advanced.svg.png');
-}
 body.skin-vector .wikiEditor-ui .wikiEditor-ui-top {
     border-bottom: 1px solid #c8ccd1;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
@@ -386,11 +399,6 @@ body.skin-vector .wikiEditor-ui .wikiEditor-ui-top {
 body.skin-vector .wikiEditor-ui-toolbar {
     background-image: none;
     background-color: #eaf3ff;
-}
-body.skin-vector li#ca-view,
-body.skin-vector li#ca-edit,
-body.skin-vector li#ca-viewsource {
-    float: right;
 }
 body.skin-vector .wikiEditor-ui-toolbar .sections .section {
     border-top: 0;
@@ -489,19 +497,45 @@ body.skin-vector div.vectorMenu.menuForceShow div.menu {
     box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
     border: 0;
 }
-body.skin-vector div.vectorMenu li a:hover {
-    background-color: #36c;
+body.skin-vector div.vectorMenu li a:hover, body.skin-vector .vectorMenu #ca-wikilove a:hover {
+    background-color: #36c !important;
+    background-image: none;
     color: #fff;
     text-decoration: none;
 }
+body.skin-vector .vectorMenu #ca-wikilove a {
+    background: none;
+}
 body.skin-vector #ca-view a,
 body.skin-vector #ca-edit a,
+body.skin-vector #ca-ve-edit a, 
 body.skin-vector #ca-addsection a,
 body.skin-vector #ca-viewsource a,
 body.skin-vector #ca-history a,
 body.skin-vector #ca-watch a,
 body.skin-vector #ca-unwatch a {
     width: 122px;
+}
+body.skin-vector #ca-view.selected a,
+body.skin-vector #ca-edit.selected a,
+body.skin-vector #ca-ve-edit.selected a, 
+body.skin-vector #ca-addsection.selected a,
+body.skin-vector #ca-viewsource.selected a,
+body.skin-vector #ca-history.selected a,
+body.skin-vector #ca-watch.selected a,
+body.skin-vector #ca-unwatch.selected a {
+    color: #0645ad;
+}
+body.skin-vector #ca-view.selected a:hover,
+body.skin-vector #ca-edit.selected a:hover,
+body.skin-vector #ca-ve-edit.selected a:hover, 
+body.skin-vector #ca-addsection.selected a:hover,
+body.skin-vector #ca-viewsource.selected a:hover,
+body.skin-vector #ca-history.selected a:hover,
+body.skin-vector #ca-watch.selected a:hover,
+body.skin-vector #ca-unwatch.selected a:hover {
+    background-color: #fff !important;
+    color: #0645ad !important;
 }
 body.skin-vector #ca-watch a {
     text-transform: capitalize;
@@ -535,4 +569,9 @@ body.skin-vector .cx-header__title {
 body.skin-vector .cx-header__bar {
     margin-top: 30px;
     border-top: none !important;
+}
+body.skin-vector #ca-watch,
+body.skin-vector #ca-unwatch,
+body.skin-vector #ca-history {
+    display: inline-block !important;
 }
