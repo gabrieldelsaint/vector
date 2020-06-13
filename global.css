@@ -427,6 +427,9 @@ body.skin-vector .wikiEditor-ui-toolbar .tabs {
     height: 32px;
     margin: 0;
 }
+body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:before {
+    background: none;
+}
 body.skin-vector .wikEdButtonBarWrapper {
     background-color: #d4d0cc;
 }
