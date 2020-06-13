@@ -407,7 +407,6 @@ body.skin-vector .wikiEditor-ui-toolbar .sections .section {
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
     background-image: none;
-    background-color: #eaf3ff;
     text-transform: uppercase;
     font-weight: normal;
     padding-top: 3px;
