@@ -506,16 +506,6 @@ body.skin-vector div.vectorMenu li a:hover, body.skin-vector .vectorMenu #ca-wik
 body.skin-vector .vectorMenu #ca-wikilove a {
     background: none;
 }
-body.skin-vector #ca-view a,
-body.skin-vector #ca-edit a,
-body.skin-vector #ca-ve-edit a, 
-body.skin-vector #ca-addsection a,
-body.skin-vector #ca-viewsource a,
-body.skin-vector #ca-history a,
-body.skin-vector #ca-watch a,
-body.skin-vector #ca-unwatch a {
-    width: 122px;
-}
 body.skin-vector #ca-view.selected a,
 body.skin-vector #ca-edit.selected a,
 body.skin-vector #ca-ve-edit.selected a, 
