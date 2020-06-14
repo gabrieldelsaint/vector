@@ -396,10 +396,6 @@ body.skin-vector .wikiEditor-ui .wikiEditor-ui-top {
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
     z-index: 2;
 }
-body.skin-vector .wikiEditor-ui-toolbar {
-    background-image: none;
-    background-color: #eaf3ff;
-}
 body.skin-vector .wikiEditor-ui-toolbar .sections .section {
     border-top: 0;
     background-color: #fff;
