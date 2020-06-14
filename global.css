@@ -402,6 +402,7 @@ body.skin-vector .wikiEditor-ui-toolbar .sections .section {
 }
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
+    color: #202021;
     background-image: none;
     text-transform: uppercase;
     font-weight: normal;
@@ -410,17 +411,11 @@ body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
 }
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited {
-    background-image: none;
-    background-color: #fff;
-    text-transform: uppercase;
     font-weight: 500;
-    padding-top: 3px;
-    padding-left: 12px;
-    height: 32px;
+    border-bottom: #222 solid 0.2rem;
 }
-body.skin-vector .wikiEditor-ui-toolbar .tabs {
-    height: 32px;
-    margin: 0;
+body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:hover {
+    text-decoration: none;
 }
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:before {
     background: none;
