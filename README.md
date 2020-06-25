@@ -4,5 +4,5 @@ Modified CSS of [MediaWiki](https://www.mediawiki.org/)'s default skin [Vector](
 
 ## Files
 
-* `global.css` - global stylesheet used in all wikis with Vector skin
-* `wikipedia-pt.css` - applies only to [Portuguese Wikipedia](https://pt.wikipedia.org/)
+* [`global.css`](global.css) - global stylesheet used in all wikis with Vector skin
+* [`wikipedia-pt.css`](wikipedia-pt.css) - applies only to [Portuguese Wikipedia](https://pt.wikipedia.org/)
