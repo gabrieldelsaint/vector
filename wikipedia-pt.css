@@ -1,35 +1,62 @@
 ﻿.wikipediauserbox a {
 	text-decoration: none;
 }
-.televisao2 {
-	background-image: none !important;
+.infobox_v2 {
+    background-color: #fff;
+    color: rgba(0,0,0,.87);
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: 4px;
+    border-collapse: collapse;
 }
-.topo.comunicacao,
-.topo.jornal,
-.topo.computador {
-	background-image: none !important;
-	background-color: transparent;
+.infobox_v2 tr {
+    border-top-color: rgba(0,0,0,.12);
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+.infobox_v2 tr:hover {
+    background-color: rgba(0,0,0,.04);
+}
+.infobox_v2 tr .floatnone img {
+    margin: 8px 0;
 }
 .infobox_v2 th {
 	background-color: transparent !important;
 	text-align: left !important;
-	vertical-align: bottom;
-	font-weight: 600;
-}
-.infobox_v2 td[scope ^="row"] {
-	background-color: transparent !important;
-	font-weight: 500 !important;
+	font-weight: 500;
+    color: initial !important;
+    font-family: inherit !important;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    height: 52px;
+    vertical-align: middle;
 }
 .infobox_v2 td {
-	background-color: transparent !important;
-	font-weight: 400 !important;
+    background-color: transparent !important;
+    font-weight: 400 !important;
+    padding-right: 8px;
+    padding-left: 8px;
+    height: 52px;
+    vertical-align: middle !important;
+}
+.infobox_v2 td[scope ^="row"] {
+    background-color: transparent !important;
+    font-weight: 500 !important;
 }
 .infobox_v2 .topo {
 	background-color: transparent !important;
+    background-image: none !important;
+    color: rgba(0,0,0,.87) !important;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    height: 52px;
+    vertical-align: middle;
 }
 .infobox_v2 .topo span {
-	text-align: left !important;
-	font-weight: 400 !important;
+    text-align: left !important;
+    font-weight: 500;
+}
+.infobox_v2 .topo small span {
+    font-weight: 400;
 }
 #lastEditUser {
 	font-family: Roboto, sans-serif !important;
@@ -37,47 +64,51 @@
 	font-size: 12px !important;
 }
 .bkl-link {
-	white-space: nowrap;
-	font-size: 0.875em;
-	padding: .2rem .4rem;
-	border-radius: 2px;
-	font-style: normal;
-	color: #3366cc;
-	background-color: #fff;
-	border: solid 1px #3366cc;
-	margin: 0 0.05em;
+    background: none;
 }
-.bkl-link-sup,
+.bkl-link-sup {
+    vertical-align: text-top;
+    margin-left: 0.2rem;
+    font-style: italic;
+}
+.bkl-link-sup::before {
+    content: "(";
+}
+.bkl-link-sup::after {
+    content: ")";
+}
 .flagicon,
 #editpage-copywarn {
 	display: none;
 }
-a:hover.mw-disambig {
-	text-decoration: none !important;
-}
 .fastb-button {
-	font-family: Roboto, sans-serif !important;
-	background-color: #9c27b0 !important;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
-	display: inline-block;
-	font-size: .875rem;
-	font-weight: 500;
-	line-height: 1;
-	margin: 0;
-	min-width: 5.5rem;
-	padding: .6875rem 1rem;
-	text-align: center;
-	vertical-align: middle;
-	border-radius: 2px;
-	text-transform: uppercase;
-	position: relative;
-	white-space: nowrap;
-	margin-bottom: 0.5em;
+    font-family: Roboto, sans-serif !important;
+    background-color: #3366cc !important;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    display: inline-block;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    padding: .6875rem 1rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    position: relative;
+    white-space: nowrap;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    box-sizing: content-box;
+    letter-spacing: .0892857143em;
 }
 .fastb-button:active {
 	background-color: hsla(0,0%,60%,.4);
 	background-image: none;
 	box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 3px rgba(0,0,0,.12),0 4px 15px 0 rgba(0,0,0,.2);
+}
+.fastb-button:focus,
+.fastb-button:hover {
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
 }
 .fastb-button:hover {
 	background-image: linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.12));
@@ -88,9 +119,15 @@ a:hover.mw-disambig {
 #fastb-submenu .fastb-menu-button,
 #fastb-submenu .fastb-action-button,
 #fastb-submenu .fastb-link-button {
-	background-color: #ff4081 !important;
-	font-size: .8125rem;
-	padding: .59375rem 1rem;
+    background-color: #fff !important;
+    padding: .59375rem 1rem;
+    color: #36c !important;
+    box-shadow: none;
+    border: 1px solid #36c;
+    font-size: small;
+}
+#fastb-submenu a:hover {
+    background: none;
 }
 .fastb-link-button:hover {
 	color: #fff !important;
@@ -102,6 +139,7 @@ a:hover.mw-disambig {
 	color: rgba(0,0,0,.26) !important;
 	box-shadow: none;
 	background-image: none;
+    font-size: small;
 }
 #fastb-menu {
 	margin-bottom: 0;
@@ -152,4 +190,10 @@ a:hover.mw-disambig {
 	background-color: #7b1fa2;
 	color: #fff;
 	text-decoration: none;
+}
+@media print {
+    #fastb-menu,
+    #fastb-submenu {
+        display: none;
+    }
 }
