@@ -16,9 +16,20 @@ body.skin-vector {
 body.skin-vector,
 body.skin-vector #left-navigation,
 body.skin-vector #right-navigation,     
-body.skin-vector #mw-panel,
-body.skin-vector .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
+body.skin-vector #mw-panel {
     padding-top: 64px !important;
+}
+body.skin-vector .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
+    margin-top: 64px;
+    z-index: 45;
+}
+@media print {
+    body.skin-vector,
+    body.skin-vector #left-navigation,
+    body.skin-vector #right-navigation,     
+    body.skin-vector #mw-panel {
+        padding-top: 0 !important;
+    }
 }
 body.skin-vector .mw-body-content {
     text-align: justify;
@@ -33,13 +44,16 @@ body.skin-vector .hatnote {
     font-size: 0.95rem;
 }
 body.skin-vector b,
-body.skin-vector strong,
-body.skin-vector #toctitle {
-    font-weight: 500;
+body.skin-vector strong {
+    font-weight: 700;
 }
 body.skin-vector textarea,
 body.skin-vector pre,
 body.skin-vector code,
+body.skin-vector tt,
+body.skin-vector kbd,
+body.skin-vector samp,
+body.skin-vector .mw-code,
 body.skin-vector span.comment,
 body.skin-vector .wikEdFrameBodySyntax,
 body.skin-vector .ace_editor,
@@ -48,14 +62,17 @@ body.skin-vector .mw-editfont-monospace,
 body.skin-vector .CodeMirror,
 body.skin-vector .diff-context,
 body.skin-vector .diff-deletedline,
-body.skin-vector .diff-addedline {
+body.skin-vector .diff-addedline,
+body.skin-vector .wikiEditor-ui-toolbar .page-characters,
+body.skin-vector .wikiEditor-ui-toolbar .section-help .page-table td.cell-syntax,
+body.skin-vector #editpage-specialchars a,
+body.skin-vector #proveit-logo {
     font-family: "Roboto Mono", monospace !important;
 }
 body.skin-vector code {
     background-color: #f5f5f5;
     border-radius: 2px;
     padding: .2rem .4rem;
-    word-break: break-word;
     font-size: 87.5%;
     color: #555;
     border: 0;
@@ -100,12 +117,6 @@ body.skin-vector #mw-previewheader {
     font-size: 1.25em !important;
     font-weight: 500;
 }
-body.skin-vector #wpTextbox1 {
-    font-size: 12px;
-}
-body.skin-vector .toc {
-    font-size: 0.9em;
-}
 body.skin-vector .mw-body fieldset {
     border: 0px none;
     padding: 24px 16px !important;
@@ -136,7 +147,13 @@ body.skin-vector .ui-dialog .ui-widget-header {
     background: none !important;
 }
 body.skin-vector .ui-dialog .ui-dialog-titlebar {
-    padding: none !important;
+    padding-bottom: 15px !important;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    border-bottom: 1px solid rgba(0,0,0,.12) !important;
+}
+body.skin-vector .ui-dialog .ui-dialog-buttonpane {
+    padding: 0 !important;
 }
 body.skin-vector .ui-widget-header {
     border: none !important;
@@ -145,29 +162,27 @@ body.skin-vector .ui-widget-header {
 body.skin-vector .ui-widget-content {
     background-color: #fff !important;
     background-image: none !important;
-} 
+}
+.wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
+    border-top: 1px solid rgba(0,0,0,.12) !important;
+}
 body.skin-vector .ui-dialog .ui-dialog-buttonpane button {
     background-color: #fff !important;
     background-image: none !important;
-    background-position: 50% 50% !important;
-    background-size: 100% 100% !important;
     border: 0px none !important;
     border-radius: 2px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: none;
     color: inherit;
-    display: inline-block;
-    margin-bottom: 0px;
-    max-width: 100%;
-    padding: 8px;
-    text-transform: uppercase;
-    font-size: 14px;
+    font-size: .875rem;
     font-family: Roboto, sans-serif !important;
-    line-height: 20px;
-    text-align: center;
-    vertical-align: middle;
-    position: relative;
     font-weight: 500;
     white-space: nowrap;
+    letter-spacing: .0892857143em;
+    text-transform: uppercase;
+    margin-left: 8px;
+    margin-right: 0;
+    max-width: 100%;
+    text-align: right;
 }
 body.skin-vector .ui-dialog-title {
     font-size: 1.25rem !important;
@@ -188,9 +203,8 @@ body.skin-vector .ui-dialog {
     border: 0px none !important;
     margin-top: 24px !important;
     margin-bottom: 24px !important;
-    border-radius: 2px !important;
     text-align: left;
-    padding: 24px 16px !important;
+    border-radius: 4px !important;
 }
 body.skin-vector .mw-body legend {
     font-size: 20px;
@@ -205,19 +219,59 @@ body.skin-vector #mw-history-compare {
     padding: 0;
 }
 body.skin-vector #toc,
-body.skin-vector .toc,
-body.skin-vector #catlinks,
-body.skin-vector .catlinks {
+body.skin-vector .toc {
     background-color: #fff;
-    color: #555555 !important;
-    border: 0;
-    border-radius: 2px;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    color: rgba(0,0,0,.87);
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 0;
+    padding: 8px 0;
 }
-body.skin-vector .noprint.top-link,
-body.skin-vector .toc a {
-    color: #555;
+body.skin-vector .toc ul ul {
+    margin: 0;
+}
+body.skin-vector .toctitle {
+    padding: 0 16px;
+    display: block;
+    align-content: center;
+}
+body.skin-vector .toctitle #mw-toc-heading {
+    font-weight: 500;
+    color: rgba(0,0,0,.87);
+    line-height: 2rem;
+    letter-spacing: .0125em;
+}
+body.skin-vector .toctogglelabel {
+    color: rgba(0,0,0,.87);
     text-decoration: none;
+}
+body.skin-vector .toc {
+    background-color: transparent;
+    color: rgba(0,0,0,.87);
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 0;
+    padding: 8px 0;
+}
+body.skin-vector .toc li::before,
+body.skin-vector .toc li::after {
+    content: "";
+}
+body.skin-vector .toc li a {
+    padding: 0 16px;
+    display: flex;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    height: 48px;
+    align-items: center;
+}
+body.skin-vector .tocnumber,
+body.skin-vector .toctext {
+    letter-spacing: .009375em;
+    text-transform: inherit;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+body.skin-vector .toc li a:hover {
+    background-color: rgba(0,0,0,.04);
 }
 body.skin-vector #toctitle {
     color: #555555 !important;
@@ -248,7 +302,7 @@ body.skin-vector .mw-tag-markers {
 body.skin-vector .mw-htmlform-submit {
     margin: 0 0 20px 15px !important;
 }
-    #siteSub {
+#siteSub {
     display: block;
     font-size: inherit;
     color: #9e9e9e;
@@ -299,7 +353,7 @@ body.skin-vector #p-personal {
     line-height: 1.5rem;
     top: 0;
     left: 0;
-    z-index: 35;
+    z-index: 40;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -320,8 +374,15 @@ body.skin-vector #pt-uls {
     display: none;
 }
 body.skin-vector #pt-userpage a,
-body.skin-vector #pt-anonuserpage a {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/14px-OOjs_UI_icon_userAvatar.svg.png') !important;
+body.skin-vector #pt-anonuserpage {
+    background-image: none;
+    display: inline-flex;
+}
+body.skin-vector #pt-userpage a::before,
+body.skin-vector #pt-anonuserpage::before {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/14px-OOjs_UI_icon_userAvatar.svg.png);
+    display: inline-flex;
+    padding: 0 .25rem;
 }
 body.skin-vector #pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read,
 body.skin-vector #pt-notifications-notice .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {
@@ -344,16 +405,15 @@ body.skin-vector div#simpleSearch {
     position: fixed;
     width: auto;
     max-width: none;
-    height: 24px;
+    height: 32px;
     border: 0;
-    margin-top: 16px;
+    margin-top: 12px;
     margin-left: -10px;
     background-color: #fff;
-    z-index: 36;
+    z-index: 45;
     right: 65%;
     left: 2em;
     top: 5px;
-    border-radius: 0;
 }
 body.skin-vector #left-navigation {
     margin-right: -1px;
@@ -365,9 +425,16 @@ body.skin-vector div#simpleSearch,
 body.skin-vector .suggestions {
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-body.skin-vector #searchInput, body.skin-vector #searchInput:hover, body.skin-vector #searchInput:focus {
-	border: 0;
+body.skin-vector #searchInput,
+body.skin-vector #searchInput:hover,
+body.skin-vector #searchInput:focus {
+    border: 0;
     box-shadow: none;
+    height: 32px;
+    padding: 0 12px;
+}
+body.skin-vector #searchButton {
+    margin: 0 6px;
 }
 body.skin-vector div.thumbinner {
     border: 0;
@@ -384,12 +451,16 @@ body.skin-vector html .thumbcaption {
 }
 body.skin-vector .mw-body .mw-indicators {
     bottom: 3.25rem;
+    z-index: 35;
 }
 body.skin-vector .referencetooltip li {
     border: 0;
 }
 body.skin-vector .referencetooltip li + li {
     border-top: 12px #fff solid;
+}
+body.skin-vector .wikiEditor-ui-toolbar {
+    background-color: #eaecf0;
 }
 body.skin-vector .wikiEditor-ui .wikiEditor-ui-top {
     border-bottom: 1px solid #c8ccd1;
@@ -404,15 +475,13 @@ body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
     color: #202021;
     background-image: none;
-    text-transform: uppercase;
     font-weight: normal;
-    padding-top: 3px;
     padding-left: 12px;
 }
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited {
     font-weight: 500;
-    border-bottom: #222 solid 0.2rem;
+    background-color: #fff;
 }
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:hover {
     text-decoration: none;
@@ -420,50 +489,16 @@ body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:hover {
 body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:before {
     background: none;
 }
-body.skin-vector .wikEdButtonBarWrapper {
-    background-color: #d4d0cc;
+body.skin-vector .wikiEditor-ui-toolbar .group-format,
+body.skin-vector .wikiEditor-ui-toolbar .group-insert,
+body.skin-vector .wikiEditor-ui-toolbar .group-codemirror {
+    border: 0;
 }
-body.skin-vector #proveit-header {
-    background-color: #fc3;
-}
-body.skin-vector #proveit-left-bracket,
-body.skin-vector #proveit-right-bracket {
-    color: #fc3 !important;
-}
-body.skin-vector #proveit-list-tab,
-body.skin-vector #proveit-add-tab {
-    border: 0 !important;
-    top: 0 !important;
-    padding: 15px 30px !important;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-body.skin-vector #proveit-list-tab.active,
-body.skin-vector #proveit-add-tab.active {
-    background: #f4f4f4;
-    border-bottom-color: #f4f4f4;
-    color: #000;
-}
-body.skin-vector #proveit-content {
-    border: 0 !important;
-}
-body.skin-vector #proveit-footer {
-    background: #000 !important;
-    border-top: 0 !important;
-}
-body.skin-vector #proveit-footer button {
-    background: #fc3 !important;
-    color: #000;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+body.skin-vector #editpage-specialchars a {
     font-size: smaller;
 }
-body.skin-vector .editButtons,
-body.skin-vector .oo-ui-inputWidget-input,
-body.skin-vector .editHelp a {
-    text-transform: uppercase;
+body.skin-vector .wikEdButtonBarWrapper {
+    background-color: #d4d0cc;
 }
 body.skin-vector .editHelp,
 body.skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled input,
@@ -509,19 +544,14 @@ body.skin-vector #ca-watch.selected a,
 body.skin-vector #ca-unwatch.selected a {
     color: #0645ad;
 }
-body.skin-vector #ca-view.selected a:hover,
-body.skin-vector #ca-edit.selected a:hover,
-body.skin-vector #ca-ve-edit.selected a:hover, 
-body.skin-vector #ca-addsection.selected a:hover,
-body.skin-vector #ca-viewsource.selected a:hover,
-body.skin-vector #ca-history.selected a:hover,
-body.skin-vector #ca-watch.selected a:hover,
-body.skin-vector #ca-unwatch.selected a:hover {
+body.skin-vector #p-cactions .vector-menu-content-list li.selected a:hover {
     background-color: #fff !important;
     color: #0645ad !important;
 }
-body.skin-vector #ca-watch a {
-    text-transform: capitalize;
+body.skin-vector #p-cactions .vector-menu-content-list li a:hover {
+    color: #fff !important;
+    background: #36c;
+    text-decoration: none;
 }
 body.skin-vector .selected a:hover {
     background-color: transparent !important;
@@ -547,7 +577,7 @@ body.skin-vector .cx-header__title {
     position: fixed;
     left: 10px;
     top: 12px;
-    z-index: 36;
+    z-index: 45;
 }
 body.skin-vector .cx-header__bar {
     margin-top: 30px;
@@ -557,4 +587,25 @@ body.skin-vector #ca-watch,
 body.skin-vector #ca-unwatch,
 body.skin-vector #ca-history {
     display: inline-block !important;
+}
+body.skin-vector #proveit-logo {
+    font-size: small;
+    font-weight: 500;
+}
+body.skin-vector .suggestions-result .highlight {
+    font-weight: 700;
+}
+body.skin-vector #wpSave,
+body.skin-vector #wpPreview,
+body.skin-vector #wpDiff {
+    font-weight: 500;
+}
+body.skin-vector .mw-diff-movedpara-left:after,
+body.skin-vector .mw-diff-movedpara-right:after {
+    font-family: Roboto, sans-serif;
+}
+@media print {
+    #proveit {
+        display: none;
+    }
 }
