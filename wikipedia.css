@@ -1,0 +1,5 @@
+@media (prefers-color-scheme: dark) {
+    .mw-wiki-logo {
+        filter: invert(1);
+    }
+}
