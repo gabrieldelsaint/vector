@@ -81,6 +81,7 @@ _To work correctly within Microsoft Edge, use "System default" option on the bro
 _Material Vector works fine with these wikis, with less or none issues_
 
 * `mediawiki.org`
+* `*.miraheze.org`
 * `*.wikibooks.org`
 * `wikidata.org`
 * `*.wikimedia.org`

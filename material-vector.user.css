@@ -9,7 +9,7 @@
 @author       Gabriel dos Santos <gabrieldossantos@programmer.net> (https://www.gabrieldossantos.net/)
 @license      MIT
 ==/UserStyle== */
-@-moz-document domain("mediawiki.org"), domain("wikibooks.org"), domain("wikidata.org"), domain("wikimedia.org"), domain("wikinews.org"), domain("wikipedia.org"), domain("wikiquote.org"), domain("wikisource.org"), domain("wikiversity.org"), domain("wikivoyage.org"), domain("wiktionary.org") {
+@-moz-document domain("mediawiki.org"), domain("miraheze.org"), domain("wikibooks.org"), domain("wikidata.org"), domain("wikimedia.org"), domain("wikinews.org"), domain("wikipedia.org"), domain("wikiquote.org"), domain("wikisource.org"), domain("wikiversity.org"), domain("wikivoyage.org"), domain("wiktionary.org") {
     body.skin-vector,
     body.skin-vector html,
     body.skin-vector input,
