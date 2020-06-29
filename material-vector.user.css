@@ -77,7 +77,7 @@
     body.skin-vector .wikiEditor-ui-toolbar .section-help .page-table td.cell-syntax,
     body.skin-vector #editpage-specialchars a,
     body.skin-vector #proveit-logo {
-        font-family: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important !important;
+        font-family: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
     }
     body.skin-vector code {
         background-color: #f5f5f5;
