@@ -10,8 +10,6 @@
 @license      MIT
 ==/UserStyle== */
 @-moz-document domain("mediawiki.org"), domain("wikibooks.org"), domain("wikidata.org"), domain("wikimedia.org"), domain("wikinews.org"), domain("wikipedia.org"), domain("wikiquote.org"), domain("wikisource.org"), domain("wikiversity.org"), domain("wikivoyage.org"), domain("wiktionary.org") {
-    @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Mono:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic|Cabin:400,400italic,500,500italic,600,600italic,700,700italic&subset=latin,greek,cyrillic,greek-ext,vietnamese,cyrillic-ext,latin-ext");
-
     body.skin-vector,
     body.skin-vector html,
     body.skin-vector input,
