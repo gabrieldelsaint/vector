@@ -117,7 +117,7 @@ _These wikis don't use Vector as their default skin and doesn't have an option t
 ### Browsers
 Material Vector was been tested in the latest versions of the following desktop browsers (no mobile support, since [Minerva](https://www.mediawiki.org/wiki/Special:MyLanguage/Skin:Minerva_Neue) is the default mobile skin for Wikimedia and possibility others MediaWiki-based wikis)
 
-* [Google Chrome](https:/www.google.com/chrome/)
+* [Google Chrome](https://www.google.com/chrome/)
 * [Mozilla Firefox](https://www.mozilla.org/firefox/new/)
 * [Microsoft Edge](https://www.microsoft.com/edge)
 
