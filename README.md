@@ -123,4 +123,4 @@ Material Vector was been tested in the latest versions of the following desktop 
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://raw.githubusercontent.com/gabrieldelsaint/material-vector/master/LICENSE)
