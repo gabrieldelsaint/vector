@@ -191,3 +191,25 @@
         display: none;
     }
 }
+@media (prefers-color-scheme: dark) {
+    body.skin-vector.page-Wikipédia_Página_principal .mw-body-content div,
+    body.skin-vector.page-Wikipédia_Página_principal .hp div,
+    body.skin-vector.page-Wikipédia_Página_principal .hp-portalen {
+        background: none !important;
+        box-shadow: none !important;
+    }
+    body.skin-vector.page-Wikipédia_Página_principal .hp table {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+    body.skin-vector.page-Wikipédia_Página_principal .hp-welkom-1,
+    body.skin-vector.page-Wikipédia_Página_principal .hp-welkom-1 a,
+    body.skin-vector.page-Wikipédia_Página_principal .hp-welkom-1 a span,
+    body.skin-vector.page-Wikipédia_Página_principal .hp-welkom-2,
+    body.skin-vector.page-Wikipédia_Página_principal .hp-welkom-2 a,
+    body.skin-vector.page-Wikipédia_Página_principal .hp-kop td span {
+        color: #fff !important;
+    }
+    body.skin-vector.page-Wikipédia_Página_principal .main-page-block-heading {
+        color: #fff;
+    }
+}
