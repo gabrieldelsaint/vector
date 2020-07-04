@@ -63,21 +63,14 @@
 	font-weight: 400 !important;
 	font-size: 12px !important;
 }
-.bkl-link {
-    background: none;
+.mw-disambig {
+    background: transparent;
 }
-.bkl-link-sup {
-    vertical-align: text-top;
+.mw-disambig::after {
     margin-left: 0.2rem;
     font-style: italic;
 }
-.bkl-link-sup::before {
-    content: "(";
-}
-.bkl-link-sup::after {
-    content: ")";
-}
-.hatnote .bkl-link-sup,
+.hatnote,
 .flagicon,
 #editpage-copywarn {
 	display: none;
