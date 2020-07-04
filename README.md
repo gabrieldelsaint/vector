@@ -25,7 +25,6 @@ _Specific for the Portuguese Wikipedia_
 * Improved [infobox](https://pt.wikipedia.org/wiki/Ajuda:Infocaixa) styles
 * Removes [country flags icons](https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Projetos/Predefini%C3%A7%C3%B5es_de_bandeiras) (works with most, but no removes flags without `.flagicon`)
 * Gadget: [FastButtons](https://pt.wikipedia.org/wiki/Wikipédia:Scripts/FastButtons) are now "materialized" buttons
-* Gadget: _[Detector de desambiguações](https://pt.wikipedia.org/wiki/Wikipédia:Detector_de_desambiguações)_ (Disambiguation Detector) shows "(desambiguação)" with round brackets
 
 ## Installing
 
