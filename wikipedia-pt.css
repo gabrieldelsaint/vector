@@ -155,36 +155,6 @@
 #Ajustes\ automáticos {
 	margin-left: 0.5em;
 }
-#diff-tools > ul > li:before, #diff-tools > ul > li:after, #diff-tools > ul > li > ul > li:not(:first-child):before,
-#diff-tools > ul > li > ul > li > ul > li:not(:first-child)::before {
-	font-size: 0;
-}
-#diff-tools li,
-#diff-tools ul {
-	font-size: small;
-}
-.diff-tools-subsection a {
-	border-radius: 1em;
-	background-color: #9c27b0;
-	color: #fff;
-	align-items: center;
-	display: inline-flex;
-	font-weight: 500;
-	padding-left: .5em;
-	padding-right: .5em;
-	text-align: center;
-	vertical-align: baseline;
-	white-space: nowrap;
-	margin: .1rem .05rem;
-	text-transform: lowercase;
-}
-.diff-tools-subsection a:active,
-.diff-tools-subsection a:focus,
-.diff-tools-subsection a:hover {
-	background-color: #7b1fa2;
-	color: #fff;
-	text-decoration: none;
-}
 @media print {
     #fastb-menu,
     #fastb-submenu {
