@@ -1,0 +1,30 @@
+body.skin-vector #improvedsearch-toggle {
+    position: fixed;
+    cursor: pointer;
+    width: auto;
+    max-width: none;
+    height: 32px;
+    border: 0;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    z-index: 50;
+    right: 65%;
+    left: 2em;
+    top: 22px;
+}
+body.skin-vector #searchInput,
+body.skin-vector #searchInput:hover,
+body.skin-vector #searchInput:focus {
+    padding-left: 40px;
+}
+body.skin-vector .suggestions {
+    right: 65% !important;
+    left: 2em !important;
+    top: 50px !important;
+}
+@media (prefers-color-scheme: dark) {
+    body.skin-vector #improvedsearch-toggle {
+        filter: invert(0);
+    }
+}
