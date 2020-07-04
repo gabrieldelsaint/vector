@@ -69,7 +69,7 @@ If you don't care about this issue, your system default font will be displayed i
 _To work correctly within Microsoft Edge, use "System default" option on the browser settings_
 
 * __Windows 10__ <small>(version 1607 (Anniversary Update) or latter)</small>: open Settings (<kbd>Win</kbd>+<kbd>I</kbd>), then "Personalization" > "Colors", and select "Dark" option on "Choose your default Windows mode" section ([support page](https://support.microsoft.com/help/17144))
-* __macOS__ <small>(version 10.14 (Mojave) or latter)</small>: open Apple menu (![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/10px-Apple_logo_black.svg.png "Apple logo")), then "System Preferences", click on "General" and select "Dark" on "Appearance options" section ([support page](https://support.apple.com/HT208976))
+* __macOS__ <small>(version 10.14 (Mojave) or latter)</small>: open Apple menu ([![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/10px-Apple_logo_black.svg.png "Apple logo")](https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg)), then "System Preferences", click on "General" and select "Dark" on "Appearance options" section ([support page](https://support.apple.com/HT208976))
 * __Linux__: Firefox and Chrome don't support dark mode on Linux by the OS settings and Edge doesn't have a Linux version
 
 ## Compatibility
