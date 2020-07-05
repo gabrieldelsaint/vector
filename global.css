@@ -676,7 +676,8 @@ body.skin-vector .mw-diff-movedpara-right:after {
     } 
     body.skin-vector .mw-body,
     body.skin-vector.ns-talk dl,
-    body.skin-vector .catlinks {
+    body.skin-vector .catlinks,
+    body.skin-vector .mw-globaluserpage-footer {
         border-color: #fff;
     }
     body.skin-vector .vector-menu-tabs,
@@ -701,6 +702,7 @@ body.skin-vector .mw-diff-movedpara-right:after {
     body.skin-vector #content ol,
     body.skin-vector #content dl,
     body.skin-vector .hatnote,
+    body.skin-vector .mw-globaluserpage-footer,
     body.skin-vector .mw-diff-movedpara-left:after,
     body.skin-vector .mw-diff-movedpara-right:after,
     body.skin-vector #pagehistory li.selected,
@@ -719,6 +721,7 @@ body.skin-vector .mw-diff-movedpara-right:after {
     body.skin-vector .hatnote a,
     body.skin-vector #mw-panel a,
     body.skin-vector .catlinks a,
+    body.skin-vector .mw-globaluserpage-footer a,
     body.skin-vector .mw-footer a {
         color: #82b1ff;
     }
@@ -730,6 +733,7 @@ body.skin-vector .mw-diff-movedpara-right:after {
     body.skin-vector .hatnote a:visited,
     body.skin-vector #mw-panel a:visited,
     body.skin-vector .catlinks a:visited,
+    body.skin-vector .mw-globaluserpage-footer a:visited,
     body.skin-vector .mw-footer a:visited {
         color: #b388ff;
     }
@@ -756,7 +760,8 @@ body.skin-vector .mw-diff-movedpara-right:after {
         background-color: rgba(255, 193, 7, 0.5);
         border-color: #ffe57f;
     }
-    body.skin-vector .catlinks {
+    body.skin-vector .catlinks,
+    body.skin-vector .mw-globaluserpage-footer {
         background-color: #616161;
     }
     body.skin-vector .mw-plusminus-pos.mw-diff-bytes {
