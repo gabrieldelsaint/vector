@@ -661,7 +661,7 @@ body.skin-vector .mw-diff-movedpara-right:after {
     }  
     body.skin-vector.ns-talk #content div:not([class]),
     body.skin-vector.ns-talk #content span:not([class]) {
-        background-color: transparent;
+        background-color: transparent !important;
         color: #fff !important;
     }
     body.skin-vector .mw-body,
