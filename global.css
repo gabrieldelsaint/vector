@@ -720,6 +720,7 @@ body.skin-vector .mw-diff-movedpara-right:after {
     body.skin-vector .mw-editsection a,
     body.skin-vector .hatnote a,
     body.skin-vector #mw-panel a,
+    body.skin-vector .wikitable a,
     body.skin-vector .catlinks a,
     body.skin-vector .mw-globaluserpage-footer a,
     body.skin-vector .mw-footer a {
@@ -732,6 +733,7 @@ body.skin-vector .mw-diff-movedpara-right:after {
     body.skin-vector .mw-editsection a:visited,
     body.skin-vector .hatnote a:visited,
     body.skin-vector #mw-panel a:visited,
+    body.skin-vector .wikitable a:visited,
     body.skin-vector .catlinks a:visited,
     body.skin-vector .mw-globaluserpage-footer a:visited,
     body.skin-vector .mw-footer a:visited {
@@ -794,5 +796,26 @@ body.skin-vector .mw-diff-movedpara-right:after {
     }
     body.skin-vector .mw-parser-output .inline-quote-talk {
         color: #4caf50;
+    }
+    body.skin-vector .wikitable {
+        background-color: #616161;
+    }
+    body.skin-vector .wikitable,
+    body.skin-vector .wikitable > tr > th,
+    body.skin-vector .wikitable > * > tr > th {
+        color: #fff;
+    }
+    body.skin-vector .wikitable > tr > th,
+    body.skin-vector .wikitable > * > tr > th {
+        background-color: #757575;
+    }
+    body.skin-vector .jquery-tablesorter th.headerSort {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjkiIHZpZXdCb3g9IjAgMCAyMSA5Ij48cGF0aCBkPSJNMTQuNSA1bC00IDQtNC00em0wLTFsLTQtNC00IDR6IiBmaWxsPSIjZmZmIi8+PC9zdmc+) !important;
+    }
+    body.skin-vector .jquery-tablesorter th.headerSortUp {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNNi41IDRsNC00IDQgNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=) !important;
+    }
+    body.skin-vector .jquery-tablesorter th.headerSortDown {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNMTQuNSAwbC00IDQtNC00eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==) !important;
     }
 }
