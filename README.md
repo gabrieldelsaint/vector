@@ -97,6 +97,7 @@ _Material Vector works fine with these wikis, with less or none issues_
 _These wikis use Vector as their default skin or have an option to enable it, but uses an older/unsupported MediaWiki version (not added to `material-vector.user.css`)_
 
 * `desciclopedia.org`
+* `*.everybodywiki.com`
 * `*.icannwiki.org`
 * `iphonedevwiki.net`
 * `theiphonewiki.com`
