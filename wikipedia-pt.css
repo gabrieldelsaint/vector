@@ -182,4 +182,19 @@
     body.skin-vector.page-Wikipédia_Página_principal .main-page-block-heading {
         color: #fff;
     }
+    body.skin-vector.ns-talk dl dl,
+    body.skin-vector.ns-talk dl dl dl dl,
+    body.skin-vector.ns-talk dl dl dl dl dl dl,
+    body.skin-vector.ns-talk dl dl dl dl dl dl dl dl,
+    body.skin-vector.ns-talk dl dl dl dl dl dl dl dl dl dl {
+        background: #424242;
+    }
+    
+    body.skin-vector.ns-talk dl,
+    body.skin-vector.ns-talk dl dl dl,
+    body.skin-vector.ns-talk dl dl dl dl dl,
+    body.skin-vector.ns-talk dl dl dl dl dl dl dl,
+    body.skin-vector.ns-talk dl dl dl dl dl dl dl dl dl {
+        background: #616161;
+    }
 }
