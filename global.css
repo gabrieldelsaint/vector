@@ -659,21 +659,11 @@ body.skin-vector .mw-diff-movedpara-right:after {
     body.skin-vector .vector-menu-tabs .selected {
         background: #424242;
     }  
-    body.skin-vector.ns-talk dl dl,
-    body.skin-vector.ns-talk dl dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl dl dl dl dl dl {
-        background: #424242;
+    body.skin-vector.ns-talk #content div:not([class]),
+    body.skin-vector.ns-talk #content span:not([class]) {
+        background-color: transparent;
+        color: #fff !important;
     }
-    
-    body.skin-vector.ns-talk dl,
-    body.skin-vector.ns-talk dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl dl dl dl dl {
-        background: #616161;
-    } 
     body.skin-vector .mw-body,
     body.skin-vector.ns-talk dl,
     body.skin-vector .catlinks,
