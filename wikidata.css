@@ -1,4 +1,4 @@
-body.skin-vector #improvedsearch-toggle {
+.skin-vector #improvedsearch-toggle {
     position: fixed;
     cursor: pointer;
     width: auto;
@@ -13,18 +13,18 @@ body.skin-vector #improvedsearch-toggle {
     left: 2em;
     top: 22px;
 }
-body.skin-vector #searchInput,
-body.skin-vector #searchInput:hover,
-body.skin-vector #searchInput:focus {
+.skin-vector #searchInput,
+.skin-vector #searchInput:hover,
+.skin-vector #searchInput:focus {
     padding-left: 40px;
 }
-body.skin-vector .suggestions {
+.skin-vector .suggestions {
     right: 65% !important;
     left: 2em !important;
     top: 50px !important;
 }
 @media (prefers-color-scheme: dark) {
-    body.skin-vector #improvedsearch-toggle {
+    .skin-vector #improvedsearch-toggle {
         filter: invert(0);
     }
 }

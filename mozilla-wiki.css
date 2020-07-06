@@ -1,39 +1,39 @@
 body,
 .body,
-body.skin-vector h1,
-body.skin-vector h2,
-body.skin-vector h3,
-body.skin-vector h4,
-body.skin-vector h5,
-body.skin-vector h6,
-body.skin-vector .huge,
-body.skin-vector .large,
-body.skin-vector div#content #firstHeading {
+.skin-vector h1,
+.skin-vector h2,
+.skin-vector h3,
+.skin-vector h4,
+.skin-vector h5,
+.skin-vector h6,
+.skin-vector .huge,
+.skin-vector .large,
+.skin-vector div#content #firstHeading {
     font-family: Roboto, sans-serif !important;
 }
-body.skin-vector #p-logo {
+.skin-vector #p-logo {
     padding-top: 64px !important;
 }
-body.skin-vector .vectorTabs ul li {
+.skin-vector .vectorTabs ul li {
     background-color: transparent;
     background-image: linear-gradient(to top,#77c1f6 0,#e8f2f8 1px,transparent 100%);
 }
-body.skin-vector .vectorTabs ul li.selected {
+.skin-vector .vectorTabs ul li.selected {
     background-image: linear-gradient(to top,#fff 1px, transparent 100%);
 }
 @media (prefers-color-scheme: dark) {
-    body.skin-vector .mw-wiki-logo {
+    .skin-vector .mw-wiki-logo {
         background-image: url(https://wiki.mozilla.org/images/f/f1/Mozilla-wiki-logo-alt-rev.svg);
         background-size: 100%;
     }
-    body.skin-vector .vectorTabs ul li a {
+    .skin-vector .vectorTabs ul li a {
         color: #fff !important;
     }
-    body.skin-vector .vectorTabs ul li {
+    .skin-vector .vectorTabs ul li {
         background-color: transparent;
         background-image: linear-gradient(to top,#fff 0,#757575 1px,transparent 100%);
     }
-    body.skin-vector .vectorTabs ul li.selected {
+    .skin-vector .vectorTabs ul li.selected {
         background-image: linear-gradient(to top,#424242 1px, transparent 100%);
     }
 }
