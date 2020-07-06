@@ -1,91 +1,91 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Mono:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic|Cabin:400,400italic,500,500italic,600,600italic,700,700italic&subset=latin,greek,cyrillic,greek-ext,vietnamese,cyrillic-ext,latin-ext");
 
-body.skin-vector,
-body.skin-vector html,
-body.skin-vector input,
-body.skin-vector select,
-body.skin-vector .firstHeading,
-body.skin-vector .mw-body h1,
-body.skin-vector .cx-column__title,
-body.skin-vector .mw-diff-movedpara-left:after,
-body.skin-vector .mw-diff-movedpara-right:after  {
+.skin-vector,
+.skin-vector html,
+.skin-vector input,
+.skin-vector select,
+.skin-vector .firstHeading,
+.skin-vector .mw-body h1,
+.skin-vector .cx-column__title,
+.skin-vector .mw-diff-movedpara-left:after,
+.skin-vector .mw-diff-movedpara-right:after  {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
 }
-body.skin-vector .mw-headline,
-body.skin-vector .mw-continue-editing,
-body.skin-vector .mw-body .mw-editsection,
-body.skin-vector .mw-body .mw-editsection-like,
-body.skin-vector .mw-body-content h2,
-body.skin-vector #toctitle h2,
-body.skin-vector .diff-currentversion-title,
-body.skin-vector .ui-dialog,
-body.skin-vector .ui-dialog .ui-dialog-buttonpane button {
+.skin-vector .mw-headline,
+.skin-vector .mw-continue-editing,
+.skin-vector .mw-body .mw-editsection,
+.skin-vector .mw-body .mw-editsection-like,
+.skin-vector .mw-body-content h2,
+.skin-vector #toctitle h2,
+.skin-vector .diff-currentversion-title,
+.skin-vector .ui-dialog,
+.skin-vector .ui-dialog .ui-dialog-buttonpane button {
     font-family: Roboto, sans-serif !important;
 }
-body.skin-vector .mw-body-content p,
-body.skin-vector .mw-body-content ul,
-body.skin-vector .mw-body-content ol,
-body.skin-vector .hatnote {
+.skin-vector .mw-body-content p,
+.skin-vector .mw-body-content ul,
+.skin-vector .mw-body-content ol,
+.skin-vector .hatnote {
     font-size: 0.95rem;
 }
-body.skin-vector b,
-body.skin-vector strong {
+.skin-vector b,
+.skin-vector strong {
     font-weight: 700;
 }
-body.skin-vector textarea,
-body.skin-vector pre,
-body.skin-vector code,
-body.skin-vector tt,
-body.skin-vector kbd,
-body.skin-vector samp,
-body.skin-vector .mw-code,
-body.skin-vector span.comment,
-body.skin-vector .wikEdFrameBodySyntax,
-body.skin-vector .ace_editor,
-body.skin-vector #wpSummary,
-body.skin-vector .mw-editfont-monospace,
-body.skin-vector .CodeMirror,
-body.skin-vector .diff-context,
-body.skin-vector .diff-deletedline,
-body.skin-vector .diff-addedline,
-body.skin-vector .wikiEditor-ui-toolbar .page-characters,
-body.skin-vector .wikiEditor-ui-toolbar .section-help .page-table td.cell-syntax,
-body.skin-vector #editpage-specialchars a,
-body.skin-vector #proveit-logo {
+.skin-vector textarea,
+.skin-vector pre,
+.skin-vector code,
+.skin-vector tt,
+.skin-vector kbd,
+.skin-vector samp,
+.skin-vector .mw-code,
+.skin-vector span.comment,
+.skin-vector .wikEdFrameBodySyntax,
+.skin-vector .ace_editor,
+.skin-vector #wpSummary,
+.skin-vector .mw-editfont-monospace,
+.skin-vector .CodeMirror,
+.skin-vector .diff-context,
+.skin-vector .diff-deletedline,
+.skin-vector .diff-addedline,
+.skin-vector .wikiEditor-ui-toolbar .page-characters,
+.skin-vector .wikiEditor-ui-toolbar .section-help .page-table td.cell-syntax,
+.skin-vector #editpage-specialchars a,
+.skin-vector #proveit-logo {
     font-family: "Roboto Mono", monospace !important;
 }
-body.skin-vector .mw-body-content {
+.skin-vector .mw-body-content {
     text-align: justify;
 }
-body.skin-vector .mw-body-content p {
+.skin-vector .mw-body-content p {
     hyphens: auto;
 }
-body.skin-vector {
+.skin-vector {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-body.skin-vector,
-body.skin-vector #left-navigation,
-body.skin-vector #right-navigation,     
-body.skin-vector #mw-panel {
+.skin-vector,
+.skin-vector #left-navigation,
+.skin-vector #right-navigation,     
+.skin-vector #mw-panel {
     padding-top: 64px !important;
 }
-body.skin-vector .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
+.skin-vector .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
     margin-top: 64px;
     z-index: 45;
 }
 @media print {
-    body.skin-vector,
-    body.skin-vector #left-navigation,
-    body.skin-vector #right-navigation,     
-    body.skin-vector #mw-panel {
+    .skin-vector,
+    .skin-vector #left-navigation,
+    .skin-vector #right-navigation,     
+    .skin-vector #mw-panel {
         padding-top: 0 !important;
     }
 }
-body.skin-vector code {
+.skin-vector code {
     background-color: #f5f5f5;
     border-radius: 2px;
     padding: .2rem .4rem;
@@ -93,27 +93,27 @@ body.skin-vector code {
     color: #555;
     border: 0;
 }
-body.skin-vector code a {
+.skin-vector code a {
     color: #555;
     text-decoration-line: underline;
 }
-body.skin-vector .portal h3,
-body.skin-vector .vector-menu-portal h3 {
+.skin-vector .portal h3,
+.skin-vector .vector-menu-portal h3 {
     background: none;
 }
-body.skin-vector h2 span.mw-headline {
+.skin-vector h2 span.mw-headline {
     font-size: 24px !important;
     font-weight: 400;
     line-height: 32px;
 }
-body.skin-vector .diff-currentversion-title {
+.skin-vector .diff-currentversion-title {
     font-size: 24px !important;
     font-weight: 400 !important;
     line-height: 32px !important;
 }
-body.skin-vector firstHeading,
-body.skin-vector .mw-body h1,
-body.skin-vector .cx-column__title {
+.skin-vector firstHeading,
+.skin-vector .mw-body h1,
+.skin-vector .cx-column__title {
     margin-top: 48px;
     font-weight: 400;
     font-size: 34px;
@@ -121,61 +121,61 @@ body.skin-vector .cx-column__title {
     margin: 24px 0;
     padding: 0;
 }
-body.skin-vector .mw-headline,
-body.skin-vector #mw-previewheader {
+.skin-vector .mw-headline,
+.skin-vector #mw-previewheader {
     font-size: 1.25em !important;
     font-weight: 500;
 }
-body.skin-vector .mw-body fieldset {
+.skin-vector .mw-body fieldset {
     border: 0px none;
     padding: 24px 16px !important;
     margin: 0 !important;
 }
-body.skin-vector .mw-body form {
+.skin-vector .mw-body form {
     box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
     margin-bottom: 24px;
     border-radius: 2px;
     text-align: left;
 }
-body.skin-vector .mw-changeslist-legend,
-body.skin-vector .hatnote img {
+.skin-vector .mw-changeslist-legend,
+.skin-vector .hatnote img {
     display: none;
 }
-body.skin-vector span.updatedmarker {
+.skin-vector span.updatedmarker {
     font-style: italic;
     background-color: transparent !important;
     color: #000 !important;
 }
-body.skin-vector .wikitable,
-body.skin-vector .mw-datatable,
-body.skin-vector .gallerytext,
-body.skin-vector .special {
+.skin-vector .wikitable,
+.skin-vector .mw-datatable,
+.skin-vector .gallerytext,
+.skin-vector .special {
     text-align: left;
 }
-body.skin-vector .ui-dialog .ui-widget-header {
+.skin-vector .ui-dialog .ui-widget-header {
     background: none !important;
 }
-body.skin-vector .ui-dialog .ui-dialog-titlebar {
+.skin-vector .ui-dialog .ui-dialog-titlebar {
     padding-bottom: 15px !important;
     padding-right: 24px !important;
     padding-left: 24px !important;
     border-bottom: 1px solid rgba(0,0,0,.12) !important;
 }
-body.skin-vector .ui-dialog .ui-dialog-buttonpane {
+.skin-vector .ui-dialog .ui-dialog-buttonpane {
     padding: 0 !important;
 }
-body.skin-vector .ui-widget-header {
+.skin-vector .ui-widget-header {
     border: none !important;
     background: none !important;
 }
-body.skin-vector .ui-widget-content {
+.skin-vector .ui-widget-content {
     background-color: #fff !important;
     background-image: none !important;
 }
 .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
     border-top: 1px solid rgba(0,0,0,.12) !important;
 }
-body.skin-vector .ui-dialog .ui-dialog-buttonpane button {
+.skin-vector .ui-dialog .ui-dialog-buttonpane button {
     background-color: #fff !important;
     background-image: none !important;
     border: 0px none !important;
@@ -192,20 +192,20 @@ body.skin-vector .ui-dialog .ui-dialog-buttonpane button {
     max-width: 100%;
     text-align: right;
 }
-body.skin-vector .ui-dialog-title {
+.skin-vector .ui-dialog-title {
     font-size: 1.25rem !important;
     font-weight: 500 !important;
     letter-spacing: .02em;
     line-height: 1.4 !important;
     margin: 0 !important;
 }
-body.skin-vector .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
+.skin-vector .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
     border: none;
 }
-body.skin-vector .ui-dialog {
+.skin-vector .ui-dialog {
     font-weight: 400;
 }
-body.skin-vector .ui-dialog {
+.skin-vector .ui-dialog {
     box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
     border: 0px none !important;
     margin-top: 24px !important;
@@ -213,56 +213,56 @@ body.skin-vector .ui-dialog {
     text-align: left;
     border-radius: 4px !important;
 }
-body.skin-vector .mw-body legend {
+.skin-vector .mw-body legend {
     font-size: 20px;
     font-weight: 400;
     display: block;
     line-height: 28px;
     padding: 24px 0 0 !important;
 }
-body.skin-vector #mw-watchlist-resetbutton,
-body.skin-vector #mw-history-compare {
+.skin-vector #mw-watchlist-resetbutton,
+.skin-vector #mw-history-compare {
     box-shadow: none;
     padding: 0;
 }
-body.skin-vector #toc,
-body.skin-vector .toc {
+.skin-vector #toc,
+.skin-vector .toc {
     background-color: #fff;
     color: rgba(0,0,0,.87);
     border: 1px solid rgba(0,0,0,.1);
     margin: 0;
     padding: 8px 0;
 }
-body.skin-vector .toc ul ul {
+.skin-vector .toc ul ul {
     margin: 0;
 }
-body.skin-vector .toctitle {
+.skin-vector .toctitle {
     padding: 0 16px;
     display: block;
     align-content: center;
 }
-body.skin-vector .toctitle #mw-toc-heading {
+.skin-vector .toctitle #mw-toc-heading {
     font-weight: 500;
     color: rgba(0,0,0,.87);
     line-height: 2rem;
     letter-spacing: .0125em;
 }
-body.skin-vector .toctogglelabel {
+.skin-vector .toctogglelabel {
     color: rgba(0,0,0,.87);
     text-decoration: none;
 }
-body.skin-vector .toc {
+.skin-vector .toc {
     background-color: transparent;
     color: rgba(0,0,0,.87);
     border: 1px solid rgba(0,0,0,.1);
     margin: 0;
     padding: 8px 0;
 }
-body.skin-vector .toc li::before,
-body.skin-vector .toc li::after {
+.skin-vector .toc li::before,
+.skin-vector .toc li::after {
     content: "";
 }
-body.skin-vector .toc li a {
+.skin-vector .toc li a {
     padding: 0 16px;
     display: flex;
     text-decoration: none;
@@ -270,30 +270,30 @@ body.skin-vector .toc li a {
     height: 48px;
     align-items: center;
 }
-body.skin-vector .tocnumber,
-body.skin-vector .toctext {
+.skin-vector .tocnumber,
+.skin-vector .toctext {
     letter-spacing: .009375em;
     text-transform: inherit;
     line-height: 1.5rem;
     color: rgba(0, 0, 0, 0.87);
 }
-body.skin-vector .toc li a:hover {
+.skin-vector .toc li a:hover {
     background-color: rgba(0,0,0,.04);
 }
-body.skin-vector #toctitle {
+.skin-vector #toctitle {
     color: #555555 !important;
 }
-body.skin-vector #toctitle h2 {
+.skin-vector #toctitle h2 {
     font-weight: 500;
     color: #555555 !important;
 }
-body.skin-vector .oo-ui-layout.oo-ui-panelLayout.oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
+.skin-vector .oo-ui-layout.oo-ui-panelLayout.oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
     border: 0;
     box-shadow: unset;
     margin: 0;
     padding: 0;
 }
-body.skin-vector span.comment {
+.skin-vector span.comment {
     color: #222;
     font-size: 0.75em;
     background-color: #f8f8f8;
@@ -302,10 +302,10 @@ body.skin-vector span.comment {
     padding: 0.25em;
     white-space: pre-wrap;
 }
-body.skin-vector .mw-tag-markers {
+.skin-vector .mw-tag-markers {
     font-size: smaller;
 }
-body.skin-vector .mw-htmlform-submit {
+.skin-vector .mw-htmlform-submit {
     margin: 0 0 20px 15px !important;
 }
     #siteSub {
@@ -314,39 +314,39 @@ body.skin-vector .mw-htmlform-submit {
     color: #9e9e9e;
     font-style: italic;
 }
-body.skin-vector h1,
-body.skin-vector h2,
-body.skin-vector h3,
-body.skin-vector h4,
-body.skin-vector h5,
-body.skin-vector h6 {
+.skin-vector h1,
+.skin-vector h2,
+.skin-vector h3,
+.skin-vector h4,
+.skin-vector h5,
+.skin-vector h6 {
     border-bottom: none;
 }
-body.skin-vector h3 span.mw-headline {
+.skin-vector h3 span.mw-headline {
     font-size: 20px !important;
     font-weight: 500;
     line-height: 1;
     letter-spacing: .02em;
 }
-body.skin-vector h4 span.mw-headline,
-body.skin-vector h5 span.mw-headline,
-body.skin-vector h6 span.mw-headline {
+.skin-vector h4 span.mw-headline,
+.skin-vector h5 span.mw-headline,
+.skin-vector h6 span.mw-headline {
     font-weight: 500;
 }
-body.skin-vector .toctoggle {
+.skin-vector .toctoggle {
     font-size: smaller;
     font-weight: 400;
 }
-body.skin-vector #contentSub,
-body.skin-vector #contentSub2 {
+.skin-vector #contentSub,
+.skin-vector #contentSub2 {
     line-height: inherit !important;
     letter-spacing: 0;
     margin: 0.5em 0;
 }
-body.skin-vector #editform {
+.skin-vector #editform {
     box-shadow: none;
 }
-body.skin-vector #p-personal {
+.skin-vector #p-personal {
     right: 0;
     background-color: #eaecf0;
     width: 100%;
@@ -364,11 +364,11 @@ body.skin-vector #p-personal {
     flex-direction: column;
     box-sizing: border-box;
 }
-body.skin-vector #p-personal a {
+.skin-vector #p-personal a {
     color: #000;
     text-decoration: none;
 }
-body.skin-vector #p-personal ul {
+.skin-vector #p-personal ul {
     padding: 16px;
     height: 56px;
     width: 100%;
@@ -376,25 +376,25 @@ body.skin-vector #p-personal ul {
     box-sizing: border-box;
     justify-content: flex-end;
 }
-body.skin-vector #pt-uls {
+.skin-vector #pt-uls {
     display: none;
 }
-body.skin-vector #pt-userpage a,
-body.skin-vector #pt-anonuserpage {
+.skin-vector #pt-userpage a,
+.skin-vector #pt-anonuserpage {
     background-image: none;
     display: inline-flex;
 }
-body.skin-vector #pt-userpage a::before,
-body.skin-vector #pt-anonuserpage::before {
+.skin-vector #pt-userpage a::before,
+.skin-vector #pt-anonuserpage::before {
     content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/14px-OOjs_UI_icon_userAvatar.svg.png);
     display: inline-flex;
     padding: 0 .25rem;
 }
-body.skin-vector #pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read,
-body.skin-vector #pt-notifications-notice .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {
+.skin-vector #pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read,
+.skin-vector #pt-notifications-notice .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {
     opacity: 1 !important;
 }
-body.skin-vector .wikEdLogo {
+.skin-vector .wikEdLogo {
     cursor: pointer;
     position: relative;
     display: block;
@@ -403,11 +403,11 @@ body.skin-vector .wikEdLogo {
     top: -5px;
     margin-left: 0;
 }
-body.skin-vector .ltr .mw-rtrc-navtoggle {
+.skin-vector .ltr .mw-rtrc-navtoggle {
     border-width: 0 !important;
     padding-top: 120px;
 }
-body.skin-vector div#simpleSearch {
+.skin-vector div#simpleSearch {
     position: fixed;
     width: auto;
     max-width: none;
@@ -421,415 +421,415 @@ body.skin-vector div#simpleSearch {
     left: 2em;
     top: 5px;
 }
-body.skin-vector #left-navigation {
+.skin-vector #left-navigation {
     margin-right: -1px;
 }
-body.skin-vector #right-navigation {
+.skin-vector #right-navigation {
     float: left;
 }
-body.skin-vector div#simpleSearch,
-body.skin-vector .suggestions {
+.skin-vector div#simpleSearch,
+.skin-vector .suggestions {
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-body.skin-vector #searchInput,
-body.skin-vector #searchInput:hover,
-body.skin-vector #searchInput:focus {
+.skin-vector #searchInput,
+.skin-vector #searchInput:hover,
+.skin-vector #searchInput:focus {
     border: 0;
     box-shadow: none;
     height: 32px;
     padding: 0 12px;
 }
-body.skin-vector #searchButton {
+.skin-vector #searchButton {
     margin: 0 6px;
 }
-body.skin-vector div.thumbinner {
+.skin-vector div.thumbinner {
     border: 0;
     padding: 0;
     overflow: hidden;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
-body.skin-vector img,
-body.skin-vector html .thumbimage {
+.skin-vector img,
+.skin-vector html .thumbimage {
     border: 0;
 }
-body.skin-vector html .thumbcaption {
+.skin-vector html .thumbcaption {
     padding: 8px 16px;
 }
-body.skin-vector .mw-body .mw-indicators {
+.skin-vector .mw-body .mw-indicators {
     bottom: 3.25rem;
     z-index: 35;
 }
-body.skin-vector .referencetooltip li {
+.skin-vector .referencetooltip li {
     border: 0;
 }
-body.skin-vector .referencetooltip li + li {
+.skin-vector .referencetooltip li + li {
     border-top: 12px #fff solid;
 }
-body.skin-vector .wikiEditor-ui-toolbar {
+.skin-vector .wikiEditor-ui-toolbar {
     background-color: #eaecf0;
 }
-body.skin-vector .wikiEditor-ui .wikiEditor-ui-top {
+.skin-vector .wikiEditor-ui .wikiEditor-ui-top {
     border-bottom: 1px solid #c8ccd1;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
     z-index: 2;
 }
-body.skin-vector .wikiEditor-ui-toolbar .sections .section {
+.skin-vector .wikiEditor-ui-toolbar .sections .section {
     border-top: 0;
     background-color: #fff;
 }
-body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
-body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
+.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
+.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
     color: #202021;
     background-image: none;
     font-weight: normal;
     padding-left: 12px;
 }
-body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
-body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited {
+.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
+.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited {
     font-weight: 500;
     background-color: #fff;
 }
-body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:hover {
+.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:hover {
     text-decoration: none;
 }
-body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:before {
+.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:before {
     background: none;
 }
-body.skin-vector .wikiEditor-ui-toolbar .group-format,
-body.skin-vector .wikiEditor-ui-toolbar .group-insert,
-body.skin-vector .wikiEditor-ui-toolbar .group-codemirror {
+.skin-vector .wikiEditor-ui-toolbar .group-format,
+.skin-vector .wikiEditor-ui-toolbar .group-insert,
+.skin-vector .wikiEditor-ui-toolbar .group-codemirror {
     border: 0;
 }
-body.skin-vector #editpage-specialchars a {
+.skin-vector #editpage-specialchars a {
     font-size: smaller;
 }
-body.skin-vector .wikEdButtonBarWrapper {
+.skin-vector .wikEdButtonBarWrapper {
     background-color: #d4d0cc;
 }
-body.skin-vector .editHelp,
-body.skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled input,
-body.skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled textarea {
+.skin-vector .editHelp,
+.skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled input,
+.skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled textarea {
     text-transform: none;
 }
-body.skin-vector .suggestions {
+.skin-vector .suggestions {
     border-top: 1px #a2a9b1 solid;
 }
-body.skin-vector .suggestions-results,
-body.skin-vector .suggestions-result-current {
+.skin-vector .suggestions-results,
+.skin-vector .suggestions-result-current {
     border: 0;
 }
-body.skin-vector .suggestions-result-current {
+.skin-vector .suggestions-result-current {
     background-color: #36c;
     color: #fff;
 }
-body.skin-vector .suggestions-special {
+.skin-vector .suggestions-special {
     border: 0;
     border-top: 1px solid #a2a9b1;
 }
-body.skin-vector div.vectorMenu:hover div.menu,
-body.skin-vector div.vectorMenu.menuForceShow div.menu {
+.skin-vector div.vectorMenu:hover div.menu,
+.skin-vector div.vectorMenu.menuForceShow div.menu {
     box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
     border: 0;
 }
-body.skin-vector div.vectorMenu li a:hover, body.skin-vector .vectorMenu #ca-wikilove a:hover {
+.skin-vector div.vectorMenu li a:hover, .skin-vector .vectorMenu #ca-wikilove a:hover {
     background-color: #36c !important;
     background-image: none;
     color: #fff;
     text-decoration: none;
 }
-body.skin-vector .vectorMenu #ca-wikilove a {
+.skin-vector .vectorMenu #ca-wikilove a {
     background: none;
 }
-body.skin-vector #ca-view.selected a,
-body.skin-vector #ca-edit.selected a,
-body.skin-vector #ca-ve-edit.selected a, 
-body.skin-vector #ca-addsection.selected a,
-body.skin-vector #ca-viewsource.selected a,
-body.skin-vector #ca-history.selected a,
-body.skin-vector #ca-watch.selected a,
-body.skin-vector #ca-unwatch.selected a {
+.skin-vector #ca-view.selected a,
+.skin-vector #ca-edit.selected a,
+.skin-vector #ca-ve-edit.selected a, 
+.skin-vector #ca-addsection.selected a,
+.skin-vector #ca-viewsource.selected a,
+.skin-vector #ca-history.selected a,
+.skin-vector #ca-watch.selected a,
+.skin-vector #ca-unwatch.selected a {
     color: #0645ad;
 }
-body.skin-vector #p-cactions .vector-menu-content-list li.selected a:hover {
+.skin-vector #p-cactions .vector-menu-content-list li.selected a:hover {
     background-color: #fff !important;
     color: #0645ad !important;
 }
-body.skin-vector #p-cactions .vector-menu-content-list li a:hover {
+.skin-vector #p-cactions .vector-menu-content-list li a:hover {
     color: #fff !important;
     background: #36c;
     text-decoration: none;
 }
-body.skin-vector .selected a:hover {
+.skin-vector .selected a:hover {
     background-color: transparent !important;
 }
-body.skin-vector .mwe-popups-extract {
+.skin-vector .mwe-popups-extract {
     hyphens: auto;
     text-align: justify;
 }
-body.skin-vector table ul,
-body.skin-vector table ol,
-body.skin-vector table p,
-body.skin-vector .reflist ul,
-body.skin-vector .reflist ol,
-body.skin-vector ul.references,
-body.skin-vector ol.references,
-body.skin-vector .toc,
-body.skin-vector .toc ul,
-body.skin-vector .catlinks,
-body.skin-vector .catlinks ul {
+.skin-vector table ul,
+.skin-vector table ol,
+.skin-vector table p,
+.skin-vector .reflist ul,
+.skin-vector .reflist ol,
+.skin-vector ul.references,
+.skin-vector ol.references,
+.skin-vector .toc,
+.skin-vector .toc ul,
+.skin-vector .catlinks,
+.skin-vector .catlinks ul {
     font-size: inherit !important
 }
-body.skin-vector .cx-header__title {
+.skin-vector .cx-header__title {
     position: fixed;
     left: 10px;
     top: 12px;
     z-index: 45;
 }
-body.skin-vector .cx-header__bar {
+.skin-vector .cx-header__bar {
     margin-top: 30px;
     border-top: none !important;
 }
-body.skin-vector #ca-watch,
-body.skin-vector #ca-unwatch,
-body.skin-vector #ca-history {
+.skin-vector #ca-watch,
+.skin-vector #ca-unwatch,
+.skin-vector #ca-history {
     display: inline-block !important;
 }
-body.skin-vector #proveit-logo {
+.skin-vector #proveit-logo {
     font-size: small;
     font-weight: 500;
 }
-body.skin-vector .suggestions-result .highlight {
+.skin-vector .suggestions-result .highlight {
     font-weight: 700;
 }
-body.skin-vector #wpSave,
-body.skin-vector #wpPreview,
-body.skin-vector #wpDiff {
+.skin-vector #wpSave,
+.skin-vector #wpPreview,
+.skin-vector #wpDiff {
     font-weight: 500;
 }
 @media print {
-    body.skin-vector .printfooter,
-    body.skin-vector .mw-footer,
-    body.skin-vector .thumb,
-    body.skin-vector table,
-    body.skin-vector ol,
-    body.skin-vector dl,
-    body.skin-vector ul,
-    body.skin-vector h3,
-    body.skin-vector h4,
-    body.skin-vector h5,
-    body.skin-vector h6 {
+    .skin-vector .printfooter,
+    .skin-vector .mw-footer,
+    .skin-vector .thumb,
+    .skin-vector table,
+    .skin-vector ol,
+    .skin-vector dl,
+    .skin-vector ul,
+    .skin-vector h3,
+    .skin-vector h4,
+    .skin-vector h5,
+    .skin-vector h6 {
         font-family: Roboto, sans-serif;
     }
-    body.skin-vector .toctitle #mw-toc-heading {
+    .skin-vector .toctitle #mw-toc-heading {
         font-size: 1rem !important;
         font-weight: 700;
     }
-    body.skin-vector .toc li a {
+    .skin-vector .toc li a {
         padding: 0 16px !important;
     }
-    body.skin-vector #proveit {
+    .skin-vector #proveit {
         display: none;
     }
 }
 @media (prefers-color-scheme: dark) {
-    body.skin-vector #p-personal {
+    .skin-vector #p-personal {
         color: #fff;
         background-color: #212121;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
-    body.skin-vector .portal h3,
-    body.skin-vector .vector-menu-portal h3,
-    body.skin-vector #p-personal a,
-    body.skin-vector .catlinks {
+    .skin-vector .portal h3,
+    .skin-vector .vector-menu-portal h3,
+    .skin-vector #p-personal a,
+    .skin-vector .catlinks {
         color: #fff;
     }
-    body.skin-vector #pt-userpage a::before,
-    body.skin-vector #pt-anonuserpage::before,
-    body.skin-vector #pt-notifications-alert,
-    body.skin-vector #pt-notifications-notice,
-    body.skin-vector .vector-menu-dropdown h3:after {
+    .skin-vector #pt-userpage a::before,
+    .skin-vector #pt-anonuserpage::before,
+    .skin-vector #pt-notifications-alert,
+    .skin-vector #pt-notifications-notice,
+    .skin-vector .vector-menu-dropdown h3:after {
         filter: invert(1);
     }
-    body.skin-vector {
+    .skin-vector {
         background: #212121;
     }
-    body.skin-vector #mw-page-base,
-    body.skin-vector #content,
-    body.skin-vector .vector-menu-tabs .selected {
+    .skin-vector #mw-page-base,
+    .skin-vector #content,
+    .skin-vector .vector-menu-tabs .selected {
         background: #424242;
     }  
-    body.skin-vector.ns-talk #content div:not([class]),
-    body.skin-vector.ns-talk #content span:not([class]) {
+    .skin-vector.ns-talk #content div:not([class]),
+    .skin-vector.ns-talk #content span:not([class]) {
         background-color: transparent !important;
         color: #fff !important;
     }
-    body.skin-vector .mw-body,
-    body.skin-vector.ns-talk dl,
-    body.skin-vector .catlinks,
-    body.skin-vector .mw-globaluserpage-footer {
+    .skin-vector .mw-body,
+    .skin-vector.ns-talk dl,
+    .skin-vector .catlinks,
+    .skin-vector .mw-globaluserpage-footer {
         border-color: #fff;
     }
-    body.skin-vector .vector-menu-tabs,
-    body.skin-vector .vector-menu-tabs a,
-    body.skin-vector #mw-head .vector-menu-dropdown h3 {
+    .skin-vector .vector-menu-tabs,
+    .skin-vector .vector-menu-tabs a,
+    .skin-vector #mw-head .vector-menu-dropdown h3 {
         background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0) 0,#fff 100%);
     }
-    body.skin-vector #mw-page-base {
+    .skin-vector #mw-page-base {
         background-image: linear-gradient(to bottom,#424242 50%, #212121 100%);
     }
-    body.skin-vector .vector-menu-tabs li {
+    .skin-vector .vector-menu-tabs li {
         background-image: linear-gradient(to top,#ffffff 0,#757575 1px,#424242 100%);
     }
-    body.skin-vector .vector-menu-tabs a,
-    body.skin-vector .vector-menu-tabs .selected a,
-    body.skin-vector #p-cactions-label,
-    body.skin-vector .mw-indicator a,
-    body.skin-vector #firstHeading,
-    body.skin-vector .mw-headline,
-    body.skin-vector #content p,
-    body.skin-vector #content ul,
-    body.skin-vector #content ol,
-    body.skin-vector #content dl,
-    body.skin-vector .hatnote,
-    body.skin-vector .navbox,
-    body.skin-vector .mw-globaluserpage-footer,
-    body.skin-vector .mw-diff-movedpara-left:after,
-    body.skin-vector .mw-diff-movedpara-right:after,
-    body.skin-vector #pagehistory li.selected,
-    body.skin-vector .diff,
-    body.skin-vector .diff .diff-context {
+    .skin-vector .vector-menu-tabs a,
+    .skin-vector .vector-menu-tabs .selected a,
+    .skin-vector #p-cactions-label,
+    .skin-vector .mw-indicator a,
+    .skin-vector #firstHeading,
+    .skin-vector .mw-headline,
+    .skin-vector #content p,
+    .skin-vector #content ul,
+    .skin-vector #content ol,
+    .skin-vector #content dl,
+    .skin-vector .hatnote,
+    .skin-vector .navbox,
+    .skin-vector .mw-globaluserpage-footer,
+    .skin-vector .mw-diff-movedpara-left:after,
+    .skin-vector .mw-diff-movedpara-right:after,
+    .skin-vector #pagehistory li.selected,
+    .skin-vector .diff,
+    .skin-vector .diff .diff-context {
         color: #fff;
     }
-    body.skin-vector .navbox .mw-selflink,
-    body.skin-vector .mw-footer li {
+    .skin-vector .navbox .mw-selflink,
+    .skin-vector .mw-footer li {
         color: #fff !important;
     }
-    body.skin-vector #content p a,
-    body.skin-vector #content ul a,
-    body.skin-vector #content ol a,
-    body.skin-vector #content dl a,
-    body.skin-vector .mw-editsection a,
-    body.skin-vector .hatnote a,
-    body.skin-vector #mw-panel a,
-    body.skin-vector .wikitable a,
-    body.skin-vector .navbox a,
-    body.skin-vector .catlinks a,
-    body.skin-vector .mw-globaluserpage-footer a,
-    body.skin-vector .mw-footer a {
+    .skin-vector #content p a,
+    .skin-vector #content ul a,
+    .skin-vector #content ol a,
+    .skin-vector #content dl a,
+    .skin-vector .mw-editsection a,
+    .skin-vector .hatnote a,
+    .skin-vector #mw-panel a,
+    .skin-vector .wikitable a,
+    .skin-vector .navbox a,
+    .skin-vector .catlinks a,
+    .skin-vector .mw-globaluserpage-footer a,
+    .skin-vector .mw-footer a {
         color: #82b1ff;
     }
-    body.skin-vector #content p a:visited,
-    body.skin-vector #content ul a:visited,
-    body.skin-vector #content ol a:visited,
-    body.skin-vector #content dl a:visited,
-    body.skin-vector .mw-editsection a:visited,
-    body.skin-vector .hatnote a:visited,
-    body.skin-vector #mw-panel a:visited,
-    body.skin-vector .wikitable a:visited,
-    body.skin-vector .navbox a:visited,
-    body.skin-vector .catlinks a:visited,
-    body.skin-vector .mw-globaluserpage-footer a:visited,
-    body.skin-vector .mw-footer a:visited {
+    .skin-vector #content p a:visited,
+    .skin-vector #content ul a:visited,
+    .skin-vector #content ol a:visited,
+    .skin-vector #content dl a:visited,
+    .skin-vector .mw-editsection a:visited,
+    .skin-vector .hatnote a:visited,
+    .skin-vector #mw-panel a:visited,
+    .skin-vector .wikitable a:visited,
+    .skin-vector .navbox a:visited,
+    .skin-vector .catlinks a:visited,
+    .skin-vector .mw-globaluserpage-footer a:visited,
+    .skin-vector .mw-footer a:visited {
         color: #b388ff;
     }
-    body.skin-vector #content .new {
+    .skin-vector #content .new {
         color: #ef5350;
     }
-    body.skin-vector #content .new:visited {
+    .skin-vector #content .new:visited {
         color: #f44336;
     }
-    body.skin-vector #pagehistory li.selected {
+    .skin-vector #pagehistory li.selected {
         background-color: #212121;
         outline: 1px dashed #fff;
     }
-    body.skin-vector .navbox {
+    .skin-vector .navbox {
         border-color: #fff;
     }
-    body.skin-vector .navbox,
-    body.skin-vector .navbox-subgroup {
+    .skin-vector .navbox,
+    .skin-vector .navbox-subgroup {
         background-color: #616161;
     }
-    body.skin-vector .navbox th,
-    body.skin-vector .navbox-title {
+    .skin-vector .navbox th,
+    .skin-vector .navbox-title {
         background-color: #757575;
         color: #fff;
     }
-    body.skin-vector .navbox-even {
+    .skin-vector .navbox-even {
         background-color: #757575;
     }
-    body.skin-vector .navbox-abovebelow,
-    body.skin-vector th.navbox-group,
-    body.skin-vector .navbox-subgroup .navbox-title {
+    .skin-vector .navbox-abovebelow,
+    .skin-vector th.navbox-group,
+    .skin-vector .navbox-subgroup .navbox-title {
         background-color: #757575;
     }
-    body.skin-vector .navbox-list,
-    body.skin-vector tr + tr > .navbox-abovebelow,
-    body.skin-vector tr + tr > .navbox-group,
-    body.skin-vector tr + tr > .navbox-image,
-    body.skin-vector tr + tr > .navbox-list {
+    .skin-vector .navbox-list,
+    .skin-vector tr + tr > .navbox-abovebelow,
+    .skin-vector tr + tr > .navbox-group,
+    .skin-vector tr + tr > .navbox-image,
+    .skin-vector tr + tr > .navbox-list {
         border-color: #616161;
     }
-    body.skin-vector span.comment {
+    .skin-vector span.comment {
         color: initial !important;
     }
-    body.skin-vector .warningbox {
+    .skin-vector .warningbox {
         background-color: rgba(255, 193, 7, 0.5);
         border-color: #ffe57f;
     }
-    body.skin-vector .catlinks,
-    body.skin-vector .mw-globaluserpage-footer {
+    .skin-vector .catlinks,
+    .skin-vector .mw-globaluserpage-footer {
         background-color: #616161;
     }
-    body.skin-vector .mw-plusminus-pos.mw-diff-bytes {
+    .skin-vector .mw-plusminus-pos.mw-diff-bytes {
         color: #4caf50;
     }
-    body.skin-vector .mw-plusminus-neg.mw-diff-bytes {
+    .skin-vector .mw-plusminus-neg.mw-diff-bytes {
         color: #d32f2f;
     }
-    body.skin-vector .diff .diff-addedline,
-    body.skin-vector .diff .diff-deletedline,
-    body.skin-vector .diff .diff-context,
-    body.skin-vector #editpage-specialchars {
+    .skin-vector .diff .diff-addedline,
+    .skin-vector .diff .diff-deletedline,
+    .skin-vector .diff .diff-context,
+    .skin-vector #editpage-specialchars {
         background: #757575;
     }
-    body.skin-vector .diff-deletedline  {
+    .skin-vector .diff-deletedline  {
         border-color: #ffe57f;
     }
-    body.skin-vector .diff-deletedline .diffchange-inline {
+    .skin-vector .diff-deletedline .diffchange-inline {
         background: #ffe57f;
     }
-    body.skin-vector .diff-addedline {
+    .skin-vector .diff-addedline {
         border-color: #82b1ff;
     }
-    body.skin-vector .diffchange-inline {
+    .skin-vector .diffchange-inline {
         background: #82b1ff;
     }
-    body.skin-vector .diff-deletedline .diffchange-inline,
-    body.skin-vector .diffchange-inline {
+    .skin-vector .diff-deletedline .diffchange-inline,
+    .skin-vector .diffchange-inline {
         color: #212121;
     }
-    body.skin-vector .mw-parser-output .inline-quote-talk {
+    .skin-vector .mw-parser-output .inline-quote-talk {
         color: #4caf50;
     }
-    body.skin-vector .wikitable {
+    .skin-vector .wikitable {
         background-color: #616161;
     }
-    body.skin-vector .wikitable,
-    body.skin-vector .wikitable > tr > th,
-    body.skin-vector .wikitable > * > tr > th {
+    .skin-vector .wikitable,
+    .skin-vector .wikitable > tr > th,
+    .skin-vector .wikitable > * > tr > th {
         color: #fff;
     }
-    body.skin-vector .wikitable > tr > th,
-    body.skin-vector .wikitable > * > tr > th {
+    .skin-vector .wikitable > tr > th,
+    .skin-vector .wikitable > * > tr > th {
         background-color: #757575;
     }
-    body.skin-vector .jquery-tablesorter th.headerSort {
+    .skin-vector .jquery-tablesorter th.headerSort {
         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjkiIHZpZXdCb3g9IjAgMCAyMSA5Ij48cGF0aCBkPSJNMTQuNSA1bC00IDQtNC00em0wLTFsLTQtNC00IDR6IiBmaWxsPSIjZmZmIi8+PC9zdmc+) !important;
     }
-    body.skin-vector .jquery-tablesorter th.headerSortUp {
+    .skin-vector .jquery-tablesorter th.headerSortUp {
         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNNi41IDRsNC00IDQgNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=) !important;
     }
-    body.skin-vector .jquery-tablesorter th.headerSortDown {
+    .skin-vector .jquery-tablesorter th.headerSortDown {
         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNMTQuNSAwbC00IDQtNC00eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==) !important;
     }
 }
