@@ -72,6 +72,12 @@
 }
 .hatnote .mw-disambig::after,
 .flagicon,
+img[src*="bandeira"],
+img[src*="Bandeira"],
+img[src*="BANDEIRA"],
+img[src*="flag"],
+img[src*="Flag"],
+img[src*="flag"],
 #editpage-copywarn {
 	display: none;
 }
