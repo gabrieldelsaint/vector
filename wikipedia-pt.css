@@ -1,6 +1,13 @@
-﻿.wikipediauserbox a {
+﻿/* fonte: roboto */
+.fastb-button,
+#lastEditUser {
+	font-family: Roboto, sans-serif !important;
+}
+/* remove sublinhado ao passar o mouse num link de userbox */
+.wikipediauserbox a {
 	text-decoration: none;
 }
+/* infocaixas */
 .infobox_v2 {
     background-color: #fff;
     color: rgba(0,0,0,.87);
@@ -58,31 +65,33 @@
 .infobox_v2 .topo small span {
     font-weight: 400;
 }
-#lastEditUser {
-	font-family: Roboto, sans-serif !important;
-	font-weight: 400 !important;
-	font-size: 12px !important;
-}
+/* gadget: detector de desambiguações */
+/** remove o fundo amarelo **/
 .mw-disambig {
     background: transparent;
 }
+/** define margem e itálico **/
 .mw-disambig::after {
     margin-left: 0.2rem;
     font-style: italic;
 }
+/* itens que não serão mostrados */
+/** inativa o gadget detector de desambiguações na predefinição ver desambig **/
 .hatnote .mw-disambig::after,
+/** remove ícones de bandeiras **/
 .flagicon,
 img[src*="bandeira"],
 img[src*="Bandeira"],
 img[src*="BANDEIRA"],
 img[src*="flag"],
 img[src*="Flag"],
-img[src*="flag"],
+img[src*="FLAG"],
+/** remove aviso de cópia na página de edição **/
 #editpage-copywarn {
 	display: none;
 }
+/* gadget: fastbuttons */
 .fastb-button {
-    font-family: Roboto, sans-serif !important;
     background-color: #3366cc !important;
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     display: inline-block;
@@ -152,55 +161,54 @@ img[src*="flag"],
 .fastb-button.fastb-link-button {
 	margin-right: 0.25em;
 }
-.noprint.plainlinksneverexpand.navbar {
-	display: inline-flex;
-}
-.NavHead {
-	font-weight: 500 !important;
-}
+/* script: ajustes automáticos */
 #Ajustes\ automáticos {
 	margin-left: 0.5em;
 }
+/* itens da tela de impressão */
 @media print {
+    /* itens que não serão mostrados */
     #fastb-menu,
     #fastb-submenu {
         display: none;
     }
 }
+/* itens do modo escuro */
 @media (prefers-color-scheme: dark) {
-    body.skin-vector.page-Wikipédia_Página_principal .mw-body-content div,
-    body.skin-vector.page-Wikipédia_Página_principal .hp div,
-    body.skin-vector.page-Wikipédia_Página_principal .hp-portalen {
+    /* página principal */
+    .skin-vector.page-Wikipédia_Página_principal .mw-body-content div,
+    .skin-vector.page-Wikipédia_Página_principal .hp div,
+    .skin-vector.page-Wikipédia_Página_principal .hp-portalen {
         background: none !important;
         box-shadow: none !important;
     }
-    body.skin-vector.page-Wikipédia_Página_principal .hp table {
+    .skin-vector.page-Wikipédia_Página_principal .hp table {
         background-color: rgba(255, 255, 255, 0.25);
     }
-    body.skin-vector.page-Wikipédia_Página_principal .hp-welkom-1,
-    body.skin-vector.page-Wikipédia_Página_principal .hp-welkom-1 a,
-    body.skin-vector.page-Wikipédia_Página_principal .hp-welkom-1 a span,
-    body.skin-vector.page-Wikipédia_Página_principal .hp-welkom-2,
-    body.skin-vector.page-Wikipédia_Página_principal .hp-welkom-2 a,
-    body.skin-vector.page-Wikipédia_Página_principal .hp-kop td span {
-        color: #fff !important;
-    }
-    body.skin-vector.page-Wikipédia_Página_principal .main-page-block-heading {
+    .skin-vector.page-Wikipédia_Página_principal .main-page-block-heading {
         color: #fff;
     }
-    body.skin-vector.ns-talk dl dl,
-    body.skin-vector.ns-talk dl dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl dl dl dl dl dl {
+    .skin-vector.page-Wikipédia_Página_principal .hp-welkom-1,
+    .skin-vector.page-Wikipédia_Página_principal .hp-welkom-1 a,
+    .skin-vector.page-Wikipédia_Página_principal .hp-welkom-1 a span,
+    .skin-vector.page-Wikipédia_Página_principal .hp-welkom-2,
+    .skin-vector.page-Wikipédia_Página_principal .hp-welkom-2 a,
+    .skin-vector.page-Wikipédia_Página_principal .hp-kop td span {
+        color: #fff !important;
+    }
+    /* páginas de discussão */
+    .skin-vector.ns-talk dl dl,
+    .skin-vector.ns-talk dl dl dl dl,
+    .skin-vector.ns-talk dl dl dl dl dl dl,
+    .skin-vector.ns-talk dl dl dl dl dl dl dl dl,
+    .skin-vector.ns-talk dl dl dl dl dl dl dl dl dl dl {
         background: #424242;
     }
-    
-    body.skin-vector.ns-talk dl,
-    body.skin-vector.ns-talk dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl dl dl,
-    body.skin-vector.ns-talk dl dl dl dl dl dl dl dl dl {
+    .skin-vector.ns-talk dl,
+    .skin-vector.ns-talk dl dl dl,
+    .skin-vector.ns-talk dl dl dl dl dl,
+    .skin-vector.ns-talk dl dl dl dl dl dl dl,
+    .skin-vector.ns-talk dl dl dl dl dl dl dl dl dl {
         background: #616161;
     }
 }
