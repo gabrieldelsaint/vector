@@ -30,7 +30,7 @@
     background-color: transparent !important;
     text-align: left !important;
     font-weight: 500;
-    color: initial !important;
+    color: inherit !important;
     font-family: inherit !important;
     padding-right: 8px !important;
     padding-left: 8px !important;
@@ -185,7 +185,8 @@ img[src*="FLAG"],
     .skin-vector.page-Wikipédia_Página_principal .hp table {
         background-color: rgba(255, 255, 255, 0.25);
     }
-    .skin-vector.page-Wikipédia_Página_principal .main-page-block-heading {
+    .skin-vector.page-Wikipédia_Página_principal .main-page-block-heading,
+    .infobox_v2 {
         color: #fff;
     }
     .skin-vector.page-Wikipédia_Página_principal .hp-welkom-1,
@@ -193,8 +194,21 @@ img[src*="FLAG"],
     .skin-vector.page-Wikipédia_Página_principal .hp-welkom-1 a span,
     .skin-vector.page-Wikipédia_Página_principal .hp-welkom-2,
     .skin-vector.page-Wikipédia_Página_principal .hp-welkom-2 a,
-    .skin-vector.page-Wikipédia_Página_principal .hp-kop td span {
+    .skin-vector.page-Wikipédia_Página_principal .hp-kop td span,
+    .infobox_v2 .topo {
         color: #fff !important;
+    }
+    /* infocaixas */
+    .infobox_v2 {
+        background-color: #616161;
+    }
+    .infobox_v2 a,
+    .infobox_v2 a.external {
+        color: #82b1ff;
+    }
+    .infobox_v2 a:visited,
+    .infobox_v2 a.external:visited {
+        color: #b388ff;
     }
     /* páginas de discussão */
     .skin-vector.ns-talk dl dl,
