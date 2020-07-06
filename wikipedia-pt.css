@@ -1,11 +1,11 @@
 ﻿/* fonte: roboto */
 .fastb-button,
 #lastEditUser {
-	font-family: Roboto, sans-serif !important;
+    font-family: Roboto, sans-serif !important;
 }
 /* remove sublinhado ao passar o mouse num link de userbox */
 .wikipediauserbox a {
-	text-decoration: none;
+    text-decoration: none;
 }
 /* infocaixas */
 .infobox_v2 {
@@ -27,9 +27,9 @@
     margin: 8px 0;
 }
 .infobox_v2 th {
-	background-color: transparent !important;
-	text-align: left !important;
-	font-weight: 500;
+    background-color: transparent !important;
+    text-align: left !important;
+    font-weight: 500;
     color: initial !important;
     font-family: inherit !important;
     padding-right: 8px !important;
@@ -50,7 +50,7 @@
     font-weight: 500 !important;
 }
 .infobox_v2 .topo {
-	background-color: transparent !important;
+    background-color: transparent !important;
     background-image: none !important;
     color: rgba(0,0,0,.87) !important;
     padding-right: 8px !important;
@@ -88,7 +88,7 @@ img[src*="Flag"],
 img[src*="FLAG"],
 /** remove aviso de cópia na página de edição **/
 #editpage-copywarn {
-	display: none;
+    display: none;
 }
 /* gadget: fastbuttons */
 .fastb-button {
@@ -111,19 +111,19 @@ img[src*="FLAG"],
     letter-spacing: .0892857143em;
 }
 .fastb-button:active {
-	background-color: hsla(0,0%,60%,.4);
-	background-image: none;
-	box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 3px rgba(0,0,0,.12),0 4px 15px 0 rgba(0,0,0,.2);
+    background-color: hsla(0,0%,60%,.4);
+    background-image: none;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 3px rgba(0,0,0,.12),0 4px 15px 0 rgba(0,0,0,.2);
 }
 .fastb-button:focus,
 .fastb-button:hover {
     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
 }
 .fastb-button:hover {
-	background-image: linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.12));
+    background-image: linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.12));
 }
 #fastb-menu .fastb-button:active {
-	background-color: #7b1fa2;
+    background-color: #7b1fa2;
 }
 #fastb-submenu .fastb-menu-button,
 #fastb-submenu .fastb-action-button,
@@ -139,31 +139,31 @@ img[src*="FLAG"],
     background: none;
 }
 .fastb-link-button:hover {
-	color: #fff !important;
+    color: #fff !important;
 }
 .fastb-disabled-button,
 .fastb-disabled-button:active,
 .fastb-disabled-button:hover {
-	background-color: rgba(0,0,0,.12) !important;
-	color: rgba(0,0,0,.26) !important;
-	box-shadow: none;
-	background-image: none;
+    background-color: rgba(0,0,0,.12) !important;
+    color: rgba(0,0,0,.26) !important;
+    box-shadow: none;
+    background-image: none;
     font-size: small;
 }
 #fastb-menu {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 #fastb-menu,
 #fastb-submenu {
-	background-color: transparent !important;
-	padding: 0;
+    background-color: transparent !important;
+    padding: 0;
 }
 .fastb-button.fastb-link-button {
-	margin-right: 0.25em;
+    margin-right: 0.25em;
 }
 /* script: ajustes automáticos */
 #Ajustes\ automáticos {
-	margin-left: 0.5em;
+    margin-left: 0.5em;
 }
 /* itens da tela de impressão */
 @media print {
