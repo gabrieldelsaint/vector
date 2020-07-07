@@ -112,7 +112,10 @@
     font-size: small;
 }
 .skin-vector code,
-.skin-vector .toctoggle {
+.skin-vector .toctoggle,
+.skin-vector .comment,
+.skin-vector .mw-tag-markers,
+.skin-vector #editpage-specialchars a {
     font-size: smaller;
 }
 .skin-vector .firstHeading,
@@ -381,7 +384,9 @@
     padding: 8px 0;
 }
 .skin-vector .toc li::before,
-.skin-vector .toc li::after {
+.skin-vector .toc li::after,
+.skin-vector .comment::before,
+.skin-vector .comment::after {
     content: "";
 }
 .skin-vector .toc li a {
@@ -511,16 +516,12 @@
     border-radius: 4px !important;
 }
 /* diff comment */
-.skin-vector span.comment {
-    font-size: 0.75em;
+.skin-vector .comment {
     background-color: #f8f8f8;
     border: 1px solid #eaecf0;
     border-radius: 2px;
     padding: 0.25em;
     white-space: pre-wrap;
-}
-.skin-vector .mw-tag-markers {
-    font-size: smaller;
 }
 .skin-vector .mw-htmlform-submit {
     margin: 0 0 20px 15px !important;
@@ -558,9 +559,6 @@
 .skin-vector .wikiEditor-ui-toolbar .group-insert,
 .skin-vector .wikiEditor-ui-toolbar .group-codemirror {
     border: 0;
-}
-.skin-vector #editpage-specialchars a {
-    font-size: smaller;
 }
 .skin-vector .wikEdButtonBarWrapper {
     background-color: #d4d0cc;
@@ -716,6 +714,9 @@
     .skin-vector code {
         background-color: rgba(117, 117, 117, 0.5);
     }
+    .skin-vector .comment {
+        background-color: rgba(117, 117, 117, 0.5) !important;
+    }
     .skin-vector .warningbox {
         background-color: rgba(255, 193, 7, 0.5);
     }
@@ -764,6 +765,7 @@
     .skin-vector code a,
     .skin-vector .navbox .mw-selflink,
     .skin-vector .mw-footer li,
+    .skin-vector .comment,
     .skin-vector.ns-talk #content div:not([class]),
     .skin-vector.ns-talk #content span:not([class]) {
         color: #fff !important;
@@ -771,6 +773,9 @@
     .skin-vector .diff-deletedline .diffchange-inline,
     .skin-vector .diffchange-inline {
         color: #212121;
+    }
+    .skin-vector .autocomment a {
+        color: #b0bec5 !important;
     }
     .skin-vector #mw-panel a,
     .skin-vector #content p a,
@@ -813,9 +818,6 @@
     .skin-vector .mw-plusminus-neg.mw-diff-bytes {
         color: #d32f2f;
     }
-    .skin-vector span.comment {
-        color: initial !important;
-    }
     /* border colors */
     .skin-vector .mw-body,
     .skin-vector .navbox,
@@ -849,9 +851,12 @@
     .skin-vector .vector-menu-dropdown h3:after {
         filter: invert(1);
     }
-    /* code */
+    /* code / diff comment */
     .skin-vector code {
         border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .skin-vector .comment {
+        border: 1px solid rgba(0, 0, 0, 0.2) !important;
     }
     /* wikitable */
     .skin-vector .jquery-tablesorter th.headerSort {
