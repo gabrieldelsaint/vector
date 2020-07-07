@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Mono:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic|Cabin:400,400italic,500,500italic,600,600italic,700,700italic&subset=latin,greek,cyrillic,greek-ext,vietnamese,cyrillic-ext,latin-ext");
 
+/* text: fonts, sizes, colors and aligns */
 .skin-vector,
 .skin-vector html,
 .skin-vector input,
@@ -11,7 +12,6 @@
 .skin-vector .mw-diff-movedpara-right:after  {
     font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: 400;
 }
 .skin-vector .mw-headline,
 .skin-vector .mw-continue-editing,
@@ -23,16 +23,6 @@
 .skin-vector .ui-dialog,
 .skin-vector .ui-dialog .ui-dialog-buttonpane button {
     font-family: Roboto, sans-serif !important;
-}
-.skin-vector .mw-body-content p,
-.skin-vector .mw-body-content ul,
-.skin-vector .mw-body-content ol,
-.skin-vector .hatnote {
-    font-size: 0.95rem;
-}
-.skin-vector b,
-.skin-vector strong {
-    font-weight: 700;
 }
 .skin-vector textarea,
 .skin-vector pre,
@@ -56,295 +46,177 @@
 .skin-vector #proveit-logo {
     font-family: "Roboto Mono", monospace !important;
 }
-.skin-vector .mw-body-content {
-    text-align: justify;
+.skin-vector .mw-body-content p,
+.skin-vector .mw-body-content ul,
+.skin-vector .mw-body-content ol,
+.skin-vector .hatnote {
+    font-size: 0.95rem;
 }
-.skin-vector .mw-body-content p {
-    hyphens: auto;
+.skin-vector .mw-headline,
+.skin-vector #mw-previewheader {
+    font-size: 1.25em !important;
 }
-.skin-vector {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.skin-vector,
-.skin-vector #left-navigation,
-.skin-vector #right-navigation,     
-.skin-vector #mw-panel {
-    padding-top: 64px !important;
-}
-.skin-vector .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
-    margin-top: 64px;
-    z-index: 45;
-}
-@media print {
-    .skin-vector,
-    .skin-vector #left-navigation,
-    .skin-vector #right-navigation,     
-    .skin-vector #mw-panel {
-        padding-top: 0 !important;
-    }
-}
-.skin-vector code {
-    background-color: #f5f5f5;
-    border-radius: 2px;
-    padding: .2rem .4rem;
-    font-size: 87.5%;
-    color: #555;
-    border: 0;
-}
-.skin-vector code a {
-    color: #555;
-    text-decoration-line: underline;
-}
-.skin-vector .portal h3,
-.skin-vector .vector-menu-portal h3 {
-    background: none;
-}
-.skin-vector h2 span.mw-headline {
-    font-size: 24px !important;
-    font-weight: 400;
-    line-height: 32px;
+.skin-vector .firstHeading,
+.skin-vector .mw-body h1,
+.skin-vector .cx-column__title {
+    margin-top: 48px;
+    font-size: 34px;
+    line-height: 40px;
+    margin: 24px 0;
+    padding: 0;
 }
 .skin-vector .diff-currentversion-title {
     font-size: 24px !important;
     font-weight: 400 !important;
     line-height: 32px !important;
 }
-.skin-vector firstHeading,
-.skin-vector .mw-body h1,
-.skin-vector .cx-column__title {
-    margin-top: 48px;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 40px;
-    margin: 24px 0;
-    padding: 0;
+.skin-vector #contentSub,
+.skin-vector #contentSub2 {
+    letter-spacing: 0;
+    margin: 0.5em 0;
 }
+.skin-vector #siteSub {
+    font-size: inherit;
+    color: #9e9e9e;
+    font-style: italic;
+}
+.skin-vector h2 span.mw-headline {
+    font-size: 24px !important;
+    line-height: 32px;
+}
+.skin-vector h3 span.mw-headline {
+    font-size: 20px !important;
+    line-height: 1;
+    letter-spacing: .02em;
+}
+.skin-vector .mw-body legend {
+    font-size: 20px;
+    line-height: 28px;
+}
+.skin-vector code {
+    font-size: 87.5%;
+}
+.skin-vector #contentSub,
+.skin-vector #contentSub2,
+.skin-vector table ul,
+.skin-vector table ol,
+.skin-vector table p,
+.skin-vector .reflist ul,
+.skin-vector .reflist ol,
+.skin-vector ul.references,
+.skin-vector ol.references,
+.skin-vector .toc,
+.skin-vector .toc ul,
+.skin-vector .catlinks,
+.skin-vector .catlinks ul {
+    font-size: inherit !important
+}
+.skin-vector #proveit-logo {
+    font-size: small;
+}
+.skin-vector .toctoggle {
+    font-size: smaller;
+}
+.skin-vector .firstHeading,
+.skin-vector .mw-body h1,
+.skin-vector .cx-column__title,
+.skin-vector h2 span.mw-headline,
+.skin-vector .toctoggle,
+.skin-vector .mw-body legend,
+.skin-vector .ui-dialog {
+    font-weight: 400;
+}
+.skin-vector #p-personal,
 .skin-vector .mw-headline,
-.skin-vector #mw-previewheader {
-    font-size: 1.25em !important;
+.skin-vector #mw-previewheader,
+.skin-vector h3 span.mw-headline,
+.skin-vector h4 span.mw-headline,
+.skin-vector h5 span.mw-headline,
+.skin-vector h6 span.mw-headline,
+.skin-vector .toctitle #mw-toc-heading,
+.skin-vector #toctitle h2,
+.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
+.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited,
+.skin-vector #wpSave,
+.skin-vector #wpPreview,
+.skin-vector #wpDiff,
+.skin-vector .ui-dialog .ui-dialog-buttonpane button,
+.skin-vector #proveit-logo {
     font-weight: 500;
 }
-.skin-vector .mw-body fieldset {
-    border: 0px none;
-    padding: 24px 16px !important;
-    margin: 0 !important;
+.skin-vector b,
+.skin-vector strong,
+.skin-vector .suggestions-result .highlight {
+    font-weight: 700;
 }
-.skin-vector .mw-body form {
-    box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
-    margin-bottom: 24px;
-    border-radius: 2px;
-    text-align: left;
-}
-.skin-vector .mw-changeslist-legend,
-.skin-vector .hatnote img {
-    display: none;
-}
-.skin-vector span.updatedmarker {
-    font-style: italic;
-    background-color: transparent !important;
-    color: #000 !important;
-}
-.skin-vector .wikitable,
 .skin-vector .mw-datatable,
 .skin-vector .gallerytext,
 .skin-vector .special {
     text-align: left;
 }
-.skin-vector .ui-dialog .ui-widget-header {
-    background: none !important;
+.skin-vector .mw-body-content,
+.skin-vector .mwe-popups-extract {
+    text-align: justify;
 }
-.skin-vector .ui-dialog .ui-dialog-titlebar {
-    padding-bottom: 15px !important;
-    padding-right: 24px !important;
-    padding-left: 24px !important;
-    border-bottom: 1px solid rgba(0,0,0,.12) !important;
-}
-.skin-vector .ui-dialog .ui-dialog-buttonpane {
-    padding: 0 !important;
-}
-.skin-vector .ui-widget-header {
-    border: none !important;
-    background: none !important;
-}
-.skin-vector .ui-widget-content {
-    background-color: #fff !important;
-    background-image: none !important;
-}
-.wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
-    border-top: 1px solid rgba(0,0,0,.12) !important;
-}
-.skin-vector .ui-dialog .ui-dialog-buttonpane button {
-    background-color: #fff !important;
-    background-image: none !important;
-    border: 0px none !important;
-    border-radius: 2px;
-    box-shadow: none;
-    color: inherit;
-    font-size: .875rem;
-    font-weight: 500;
-    white-space: nowrap;
-    letter-spacing: .0892857143em;
-    text-transform: uppercase;
-    margin-left: 8px;
-    margin-right: 0;
-    max-width: 100%;
-    text-align: right;
-}
-.skin-vector .ui-dialog-title {
-    font-size: 1.25rem !important;
-    font-weight: 500 !important;
-    letter-spacing: .02em;
-    line-height: 1.4 !important;
-    margin: 0 !important;
-}
-.skin-vector .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
-    border: none;
-}
-.skin-vector .ui-dialog {
-    font-weight: 400;
-}
-.skin-vector .ui-dialog {
-    box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
-    border: 0px none !important;
-    margin-top: 24px !important;
-    margin-bottom: 24px !important;
-    text-align: left;
-    border-radius: 4px !important;
-}
-.skin-vector .mw-body legend {
-    font-size: 20px;
-    font-weight: 400;
-    display: block;
-    line-height: 28px;
-    padding: 24px 0 0 !important;
-}
-.skin-vector #mw-watchlist-resetbutton,
-.skin-vector #mw-history-compare {
-    box-shadow: none;
-    padding: 0;
+.skin-vector .mw-body-content p,
+.skin-vector .mwe-popups-extract {
+    hyphens: auto;
 }
 .skin-vector #toc,
-.skin-vector .toc {
-    background-color: #fff;
-    color: rgba(0,0,0,.87);
-    border: 1px solid rgba(0,0,0,.1);
-    margin: 0;
-    padding: 8px 0;
-}
-.skin-vector .toc ul ul {
-    margin: 0;
-}
-.skin-vector .toctitle {
-    padding: 0 16px;
-    display: block;
-    align-content: center;
-}
-.skin-vector .toctitle #mw-toc-heading {
-    font-weight: 500;
-    color: rgba(0,0,0,.87);
-    line-height: 2rem;
-    letter-spacing: .0125em;
-}
-.skin-vector .toctogglelabel {
-    color: rgba(0,0,0,.87);
-    text-decoration: none;
-}
-.skin-vector .toc {
-    background-color: transparent;
-    color: rgba(0,0,0,.87);
-    border: 1px solid rgba(0,0,0,.1);
-    margin: 0;
-    padding: 8px 0;
-}
-.skin-vector .toc li::before,
-.skin-vector .toc li::after {
-    content: "";
-}
-.skin-vector .toc li a {
-    padding: 0 16px;
-    display: flex;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.87);
-    height: 48px;
-    align-items: center;
-}
+.skin-vector .toc,
+.skin-vector .toctitle #mw-toc-heading,
+.skin-vector .toctogglelabel,
+.skin-vector .toc li a,
 .skin-vector .tocnumber,
 .skin-vector .toctext {
-    letter-spacing: .009375em;
-    text-transform: inherit;
-    line-height: 1.5rem;
-    color: rgba(0, 0, 0, 0.87);
+    color: rgba(0,0,0,.87);
 }
-.skin-vector .toc li a:hover {
-    background-color: rgba(0,0,0,.04);
+.skin-vector code,
+.skin-vector code a {
+    color: #555;
 }
-.skin-vector #toctitle {
-    color: #555555 !important;
-}
+.skin-vector #toctitle,
 .skin-vector #toctitle h2 {
-    font-weight: 500;
-    color: #555555 !important;
-}
-.skin-vector .oo-ui-layout.oo-ui-panelLayout.oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
-    border: 0;
-    box-shadow: unset;
-    margin: 0;
-    padding: 0;
+    color: #555 !important;
 }
 .skin-vector span.comment {
     color: #222;
-    font-size: 0.75em;
-    background-color: #f8f8f8;
-    border: 1px solid #eaecf0;
-    border-radius: 2px;
-    padding: 0.25em;
-    white-space: pre-wrap;
 }
-.skin-vector .mw-tag-markers {
-    font-size: smaller;
+.skin-vector #p-personal a {
+    color: #000;
 }
-.skin-vector .mw-htmlform-submit {
-    margin: 0 0 20px 15px !important;
+.skin-vector .suggestions-result-current,
+.skin-vector div.vectorMenu li a:hover,
+.skin-vector .vectorMenu #ca-wikilove a:hover,
+.skin-vector #p-cactions .vector-menu-content-list li a:hover {
+    color: #fff;
 }
-    #siteSub {
-    display: block;
-    font-size: inherit;
-    color: #9e9e9e;
-    font-style: italic;
+.skin-vector #ca-view.selected a,
+.skin-vector #ca-edit.selected a,
+.skin-vector #ca-ve-edit.selected a, 
+.skin-vector #ca-addsection.selected a,
+.skin-vector #ca-viewsource.selected a,
+.skin-vector #ca-history.selected a,
+.skin-vector #ca-watch.selected a,
+.skin-vector #ca-unwatch.selected a {
+    color: #0645ad;
 }
-.skin-vector h1,
-.skin-vector h2,
-.skin-vector h3,
-.skin-vector h4,
-.skin-vector h5,
-.skin-vector h6 {
-    border-bottom: none;
+.skin-vector #p-cactions .vector-menu-content-list li.selected a:hover {
+    color: #0645ad !important;
 }
-.skin-vector h3 span.mw-headline {
-    font-size: 20px !important;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: .02em;
+.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
+.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
+    color: #202021;
 }
-.skin-vector h4 span.mw-headline,
-.skin-vector h5 span.mw-headline,
-.skin-vector h6 span.mw-headline {
-    font-weight: 500;
+.skin-vector .ui-dialog .ui-dialog-buttonpane button {
+    color: inherit;
 }
-.skin-vector .toctoggle {
-    font-size: smaller;
-    font-weight: 400;
-}
-.skin-vector #contentSub,
-.skin-vector #contentSub2 {
-    line-height: inherit !important;
-    letter-spacing: 0;
-    margin: 0.5em 0;
-}
-.skin-vector #editform {
-    box-shadow: none;
+/* pseudo-navbar */
+.skin-vector,
+.skin-vector #left-navigation,
+.skin-vector #right-navigation,     
+.skin-vector #mw-panel {
+    padding-top: 64px !important;
 }
 .skin-vector #p-personal {
     right: 0;
@@ -354,7 +226,6 @@
     position: fixed;
     height: 64px;
     padding-top: 4px;
-    font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 1.5rem;
     top: 0;
@@ -365,7 +236,6 @@
     box-sizing: border-box;
 }
 .skin-vector #p-personal a {
-    color: #000;
     text-decoration: none;
 }
 .skin-vector #p-personal ul {
@@ -421,12 +291,6 @@
     left: 2em;
     top: 5px;
 }
-.skin-vector #left-navigation {
-    margin-right: -1px;
-}
-.skin-vector #right-navigation {
-    float: left;
-}
 .skin-vector div#simpleSearch,
 .skin-vector .suggestions {
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -442,29 +306,228 @@
 .skin-vector #searchButton {
     margin: 0 6px;
 }
+.skin-vector .suggestions {
+    border-top: 1px #a2a9b1 solid;
+}
+.skin-vector .suggestions-results,
+.skin-vector .suggestions-result-current {
+    border: 0;
+}
+.skin-vector .suggestions-result-current {
+    background-color: #36c;
+}
+.skin-vector .suggestions-special {
+    border: 0;
+    border-top: 1px solid #a2a9b1;
+}
+/* page actions */
+.skin-vector #left-navigation {
+    margin-right: -1px;
+}
+.skin-vector #right-navigation {
+    float: left;
+}
+.skin-vector div.vectorMenu li a:hover,
+.skin-vector .vectorMenu #ca-wikilove a:hover {
+    background-color: #36c !important;
+    background-image: none;
+    text-decoration: none;
+}
+.skin-vector .vectorMenu #ca-wikilove a {
+    background: none;
+}
+.skin-vector #p-cactions .vector-menu-content-list li.selected a:hover {
+    background-color: #fff !important;
+}
+.skin-vector #p-cactions .vector-menu-content-list li a:hover {
+    background: #36c;
+    text-decoration: none;
+}
+.skin-vector #ca-watch,
+.skin-vector #ca-unwatch,
+.skin-vector #ca-history {
+    display: inline-block !important;
+}
+/* page indicators */
+.skin-vector .mw-body .mw-indicators {
+    bottom: 3.25rem;
+    z-index: 35;
+}
+/* table of contents */
+.skin-vector #toc,
+.skin-vector .toc {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 0;
+    padding: 8px 0;
+}
+.skin-vector .toc ul ul {
+    margin: 0;
+}
+.skin-vector .toctitle {
+    padding: 0 16px;
+    display: block;
+    align-content: center;
+}
+.skin-vector .toctitle #mw-toc-heading {
+    line-height: 2rem;
+    letter-spacing: .0125em;
+}
+.skin-vector .toctogglelabel {
+    text-decoration: none;
+}
+.skin-vector .toc {
+    background-color: transparent;
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 0;
+    padding: 8px 0;
+}
+.skin-vector .toc li::before,
+.skin-vector .toc li::after {
+    content: "";
+}
+.skin-vector .toc li a {
+    padding: 0 16px;
+    display: flex;
+    text-decoration: none;
+    height: 48px;
+    align-items: center;
+}
+.skin-vector .tocnumber,
+.skin-vector .toctext {
+    letter-spacing: .009375em;
+    text-transform: inherit;
+    line-height: 1.5rem;
+}
+.skin-vector .toc li a:hover {
+    background-color: rgba(0,0,0,.04);
+}
+.skin-vector .oo-ui-layout.oo-ui-panelLayout.oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
+    border: 0;
+    box-shadow: unset;
+    margin: 0;
+    padding: 0;
+}
+/* pictures */
+.skin-vector html .thumbcaption {
+    padding: 8px 16px;
+}
 .skin-vector div.thumbinner {
     border: 0;
     padding: 0;
     overflow: hidden;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
-.skin-vector img,
-.skin-vector html .thumbimage {
+/* code */
+.skin-vector code {
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    padding: .2rem .4rem;
     border: 0;
 }
-.skin-vector html .thumbcaption {
-    padding: 8px 16px;
+.skin-vector code a {
+    text-decoration-line: underline;
 }
-.skin-vector .mw-body .mw-indicators {
-    bottom: 3.25rem;
-    z-index: 35;
-}
+/* references */
 .skin-vector .referencetooltip li {
     border: 0;
 }
 .skin-vector .referencetooltip li + li {
     border-top: 12px #fff solid;
 }
+/* forms */
+.skin-vector .mw-body fieldset {
+    border: 0px none;
+    padding: 24px 16px !important;
+    margin: 0 !important;
+}
+.skin-vector .mw-body form {
+    box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
+    margin-bottom: 24px;
+    border-radius: 2px;
+    text-align: left;
+}
+.skin-vector .mw-body legend {
+    display: block;
+    padding: 24px 0 0 !important;
+}
+.skin-vector #mw-watchlist-resetbutton,
+.skin-vector #mw-history-compare {
+    padding: 0;
+}
+/* dialogs */
+.skin-vector .ui-dialog .ui-widget-header {
+    background: none !important;
+}
+.skin-vector .ui-dialog .ui-dialog-titlebar {
+    padding-bottom: 15px !important;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    border-bottom: 1px solid rgba(0,0,0,.12) !important;
+}
+.skin-vector .ui-dialog .ui-dialog-buttonpane {
+    padding: 0 !important;
+}
+.skin-vector .ui-widget-header {
+    border: none !important;
+    background: none !important;
+}
+.skin-vector .ui-widget-content {
+    background-color: #fff !important;
+    background-image: none !important;
+}
+.wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
+    border-top: 1px solid rgba(0,0,0,.12) !important;
+}
+.skin-vector .ui-dialog .ui-dialog-buttonpane button {
+    background-color: #fff !important;
+    background-image: none !important;
+    border: 0px none !important;
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: .875rem;
+    white-space: nowrap;
+    letter-spacing: .0892857143em;
+    text-transform: uppercase;
+    margin-left: 8px;
+    margin-right: 0;
+    max-width: 100%;
+    text-align: right;
+}
+.skin-vector .ui-dialog-title {
+    font-size: 1.25rem !important;
+    font-weight: 500 !important;
+    letter-spacing: .02em;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+}
+.skin-vector .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
+    border: none;
+}
+.skin-vector .ui-dialog {
+    box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
+    border: 0px none !important;
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    text-align: left;
+    border-radius: 4px !important;
+}
+/* diff comment */
+.skin-vector span.comment {
+    font-size: 0.75em;
+    background-color: #f8f8f8;
+    border: 1px solid #eaecf0;
+    border-radius: 2px;
+    padding: 0.25em;
+    white-space: pre-wrap;
+}
+.skin-vector .mw-tag-markers {
+    font-size: smaller;
+}
+.skin-vector .mw-htmlform-submit {
+    margin: 0 0 20px 15px !important;
+}
+/* wikieditor */
 .skin-vector .wikiEditor-ui-toolbar {
     background-color: #eaecf0;
 }
@@ -479,14 +542,12 @@
 }
 .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
 .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
-    color: #202021;
     background-image: none;
     font-weight: normal;
     padding-left: 12px;
 }
 .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
 .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited {
-    font-weight: 500;
     background-color: #fff;
 }
 .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:hover {
@@ -511,73 +572,13 @@
 .skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled textarea {
     text-transform: none;
 }
-.skin-vector .suggestions {
-    border-top: 1px #a2a9b1 solid;
-}
-.skin-vector .suggestions-results,
-.skin-vector .suggestions-result-current {
-    border: 0;
-}
-.skin-vector .suggestions-result-current {
-    background-color: #36c;
-    color: #fff;
-}
-.skin-vector .suggestions-special {
-    border: 0;
-    border-top: 1px solid #a2a9b1;
-}
 .skin-vector div.vectorMenu:hover div.menu,
 .skin-vector div.vectorMenu.menuForceShow div.menu {
     box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
     border: 0;
 }
-.skin-vector div.vectorMenu li a:hover, .skin-vector .vectorMenu #ca-wikilove a:hover {
-    background-color: #36c !important;
-    background-image: none;
-    color: #fff;
-    text-decoration: none;
-}
-.skin-vector .vectorMenu #ca-wikilove a {
-    background: none;
-}
-.skin-vector #ca-view.selected a,
-.skin-vector #ca-edit.selected a,
-.skin-vector #ca-ve-edit.selected a, 
-.skin-vector #ca-addsection.selected a,
-.skin-vector #ca-viewsource.selected a,
-.skin-vector #ca-history.selected a,
-.skin-vector #ca-watch.selected a,
-.skin-vector #ca-unwatch.selected a {
-    color: #0645ad;
-}
-.skin-vector #p-cactions .vector-menu-content-list li.selected a:hover {
-    background-color: #fff !important;
-    color: #0645ad !important;
-}
-.skin-vector #p-cactions .vector-menu-content-list li a:hover {
-    color: #fff !important;
-    background: #36c;
-    text-decoration: none;
-}
 .skin-vector .selected a:hover {
     background-color: transparent !important;
-}
-.skin-vector .mwe-popups-extract {
-    hyphens: auto;
-    text-align: justify;
-}
-.skin-vector table ul,
-.skin-vector table ol,
-.skin-vector table p,
-.skin-vector .reflist ul,
-.skin-vector .reflist ol,
-.skin-vector ul.references,
-.skin-vector ol.references,
-.skin-vector .toc,
-.skin-vector .toc ul,
-.skin-vector .catlinks,
-.skin-vector .catlinks ul {
-    font-size: inherit !important
 }
 .skin-vector .cx-header__title {
     position: fixed;
@@ -589,24 +590,43 @@
     margin-top: 30px;
     border-top: none !important;
 }
-.skin-vector #ca-watch,
-.skin-vector #ca-unwatch,
-.skin-vector #ca-history {
-    display: inline-block !important;
+/* visualeditor */
+.skin-vector .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
+    margin-top: 64px;
+    z-index: 45;
 }
-.skin-vector #proveit-logo {
-    font-size: small;
-    font-weight: 500;
+/* hidden items */
+.skin-vector .mw-changeslist-legend,
+.skin-vector .hatnote img {
+    display: none;
 }
-.skin-vector .suggestions-result .highlight {
-    font-weight: 700;
+/* no background */
+.skin-vector .portal h3,
+.skin-vector .vector-menu-portal h3 {
+    background: none;
 }
-.skin-vector #wpSave,
-.skin-vector #wpPreview,
-.skin-vector #wpDiff {
-    font-weight: 500;
+/* no borders */
+.skin-vector h1,
+.skin-vector h2,
+.skin-vector h3,
+.skin-vector h4,
+.skin-vector h5,
+.skin-vector h6 {
+    border-bottom: none;
 }
+.skin-vector img,
+.skin-vector html .thumbimage {
+    border: 0;
+}
+/* no shadow */
+.skin-vector #editform,
+.skin-vector #mw-watchlist-resetbutton,
+.skin-vector #mw-history-compare {
+    box-shadow: none;
+}
+/* print screen items */
 @media print {
+    /* font */
     .skin-vector .printfooter,
     .skin-vector .mw-footer,
     .skin-vector .thumb,
@@ -620,6 +640,14 @@
     .skin-vector h6 {
         font-family: Roboto, sans-serif;
     }
+    /* no pseudo-navbar, no padding */
+    .skin-vector,
+    .skin-vector #left-navigation,
+    .skin-vector #right-navigation,     
+    .skin-vector #mw-panel {
+        padding-top: 0 !important;
+    }
+    /* table of contents */
     .skin-vector .toctitle #mw-toc-heading {
         font-size: 1rem !important;
         font-weight: 700;
@@ -627,47 +655,34 @@
     .skin-vector .toc li a {
         padding: 0 16px !important;
     }
+    /* hidden items */
     .skin-vector #proveit {
         display: none;
     }
 }
+/* dark mode items */
 @media (prefers-color-scheme: dark) {
+    /* backgrounds */
+    .skin-vector,
     .skin-vector #p-personal {
-        color: #fff;
-        background-color: #212121;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    }
-    .skin-vector .portal h3,
-    .skin-vector .vector-menu-portal h3,
-    .skin-vector #p-personal a,
-    .skin-vector .catlinks {
-        color: #fff;
-    }
-    .skin-vector #pt-userpage a::before,
-    .skin-vector #pt-anonuserpage::before,
-    .skin-vector #pt-notifications-alert,
-    .skin-vector #pt-notifications-notice,
-    .skin-vector .vector-menu-dropdown h3:after {
-        filter: invert(1);
-    }
-    .skin-vector {
         background: #212121;
     }
     .skin-vector #mw-page-base,
     .skin-vector #content,
     .skin-vector .vector-menu-tabs .selected {
         background: #424242;
-    }  
-    .skin-vector.ns-talk #content div:not([class]),
-    .skin-vector.ns-talk #content span:not([class]) {
-        background-color: transparent !important;
-        color: #fff !important;
     }
-    .skin-vector .mw-body,
-    .skin-vector.ns-talk dl,
-    .skin-vector .catlinks,
-    .skin-vector .mw-globaluserpage-footer {
-        border-color: #fff;
+    .skin-vector .diff .diff-addedline,
+    .skin-vector .diff .diff-deletedline,
+    .skin-vector .diff .diff-context,
+    .skin-vector #editpage-specialchars {
+        background: #757575;
+    }
+    .skin-vector .diff-deletedline .diffchange-inline {
+        background: #ffe57f;
+    }
+    .skin-vector .diffchange-inline {
+        background: #82b1ff;
     }
     .skin-vector .vector-menu-tabs,
     .skin-vector .vector-menu-tabs a,
@@ -680,6 +695,38 @@
     .skin-vector .vector-menu-tabs li {
         background-image: linear-gradient(to top,#ffffff 0,#757575 1px,#424242 100%);
     }
+    .skin-vector #toc,
+    .skin-vector .toc,
+    .skin-vector .wikitable,
+    .skin-vector .navbox,
+    .skin-vector .navbox-subgroup,
+    .skin-vector .catlinks,
+    .skin-vector .mw-globaluserpage-footer,
+    .skin-vector #pagehistory li.selected {
+        background-color: #616161;
+    }
+    .skin-vector .wikitable > tr > th,
+    .skin-vector .wikitable > * > tr > th,
+    .skin-vector .navbox th,
+    .skin-vector .navbox-title,
+    .skin-vector .navbox-even,
+    .skin-vector .navbox-abovebelow,
+    .skin-vector th.navbox-group,
+    .skin-vector .navbox-subgroup .navbox-title {
+        background-color: #757575;
+    }
+    .skin-vector .warningbox {
+        background-color: rgba(255, 193, 7, 0.5);
+    }
+    .skin-vector.ns-talk #content div:not([class]),
+    .skin-vector.ns-talk #content span:not([class]) {
+        background-color: transparent !important;
+    }
+    /* font colors */
+    .skin-vector #p-personal,
+    .skin-vector .portal h3,
+    .skin-vector .vector-menu-portal h3,
+    .skin-vector #p-personal a,
     .skin-vector .vector-menu-tabs a,
     .skin-vector .vector-menu-tabs .selected a,
     .skin-vector #p-cactions-label,
@@ -691,26 +738,44 @@
     .skin-vector #content ol,
     .skin-vector #content dl,
     .skin-vector .hatnote,
+    .skin-vector #toc,
+    .skin-vector .toc,
+    .skin-vector .toctitle #mw-toc-heading,
+    .skin-vector .toctogglelabel,
+    .skin-vector .toc li a,
+    .skin-vector .tocnumber,
+    .skin-vector .toctext,
+    .skin-vector .wikitable,
+    .skin-vector .wikitable > tr > th,
+    .skin-vector .wikitable > * > tr > th,
     .skin-vector .navbox,
-    .skin-vector .mw-globaluserpage-footer,
+    .skin-vector .navbox th,
+    .skin-vector .navbox-title,
+    .skin-vector .catlinks,
     .skin-vector .mw-diff-movedpara-left:after,
     .skin-vector .mw-diff-movedpara-right:after,
     .skin-vector #pagehistory li.selected,
     .skin-vector .diff,
-    .skin-vector .diff .diff-context {
+    .skin-vector .diff .diff-context,
+    .skin-vector.ns-talk #content div:not([class]),
+    .skin-vector.ns-talk #content span:not([class]) {
         color: #fff;
     }
     .skin-vector .navbox .mw-selflink,
     .skin-vector .mw-footer li {
         color: #fff !important;
     }
+    .skin-vector .diff-deletedline .diffchange-inline,
+    .skin-vector .diffchange-inline {
+        color: #212121;
+    }
+    .skin-vector #mw-panel a,
     .skin-vector #content p a,
     .skin-vector #content ul a,
     .skin-vector #content ol a,
     .skin-vector #content dl a,
     .skin-vector .mw-editsection a,
     .skin-vector .hatnote a,
-    .skin-vector #mw-panel a,
     .skin-vector .wikitable a,
     .skin-vector .navbox a,
     .skin-vector .catlinks a,
@@ -718,13 +783,13 @@
     .skin-vector .mw-footer a {
         color: #82b1ff;
     }
+    .skin-vector #mw-panel a:visited,
     .skin-vector #content p a:visited,
     .skin-vector #content ul a:visited,
     .skin-vector #content ol a:visited,
     .skin-vector #content dl a:visited,
     .skin-vector .mw-editsection a:visited,
     .skin-vector .hatnote a:visited,
-    .skin-vector #mw-panel a:visited,
     .skin-vector .wikitable a:visited,
     .skin-vector .navbox a:visited,
     .skin-vector .catlinks a:visited,
@@ -738,29 +803,23 @@
     .skin-vector #content .new:visited {
         color: #f44336;
     }
-    .skin-vector #pagehistory li.selected {
-        background-color: #212121;
-        outline: 1px dashed #fff;
+    .skin-vector .mw-parser-output .inline-quote-talk,
+    .skin-vector .mw-plusminus-pos.mw-diff-bytes {
+        color: #4caf50;
     }
-    .skin-vector .navbox {
-        border-color: #fff;
+    .skin-vector .mw-plusminus-neg.mw-diff-bytes {
+        color: #d32f2f;
     }
+    .skin-vector span.comment {
+        color: initial !important;
+    }
+    /* border colors */
+    .skin-vector .mw-body,
     .skin-vector .navbox,
-    .skin-vector .navbox-subgroup {
-        background-color: #616161;
-    }
-    .skin-vector .navbox th,
-    .skin-vector .navbox-title {
-        background-color: #757575;
-        color: #fff;
-    }
-    .skin-vector .navbox-even {
-        background-color: #757575;
-    }
-    .skin-vector .navbox-abovebelow,
-    .skin-vector th.navbox-group,
-    .skin-vector .navbox-subgroup .navbox-title {
-        background-color: #757575;
+    .skin-vector .catlinks,
+    .skin-vector .mw-globaluserpage-footer,
+    .skin-vector.ns-talk dl {
+        border-color: #fff;
     }
     .skin-vector .navbox-list,
     .skin-vector tr + tr > .navbox-abovebelow,
@@ -769,60 +828,25 @@
     .skin-vector tr + tr > .navbox-list {
         border-color: #616161;
     }
-    .skin-vector span.comment {
-        color: initial !important;
-    }
+    .skin-vector .diff-deletedline,
     .skin-vector .warningbox {
-        background-color: rgba(255, 193, 7, 0.5);
         border-color: #ffe57f;
-    }
-    .skin-vector .catlinks,
-    .skin-vector .mw-globaluserpage-footer {
-        background-color: #616161;
-    }
-    .skin-vector .mw-plusminus-pos.mw-diff-bytes {
-        color: #4caf50;
-    }
-    .skin-vector .mw-plusminus-neg.mw-diff-bytes {
-        color: #d32f2f;
-    }
-    .skin-vector .diff .diff-addedline,
-    .skin-vector .diff .diff-deletedline,
-    .skin-vector .diff .diff-context,
-    .skin-vector #editpage-specialchars {
-        background: #757575;
-    }
-    .skin-vector .diff-deletedline  {
-        border-color: #ffe57f;
-    }
-    .skin-vector .diff-deletedline .diffchange-inline {
-        background: #ffe57f;
     }
     .skin-vector .diff-addedline {
         border-color: #82b1ff;
     }
-    .skin-vector .diffchange-inline {
-        background: #82b1ff;
+    /* pseudo-navbar */
+    .skin-vector #p-personal {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
-    .skin-vector .diff-deletedline .diffchange-inline,
-    .skin-vector .diffchange-inline {
-        color: #212121;
+    .skin-vector #pt-userpage a::before,
+    .skin-vector #pt-anonuserpage::before,
+    .skin-vector #pt-notifications-alert,
+    .skin-vector #pt-notifications-notice,
+    .skin-vector .vector-menu-dropdown h3:after {
+        filter: invert(1);
     }
-    .skin-vector .mw-parser-output .inline-quote-talk {
-        color: #4caf50;
-    }
-    .skin-vector .wikitable {
-        background-color: #616161;
-    }
-    .skin-vector .wikitable,
-    .skin-vector .wikitable > tr > th,
-    .skin-vector .wikitable > * > tr > th {
-        color: #fff;
-    }
-    .skin-vector .wikitable > tr > th,
-    .skin-vector .wikitable > * > tr > th {
-        background-color: #757575;
-    }
+    /* wikitable */
     .skin-vector .jquery-tablesorter th.headerSort {
         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjkiIHZpZXdCb3g9IjAgMCAyMSA5Ij48cGF0aCBkPSJNMTQuNSA1bC00IDQtNC00em0wLTFsLTQtNC00IDR6IiBmaWxsPSIjZmZmIi8+PC9zdmc+) !important;
     }
@@ -831,5 +855,9 @@
     }
     .skin-vector .jquery-tablesorter th.headerSortDown {
         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNMTQuNSAwbC00IDQtNC00eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==) !important;
+    }
+    /* history edit page */
+    .skin-vector #pagehistory li.selected {
+        outline: 1px dashed #fff;
     }
 }
