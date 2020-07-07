@@ -80,12 +80,6 @@
 .hatnote .mw-disambig::after,
 /** remove ícones de bandeiras **/
 .flagicon,
-img[src*="bandeira"],
-img[src*="Bandeira"],
-img[src*="BANDEIRA"],
-img[src*="flag"],
-img[src*="Flag"],
-img[src*="FLAG"],
 /** remove aviso de cópia na página de edição **/
 #editpage-copywarn {
     display: none;
