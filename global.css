@@ -93,9 +93,6 @@
     font-size: 20px;
     line-height: 28px;
 }
-.skin-vector code {
-    font-size: 87.5%;
-}
 .skin-vector #contentSub,
 .skin-vector #contentSub2,
 .skin-vector table ul,
@@ -114,6 +111,7 @@
 .skin-vector #proveit-logo {
     font-size: small;
 }
+.skin-vector code,
 .skin-vector .toctoggle {
     font-size: smaller;
 }
@@ -715,6 +713,9 @@
     .skin-vector .navbox-subgroup .navbox-title {
         background-color: #757575;
     }
+    .skin-vector code {
+        background-color: rgba(117, 117, 117, 0.5);
+    }
     .skin-vector .warningbox {
         background-color: rgba(255, 193, 7, 0.5);
     }
@@ -745,6 +746,8 @@
     .skin-vector .toc li a,
     .skin-vector .tocnumber,
     .skin-vector .toctext,
+    .skin-vector code,
+    .skin-vector code a,
     .skin-vector .wikitable,
     .skin-vector .wikitable > tr > th,
     .skin-vector .wikitable > * > tr > th,
