@@ -746,8 +746,6 @@
     .skin-vector .toc li a,
     .skin-vector .tocnumber,
     .skin-vector .toctext,
-    .skin-vector code,
-    .skin-vector code a,
     .skin-vector .wikitable,
     .skin-vector .wikitable > tr > th,
     .skin-vector .wikitable > * > tr > th,
@@ -759,13 +757,15 @@
     .skin-vector .mw-diff-movedpara-right:after,
     .skin-vector #pagehistory li.selected,
     .skin-vector .diff,
-    .skin-vector .diff .diff-context,
-    .skin-vector.ns-talk #content div:not([class]),
-    .skin-vector.ns-talk #content span:not([class]) {
+    .skin-vector .diff .diff-context {
         color: #fff;
     }
+    .skin-vector code,
+    .skin-vector code a,
     .skin-vector .navbox .mw-selflink,
-    .skin-vector .mw-footer li {
+    .skin-vector .mw-footer li,
+    .skin-vector.ns-talk #content div:not([class]),
+    .skin-vector.ns-talk #content span:not([class]) {
         color: #fff !important;
     }
     .skin-vector .diff-deletedline .diffchange-inline,
@@ -848,6 +848,10 @@
     .skin-vector #pt-notifications-notice,
     .skin-vector .vector-menu-dropdown h3:after {
         filter: invert(1);
+    }
+    /* code */
+    .skin-vector code {
+        border: 1px solid rgba(0, 0, 0, 0.2);
     }
     /* wikitable */
     .skin-vector .jquery-tablesorter th.headerSort {
