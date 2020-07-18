@@ -9,7 +9,7 @@
 .skin-vector .mw-body h1,
 .skin-vector .cx-column__title,
 .skin-vector .mw-diff-movedpara-left:after,
-.skin-vector .mw-diff-movedpara-right:after  {
+.skin-vector .mw-diff-movedpara-right:after {
     font-family: Roboto, sans-serif;
     font-style: normal;
 }
@@ -170,7 +170,7 @@
 .skin-vector .toc li a,
 .skin-vector .tocnumber,
 .skin-vector .toctext {
-    color: rgba(0,0,0,.87);
+    color: rgba(0, 0, 0, .87);
 }
 .skin-vector code,
 .skin-vector code a {
@@ -194,7 +194,7 @@
 }
 .skin-vector #ca-view.selected a,
 .skin-vector #ca-edit.selected a,
-.skin-vector #ca-ve-edit.selected a, 
+.skin-vector #ca-ve-edit.selected a,
 .skin-vector #ca-addsection.selected a,
 .skin-vector #ca-viewsource.selected a,
 .skin-vector #ca-history.selected a,
@@ -215,7 +215,7 @@
 /* pseudo-navbar */
 .skin-vector,
 .skin-vector #left-navigation,
-.skin-vector #right-navigation,     
+.skin-vector #right-navigation,
 .skin-vector #mw-panel {
     padding-top: 64px !important;
 }
@@ -358,7 +358,7 @@
 .skin-vector #toc,
 .skin-vector .toc {
     background-color: #fff;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     margin: 0;
     padding: 8px 0;
 }
@@ -379,7 +379,7 @@
 }
 .skin-vector .toc {
     background-color: transparent;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     margin: 0;
     padding: 8px 0;
 }
@@ -403,7 +403,7 @@
     line-height: 1.5rem;
 }
 .skin-vector .toc li a:hover {
-    background-color: rgba(0,0,0,.04);
+    background-color: rgba(0, 0, 0, .04);
 }
 .skin-vector .oo-ui-layout.oo-ui-panelLayout.oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
     border: 0;
@@ -466,7 +466,7 @@
     padding-bottom: 15px !important;
     padding-right: 24px !important;
     padding-left: 24px !important;
-    border-bottom: 1px solid rgba(0,0,0,.12) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, .12) !important;
 }
 .skin-vector .ui-dialog .ui-dialog-buttonpane {
     padding: 0 !important;
@@ -480,7 +480,7 @@
     background-image: none !important;
 }
 .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
-    border-top: 1px solid rgba(0,0,0,.12) !important;
+    border-top: 1px solid rgba(0, 0, 0, .12) !important;
 }
 .skin-vector .ui-dialog .ui-dialog-buttonpane button {
     background-color: #fff !important;
@@ -532,7 +532,7 @@
 }
 .skin-vector .wikiEditor-ui .wikiEditor-ui-top {
     border-bottom: 1px solid #c8ccd1;
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
     z-index: 2;
 }
 .skin-vector .wikiEditor-ui-toolbar .sections .section {
@@ -570,7 +570,7 @@
 }
 .skin-vector div.vectorMenu:hover div.menu,
 .skin-vector div.vectorMenu.menuForceShow div.menu {
-    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border: 0;
 }
 .skin-vector .selected a:hover {
@@ -639,7 +639,7 @@
     /* no pseudo-navbar, no padding */
     .skin-vector,
     .skin-vector #left-navigation,
-    .skin-vector #right-navigation,     
+    .skin-vector #right-navigation,
     .skin-vector #mw-panel {
         padding-top: 0 !important;
     }
@@ -683,13 +683,13 @@
     .skin-vector .vector-menu-tabs,
     .skin-vector .vector-menu-tabs a,
     .skin-vector #mw-head .vector-menu-dropdown h3 {
-        background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0) 0,#fff 100%);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
     }
     .skin-vector #mw-page-base {
-        background-image: linear-gradient(to bottom,#424242 50%, #212121 100%);
+        background-image: linear-gradient(to bottom, #424242 50%, #212121 100%);
     }
     .skin-vector .vector-menu-tabs li {
-        background-image: linear-gradient(to top,#ffffff 0,#757575 1px,#424242 100%);
+        background-image: linear-gradient(to top, #ffffff 0, #757575 1px, #424242 100%);
     }
     .skin-vector #toc,
     .skin-vector .toc,
@@ -826,6 +826,10 @@
     .skin-vector.ns-talk dl {
         border-color: #fff;
     }
+    .skin-vector #pt-notifications-alert .mw-echo-notifications-badge:after,
+    .skin-vector #pt-notifications-notice .mw-echo-notifications-badge:after {
+        border-color: #212121;
+    }
     .skin-vector .navbox-list,
     .skin-vector tr + tr > .navbox-abovebelow,
     .skin-vector tr + tr > .navbox-group,
@@ -846,10 +850,16 @@
     }
     .skin-vector #pt-userpage a::before,
     .skin-vector #pt-anonuserpage::before,
-    .skin-vector #pt-notifications-alert,
-    .skin-vector #pt-notifications-notice,
     .skin-vector .vector-menu-dropdown h3:after {
         filter: invert(1);
+    }
+    .skin-vector .oo-ui-icon-bell,
+    .skin-vector .mw-ui-icon-bell:before {
+        background-image: linear-gradient(transparent,transparent),url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/OOjs_UI_icon_bell-invert.svg/20px-OOjs_UI_icon_bell-invert.svg.png);
+    }
+    .skin-vector .oo-ui-icon-tray,
+    .skin-vector .mw-ui-icon-tray:before {
+        background-image: linear-gradient(transparent,transparent),url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/OOjs_UI_icon_tray-invert.svg/20px-OOjs_UI_icon_tray-invert.svg.png);
     }
     /* code / diff comment */
     .skin-vector code {
