@@ -132,13 +132,13 @@ Material Vector was been tested in the latest versions of the following desktop 
 
 Material Vector: 
 
-* Files on [this list](#files): [MIT](https://github.com/gabrieldelsaint/material-vector/master/LICENSE)
+* Files on [this list](#files): [MIT](https://github.com/gabrieldelsaint/material-vector/blob/master/LICENSE)
 
 Icons used: 
 
-* `OOjs_UI_icon_bell-invert.svg`: [MIT](https://www.mediawiki.org/wiki/File:OOjs_UI_icon_bell-invert.svg)
-* `OOjs_UI_icon_tray-invert.svg`: [MIT](https://www.mediawiki.org/wiki/File:OOjs_UI_icon_tray-invert.svg)
-* `OOjs_UI_icon_userAvatar.svg`: [MIT](https://www.mediawiki.org/wiki/File:OOjs_UI_icon_userAvatar.svg)
+* `OOjs_UI_icon_bell-invert.svg`: [MIT](https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_bell-invert.svg)
+* `OOjs_UI_icon_tray-invert.svg`: [MIT](https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_tray-invert.svg)
+* `OOjs_UI_icon_userAvatar.svg`: [MIT](https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_userAvatar.svg)
 * `sort_both.svg`: [public domain](https://commons.wikimedia.org/wiki/File:Sort_both.svg)
 * `sort_down.svg`: [public domain](https://commons.wikimedia.org/wiki/File:Sort_down_small.svg)
 * `sort_up.svg`: [public domain](https://commons.wikimedia.org/wiki/File:Sort_up_small.svg)
