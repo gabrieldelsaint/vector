@@ -8,6 +8,8 @@ Modified CSS of [MediaWiki](https://www.mediawiki.org/)'s default skin [Vector](
 
 * [`global.css`](global.css) - global stylesheet used in all wikis with Vector skin
 * [`material-vector.user.css`](material-vector.user.css) - to use with [Stylish](#stylish) / [Stylus](#stylus) browser extension
+* [`mozilla-wiki.css`](mozilla-wiki.css)- applies only to [MozillaWiki](https://wiki.mozilla.org/)
+* [`wikidata.css`](mozilla-wiki.css)- applies only to [Wikidata](https://www.wikidata.org/)
 * [`wikipedia.css`](wikipedia.css) - invert the [Wikipedia logo](https://commons.wikimedia.org/wiki/File:Wikipedia-logo-v2-en.svg) for the dark mode (the code can be reused with other wikis, but it can't get the same effect like it does on the Wikipedia logo)
 * [`wikipedia-pt.css`](wikipedia-pt.css) - applies only to [Portuguese Wikipedia](https://pt.wikipedia.org/)
 
@@ -18,7 +20,7 @@ Modified CSS of [MediaWiki](https://www.mediawiki.org/)'s default skin [Vector](
 * Improved [table of contents](https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Table_of_contents) styles
 * Content text justified with automatic hyphenation (hyphenation only works with Chromium-based browsers on macOS and Firefox)
 * [Dark mode](#dark-mode) (preliminary support)
-* Use globally: Material Vector don't override other MediaWiki skins customized styles
+* Use [globally](https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs): Material Vector don't override other MediaWiki skins customized styles
 
 _Specific for the Portuguese Wikipedia_
 
@@ -30,7 +32,7 @@ _Specific for the Portuguese Wikipedia_
 
 ### Using MediaWiki
 
-MediaWiki have built-in [custom user stylesheets](https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Interface/Stylesheets) support. If this [feature has been activated](https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:$wgAllowUserCss), you must create `User:`_`YourUsername`_`/common.css` (or  `User:`_`YourUsername`_`/vector.css`) page with the contents of `global.css`. To enable it on all Wikimedia wikis, you must create a page at https://meta.wikimedia.org/wiki/Special:MyPage/global.css.
+MediaWiki have built-in [custom user stylesheets](https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Interface/Stylesheets) support. If this [feature has been activated](https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:$wgAllowUserCss), you must create `User:`_`YourUsername`_`/common.css` (or  `User:`_`YourUsername`_`/vector.css`) page with the contents of `global.css`. To enable it on all Wikimedia wikis, you must create a page at [https://meta.wikimedia.org/wiki/Special:MyPage/global.css](https://meta.wikimedia.org/wiki/Special:MyPage/global.css).
 
 ### Using a browser extension
 
@@ -92,6 +94,10 @@ _Material Vector works fine with these wikis, with less or none issues_
 * `*.wikivoyage.org`
 * `*.wiktionary.org`
 
+#### Partially compatible
+
+* `wiki.mozilla.org`
+
 #### Possibly compatible
 
 _These wikis use Vector as their default skin or have an option to enable it, but uses an older/unsupported MediaWiki version (not added to `material-vector.user.css`)_
@@ -106,7 +112,7 @@ _These wikis use Vector as their default skin or have an option to enable it, bu
 * `uncyclopedia.ca`
 * `*.uncyclopedia.co`
 * `wiki.cancaonova.com`
-* `wiki.mozilla.org`
+* `wiki.creativecommons.org`
 
 #### Incompatible
 
@@ -124,4 +130,15 @@ Material Vector was been tested in the latest versions of the following desktop 
 
 ## License
 
-[MIT](https://raw.githubusercontent.com/gabrieldelsaint/material-vector/master/LICENSE)
+Material Vector: 
+
+* Files on [this list](#files): [MIT](https://github.com/gabrieldelsaint/material-vector/master/LICENSE)
+
+Icons used: 
+
+* `OOjs_UI_icon_bell-invert.svg`: [MIT](https://www.mediawiki.org/wiki/File:OOjs_UI_icon_bell-invert.svg)
+* `OOjs_UI_icon_tray-invert.svg`: [MIT](https://www.mediawiki.org/wiki/File:OOjs_UI_icon_tray-invert.svg)
+* `OOjs_UI_icon_userAvatar.svg`: [MIT](https://www.mediawiki.org/wiki/File:OOjs_UI_icon_userAvatar.svg)
+* `sort_both.svg`: [public domain](https://commons.wikimedia.org/wiki/File:Sort_both.svg)
+* `sort_down.svg`: [public domain](https://commons.wikimedia.org/wiki/File:Sort_down_small.svg)
+* `sort_up.svg`: [public domain](https://commons.wikimedia.org/wiki/File:Sort_up_small.svg)
