@@ -8,8 +8,9 @@ Modified CSS of [MediaWiki](https://www.mediawiki.org/)'s default skin [Vector](
 
 * [`global.css`](global.css) - global stylesheet used in all wikis with Vector skin
 * [`material-vector.user.css`](material-vector.user.css) - to use with [Stylish](#stylish) / [Stylus](#stylus) browser extension
-* [`mozilla-wiki.css`](mozilla-wiki.css)- applies only to [MozillaWiki](https://wiki.mozilla.org/)
-* [`wikidata.css`](mozilla-wiki.css)- applies only to [Wikidata](https://www.wikidata.org/)
+* [`mozilla-wiki.css`](mozilla-wiki.css) - applies only to [MozillaWiki](https://wiki.mozilla.org/)
+* [`wikidata.css`](wikidata.css) - applies only to [Wikidata](https://www.wikidata.org/)
+* [`wikimedia-commons.css`](wikimedia-commons.css) - applies only to [Wikimedia Commons](https://www.wikidata.org/)
 * [`wikipedia.css`](wikipedia.css) - invert the [Wikipedia logo](https://commons.wikimedia.org/wiki/File:Wikipedia-logo-v2-en.svg) for the dark mode (the code can be reused with other wikis, but it can't get the same effect like it does on the Wikipedia logo)
 * [`wikipedia-pt.css`](wikipedia-pt.css) - applies only to [Portuguese Wikipedia](https://pt.wikipedia.org/)
 
