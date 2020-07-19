@@ -137,7 +137,10 @@ Material Vector:
 
 Icons used: 
 
+* `file-pdf.svg`: [CC-BY 4.0](https://fontawesome.com/icons/file-pdf?style=regular)
 * `OOjs_UI_icon_bell-invert.svg`: [MIT](https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_bell-invert.svg)
+* `OOjs_UI_icon_newWindow-ltr.svg`: [MIT](https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_newWindow-ltr.svg)
+* `OOjs_UI_icon_newWindow-ltr-invert.svg`: [MIT](https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_newWindow-ltr-invert.svg)
 * `OOjs_UI_icon_tray-invert.svg`: [MIT](https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_tray-invert.svg)
 * `OOjs_UI_icon_userAvatar.svg`: [MIT](https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_userAvatar.svg)
 * `sort_both.svg`: [public domain](https://commons.wikimedia.org/wiki/File:Sort_both.svg)
