@@ -2,24 +2,26 @@
 
 /* text: fonts, sizes, colors and aligns */
 .skin-vector,
-.skin-vector html,
 .skin-vector input,
 .skin-vector select,
-.skin-vector .firstHeading,
+.skin-vector .mw-body,
 .skin-vector .mw-body h1,
+.skin-vector .mw-body-content h1,
+.skin-vector .mw-body-content h2,
+.skin-vector .firstHeading,
+.skin-vector .toctitle h2,
+.skin-vector .mw-headline,
+.skin-vector .mw-editsection,
+.skin-vector .mw-editsection-like,
 .skin-vector .cx-column__title,
+.skin-vector .mw-editfont-sans-serif,
 .skin-vector .mw-diff-movedpara-left:after,
-.skin-vector .mw-diff-movedpara-right:after {
+.skin-vector .mw-diff-movedpara-right:after,
+.skin-vector .diff-currentversion-title {
     font-family: Roboto, sans-serif;
     font-style: normal;
 }
-.skin-vector .mw-headline,
 .skin-vector .mw-continue-editing,
-.skin-vector .mw-body .mw-editsection,
-.skin-vector .mw-body .mw-editsection-like,
-.skin-vector .mw-body-content h2,
-.skin-vector #toctitle h2,
-.skin-vector .diff-currentversion-title,
 .skin-vector .ui-dialog,
 .skin-vector .ui-dialog .ui-dialog-buttonpane button {
     font-family: Roboto, sans-serif !important;
@@ -31,6 +33,7 @@
 .skin-vector kbd,
 .skin-vector samp,
 .skin-vector .mw-code,
+.skin-vector .monospaced,
 .skin-vector span.comment,
 .skin-vector .wikEdFrameBodySyntax,
 .skin-vector .ace_editor,
@@ -44,17 +47,23 @@
 .skin-vector .wikiEditor-ui-toolbar .section-help .page-table td.cell-syntax,
 .skin-vector #editpage-specialchars a,
 .skin-vector #proveit-logo {
-    font-family: "Roboto Mono", monospace !important;
+    font-family: "Roboto Mono", monospace;
 }
-.skin-vector .mw-body-content p,
-.skin-vector .mw-body-content ul,
-.skin-vector .mw-body-content ol,
-.skin-vector .hatnote {
-    font-size: 0.95rem;
+.skin-vector .mw-editfont-serif,
+.skin-vector .inline-quote-talk {
+    font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 }
-.skin-vector .mw-headline,
-.skin-vector #mw-previewheader {
-    font-size: 1.25em !important;
+.skin-vector .mw-body-content {
+    font-size: .95rem;
+}
+.skin-vector .mw-body-content table {
+    font-size: .875rem;
+    line-height: 1.375rem;
+    letter-spacing: .03125em;
+}
+.skin-vector #siteSub,
+.skin-vector .toc {
+    font-size: inherit;
 }
 .skin-vector .firstHeading,
 .skin-vector .mw-body h1,
@@ -65,27 +74,21 @@
     margin: 24px 0;
     padding: 0;
 }
-.skin-vector .diff-currentversion-title {
-    font-size: 24px !important;
-    font-weight: 400 !important;
-    line-height: 32px !important;
-}
 .skin-vector #contentSub,
 .skin-vector #contentSub2 {
     letter-spacing: 0;
     margin: 0.5em 0;
 }
 .skin-vector #siteSub {
-    font-size: inherit;
     color: #9e9e9e;
     font-style: italic;
 }
-.skin-vector h2 span.mw-headline {
-    font-size: 24px !important;
+.skin-vector h2 .mw-headline {
+    font-size: 24px;
     line-height: 32px;
 }
-.skin-vector h3 span.mw-headline {
-    font-size: 20px !important;
+.skin-vector h3 .mw-headline {
+    font-size: 20px;
     line-height: 1;
     letter-spacing: .02em;
 }
@@ -95,24 +98,20 @@
 }
 .skin-vector #contentSub,
 .skin-vector #contentSub2,
-.skin-vector table ul,
-.skin-vector table ol,
-.skin-vector table p,
-.skin-vector .reflist ul,
-.skin-vector .reflist ol,
-.skin-vector ul.references,
-.skin-vector ol.references,
-.skin-vector .toc,
-.skin-vector .toc ul,
-.skin-vector .catlinks,
-.skin-vector .catlinks ul {
-    font-size: inherit !important
-}
+.skin-vector .reflist,
+.skin-vector .references,
 .skin-vector #proveit-logo {
     font-size: small;
 }
+.skin-vector .infobox,
+.skin-vector .navbox,
+.skin-vector .navbox table,
+.skin-vector .navbox div {
+    font-size: small !important;
+}
 .skin-vector code,
 .skin-vector .toctoggle,
+
 .skin-vector .comment,
 .skin-vector .mw-tag-markers,
 .skin-vector #editpage-specialchars a {
@@ -219,6 +218,9 @@
 .skin-vector #mw-panel {
     padding-top: 64px !important;
 }
+.skin-vector.mw-special-ContentTranslation {
+    padding-top: 0 !important;
+}
 .skin-vector #p-personal {
     right: 0;
     background-color: #eaecf0;
@@ -269,10 +271,12 @@
     cursor: pointer;
     position: relative;
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
     top: -5px;
-    margin-left: 0;
+    line-height: normal;
+    box-sizing: border-box;
 }
 .skin-vector .ltr .mw-rtrc-navtoggle {
     border-width: 0 !important;
@@ -351,7 +355,7 @@
 }
 /* page indicators */
 .skin-vector .mw-body .mw-indicators {
-    bottom: 3.25rem;
+    bottom: 3.5rem;
     z-index: 35;
 }
 /* table of contents */
@@ -421,6 +425,10 @@
     overflow: hidden;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
+.skin-vector .mw-content-ltr .magnify a {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGc+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
+    width: 11px;
+}
 /* code */
 .skin-vector code {
     background-color: #f5f5f5;
@@ -431,32 +439,21 @@
 .skin-vector code a {
     text-decoration-line: underline;
 }
+/* external links */
+.skin-vector #content a[href$=".pdf"].external,
+.skin-vector #content a[href*=".pdf?"].external,
+.skin-vector #content a[href*=".pdf#"].external,
+.skin-vector #content a[href$=".PDF"].external,
+.skin-vector #content a[href*=".PDF?"].external,
+.skin-vector #content a[href*=".PDF#"].external {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTYiIHdpZHRoPSIxNiI+PHBhdGggZD0iTTAgMGgxNnYxNkgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMi42MzIgMy44ODVMMTAuNDQ3IDEuN2ExLjI1IDEuMjUgMCAwMC0uODgyLS4zNjdINC4yNUMzLjU2IDEuMzM2IDMgMS44OTYgMyAyLjU4NnYxMC44M2MwIC42OS41NiAxLjI1IDEuMjUgMS4yNWg3LjQ5OGMuNjkgMCAxLjI1LS41NiAxLjI1LTEuMjVWNC43N2MwLS4zMy0uMTMzLS42NS0uMzY3LS44ODV6IiBmaWxsPSIjZDMyZjJmIi8+PHBhdGggZD0iTTQuMjUgMi41ODZ2MTAuODNoNy41VjUuOTE5SDkuMDRhLjYyMy42MjMgMCAwMS0uNjI0LS42MjRWMi41ODZ6bTUuNDE2LjEwMVY0LjY3aDEuOTgyeiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik03LjY3NiA2LjMzN2MtLjIzMi4wMDctLjQ1Ni4xMzYtLjUxNC4zNTItLjExNS40Mi0uMDEgMS4wMDIuMTgyIDEuNzQ3LS4yNi42MjItLjY0OCAxLjQ1OC0uOTIyIDEuOTM3LS41Mi4yNjgtMS4yMjQuNjgyLTEuMzI4IDEuMjAzLS4wODYuNDExLjY3NyAxLjQzNyAxLjk4Mi0uODEyLjU4My0uMTkzIDEuMjE4LS40MyAxLjc4LS41MjQuNDkzLjI2NiAxLjA2OC40NDMgMS40NTMuNDQzLjY2NCAwIC43My0uNzM0LjQ1Ni0xLjAwOC0uMzE4LS4zMTItMS4yMjQtLjIyNi0xLjY3Ny0uMTY5LS40NDctLjI3My0uNzQ3LS42NS0uOTU4LTEuMjA1LjEwMi0uNDIuMjYzLTEuMDU3LjE0LTEuNDU4YS41NjYuNTY2IDAgMDAtLjU5NC0uNTA2em0uMDU2LjQwMmMuMTkzIDAgLjE3NC44MzUuMDQ3IDEuMDYyLS4xMTUtLjM2Mi0uMTEyLTEuMDYyLS4wNDctMS4wNjJ6TTcuNzQgOC44N2MuMjE2LjM5My40OTIuNzA4Ljc4My45MjQtLjU0MS4xMTItMS4wMTIuMzQxLTEuNDI2LjUuMjUyLS40NC40NjgtLjk2My42NDMtMS40MjR6bTIuMTIgMS4wNzhjLjY0LS4wMDUuNzQ1LjE2MS42NjMuMjE2IDAgMC0uMTMuMTU2LS45NzEtLjIwMy4xMTQtLjAwOS4yMTYtLjAxMy4zMDgtLjAxM3ptLTMuNDYxLjg0Yy0uNDk1Ljc5LS43OTIuOTMtLjc5Mi45MTIuMTMzLS4zNTcuNjM4LS43NjguNzkyLS45MTF6IiBmaWxsPSIjZDMyZjJmIi8+PC9zdmc+) center right no-repeat;
+}
 /* references */
 .skin-vector .referencetooltip li {
     border: 0;
 }
 .skin-vector .referencetooltip li + li {
     border-top: 12px #fff solid;
-}
-/* forms */
-.skin-vector .mw-body fieldset {
-    border: 0px none;
-    padding: 24px 16px !important;
-    margin: 0 !important;
-}
-.skin-vector .mw-body form {
-    box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
-    margin-bottom: 24px;
-    border-radius: 2px;
-    text-align: left;
-}
-.skin-vector .mw-body legend {
-    display: block;
-    padding: 24px 0 0 !important;
-}
-.skin-vector #mw-watchlist-resetbutton,
-.skin-vector #mw-history-compare {
-    padding: 0;
 }
 /* dialogs */
 .skin-vector .ui-dialog .ui-widget-header {
@@ -544,6 +541,7 @@
     background-image: none;
     font-weight: normal;
     padding-left: 12px;
+    height: 35px;
 }
 .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
 .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited {
@@ -644,6 +642,14 @@
         padding-top: 0 !important;
     }
     /* table of contents */
+    .skin-vector #toc,
+    .skin-vector .toc {
+        width: 100%;
+        border: none;
+    }
+    .skin-vector .tocnumber {
+        display: block;
+    }
     .skin-vector .toctitle #mw-toc-heading {
         font-size: 1rem !important;
         font-weight: 700;
@@ -664,10 +670,12 @@
         background: #212121;
     }
     .skin-vector #mw-page-base,
-    .skin-vector #content,
-    .skin-vector .vector-menu-tabs .selected {
+    .skin-vector .mw-body,
+    .skin-vector .vector-menu-tabs .selected,
+    .skin-vector .vector-menu-tabs li.new.selected {
         background: #424242;
     }
+    .skin-vector .warningbox,
     .skin-vector .diff .diff-addedline,
     .skin-vector .diff .diff-deletedline,
     .skin-vector .diff .diff-context,
@@ -691,16 +699,45 @@
     .skin-vector .vector-menu-tabs li {
         background-image: linear-gradient(to top, #ffffff 0, #757575 1px, #424242 100%);
     }
+    .skin-vector .vector-menu-dropdown .vector-menu-content-list,
+    .skin-vector .vector-menu-dropdown .vector-menu-checkbox:checked ~ .skin-vector .vector-menu-content .vector-menu-content-list,
+    .skin-vector #p-cactions .vector-menu-content-list li.selected a:hover,
+    .skin-vector .wikiEditor-ui-toolbar .booklet > .index > .current,
+    .skin-vector #wpTextbox1 {
+        background-color: #424242;
+    }
+    .skin-vector #p-cactions .vector-menu-content-list li.selected a:hover {
+        background-color: #424242 !important;
+    }
+    .skin-vector #p-cactions .vector-menu-content-list li a:hover,
+    .skin-vector .cx-callout,
+    .skin-vector .mw-body .mw-parser-output .ambox,
+    .skin-vector .ombox tbody,
+    .skin-vector .infobox,
     .skin-vector #toc,
     .skin-vector .toc,
+    .skin-vector .mwe-popups,
+    .skin-vector .thumbinner,
+    .skin-vector .gallerybox .thumb,
     .skin-vector .wikitable,
     .skin-vector .navbox,
     .skin-vector .navbox-subgroup,
     .skin-vector .catlinks,
+    .skin-vector .mw-babel-wrapper,
     .skin-vector .mw-globaluserpage-footer,
-    .skin-vector #pagehistory li.selected {
+    .skin-vector #pagehistory li.selected,
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited,
+    .skin-vector .wikiEditor-ui-toolbar .sections .section,
+    .skin-vector .wikiEditor-ui-toolbar .group .tool-select .options,
+    .skin-vector .editOptions,
+    .skin-vector.mw-special-Preferences .oo-ui-tabPanelLayout-active {
         background-color: #616161;
     }
+    .skin-vector #documentation-meta-data {
+        background-color: #616161 !important;
+    }
+    .skin-vector .cx-callout a:hover,
     .skin-vector .wikitable > tr > th,
     .skin-vector .wikitable > * > tr > th,
     .skin-vector .navbox th,
@@ -708,8 +745,18 @@
     .skin-vector .navbox-even,
     .skin-vector .navbox-abovebelow,
     .skin-vector th.navbox-group,
-    .skin-vector .navbox-subgroup .navbox-title {
+    .skin-vector .navbox-subgroup .navbox-title,
+    .skin-vector .wikiEditor-ui-toolbar,
+    .skin-vector .wikiEditor-ui-toolbar .group .tool-select .menu .options .option:hover,
+    .skin-vector .wikiEditor-ui-toolbar .booklet > .index > :hover,
+    .skin-vector .wikiEditor-ui-toolbar .page-characters div span:hover {
         background-color: #757575;
+    }
+    .skin-vector .template-documentation {
+        background-color: #546e7a;
+    }
+    .skin-vector .mwe-popups .mwe-popups-extract[dir='ltr']:after {
+        background-image: linear-gradient(to right,rgba(255,255,255,0),#616161 50%);
     }
     .skin-vector code {
         background-color: rgba(117, 117, 117, 0.5);
@@ -717,11 +764,14 @@
     .skin-vector .comment {
         background-color: rgba(117, 117, 117, 0.5) !important;
     }
-    .skin-vector .warningbox {
-        background-color: rgba(255, 193, 7, 0.5);
+    .skin-vector .tmbox {
+        background-color: rgba(255, 193, 7, 0.5) !important;
     }
-    .skin-vector.ns-talk #content div:not([class]),
-    .skin-vector.ns-talk #content span:not([class]) {
+    .skin-vector .tmbox td,
+    .skin-vector .boilerplate,
+    .skin-vector .boilerplate.metadata,
+    .skin-vector.ns-talk .mw-body div:not([class]),
+    .skin-vector.ns-talk .mw-body span:not([class]) {
         background-color: transparent !important;
     }
     /* font colors */
@@ -729,17 +779,38 @@
     .skin-vector .portal h3,
     .skin-vector .vector-menu-portal h3,
     .skin-vector #p-personal a,
+    .skin-vector .cx-callout a,
+    .skin-vector .cx-callout a:visited,
     .skin-vector .vector-menu-tabs a,
+    .skin-vector .vector-menu-tabs a:visited,
     .skin-vector .vector-menu-tabs .selected a,
+    .skin-vector .vector-menu-tabs .new.selected a,
     .skin-vector #p-cactions-label,
+    .skin-vector #p-cactions .vector-menu-content-list li a,
+    .skin-vector #xtools,
     .skin-vector .mw-indicator a,
+    .skin-vector .mw-body-content,
+    .skin-vector .mw-body .ve-ui-surface,
     .skin-vector #firstHeading,
+    .skin-vector .mw-content-ltr .mw-editsection-bracket:first-of-type,
+    .skin-vector .mw-content-rtl .mw-editsection-bracket:not(:first-of-type),
+    .skin-vector .mw-editsection-divider,
+    .skin-vector .mw-content-rtl .mw-editsection-bracket:first-of-type,
+    .skin-vector .mw-content-ltr .mw-editsection-bracket:not(:first-of-type),
+    .skin-vector .mw-body h1,
+    .skin-vector .mw-body-content h1,
+    .skin-vector .mw-body-content h2,
+    .skin-vector .mw-body h3,
+    .skin-vector .mw-body h4,
+    .skin-vector .mw-body h5,
+    .skin-vector .mw-body h6
+    .skin-vector .mw-body p,
+    .skin-vector .mw-body ul,
+    .skin-vector .mw-body ol,
+    .skin-vector .mw-body dl,
     .skin-vector .mw-headline,
-    .skin-vector #content p,
-    .skin-vector #content ul,
-    .skin-vector #content ol,
-    .skin-vector #content dl,
     .skin-vector .hatnote,
+    .skin-vector .infobox,
     .skin-vector #toc,
     .skin-vector .toc,
     .skin-vector .toctitle #mw-toc-heading,
@@ -747,6 +818,10 @@
     .skin-vector .toc li a,
     .skin-vector .tocnumber,
     .skin-vector .toctext,
+    .skin-vector .mwe-popups-extract,
+    .skin-vector .mwe-popups-extract:visited,
+    .skin-vector .mwe-popups-title,
+    .skin-vector .mwe-popups-container .citation,
     .skin-vector .wikitable,
     .skin-vector .wikitable > tr > th,
     .skin-vector .wikitable > * > tr > th,
@@ -754,20 +829,43 @@
     .skin-vector .navbox th,
     .skin-vector .navbox-title,
     .skin-vector .catlinks,
-    .skin-vector .mw-diff-movedpara-left:after,
-    .skin-vector .mw-diff-movedpara-right:after,
+    .skin-vector .messagebox,
+    .skin-vector .errorbox,
+    .skin-vector .warningbox,
+    .skin-vector .successbox,
+    .skin-vector form,
     .skin-vector #pagehistory li.selected,
     .skin-vector .diff,
-    .skin-vector .diff .diff-context {
+    .skin-vector .diff .diff-context,
+    .skin-vector .diff-currentversion-title,
+    .skin-vector .mw-diff-movedpara-left:after,
+    .skin-vector .mw-diff-movedpara-right:after,
+    .skin-vector .watchlistDetails,
+    .skin-vector .mw-changeslist h4,
+    .skin-vector .wikiEditor-ui-toolbar .group .tool-select .options .option,
+    .skin-vector .wikiEditor-ui-toolbar .group .tool-select .menu .options .option:hover,
+    .skin-vector .wikiEditor-ui-toolbar .booklet > .index > .current,
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited,
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited,
+    .skin-vector .wikiEditor-ui-toolbar .label,
+    .skin-vector .wikiEditor-ui-toolbar .group .tool-select .label,
+    .skin-vector .wikiEditor-ui-toolbar .page-characters div span,
+    .skin-vector .wikiEditor-ui-toolbar .page-table th,
+    .skin-vector .wikiEditor-ui-toolbar .page-table .cell,
+    .skin-vector #wpTextbox1,
+    .skin-vector .editOptions {
         color: #fff;
     }
+    .skin-vector #p-cactions .vector-menu-content-list li.selected a:hover,
     .skin-vector code,
     .skin-vector code a,
     .skin-vector .navbox .mw-selflink,
     .skin-vector .mw-footer li,
     .skin-vector .comment,
-    .skin-vector.ns-talk #content div:not([class]),
-    .skin-vector.ns-talk #content span:not([class]) {
+    .skin-vector.ns-talk .mw-body div:not([class]),
+    .skin-vector.ns-talk .mw-body span:not([class]) {
         color: #fff !important;
     }
     .skin-vector .diff-deletedline .diffchange-inline,
@@ -777,51 +875,64 @@
     .skin-vector .autocomment a {
         color: #b0bec5 !important;
     }
-    .skin-vector #mw-panel a,
-    .skin-vector #content p a,
-    .skin-vector #content ul a,
-    .skin-vector #content ol a,
-    .skin-vector #content dl a,
-    .skin-vector .mw-editsection a,
-    .skin-vector .hatnote a,
-    .skin-vector .wikitable a,
-    .skin-vector .navbox a,
-    .skin-vector .catlinks a,
-    .skin-vector .mw-globaluserpage-footer a,
-    .skin-vector .mw-footer a {
+    .skin-vector #siteSub,
+    .skin-vector #contentSub,
+    .skin-vector #contentSub2,
+    .skin-vector .oo-ui-labelWidget.oo-ui-inline-help,
+    .skin-vector .results-info {
+        color: #9e9e9e;
+    }
+    .skin-vector a,
+    .skin-vector .portal li a,
+    .skin-vector .mw-parser-output a {
         color: #82b1ff;
     }
-    .skin-vector #mw-panel a:visited,
-    .skin-vector #content p a:visited,
-    .skin-vector #content ul a:visited,
-    .skin-vector #content ol a:visited,
-    .skin-vector #content dl a:visited,
-    .skin-vector .mw-editsection a:visited,
-    .skin-vector .hatnote a:visited,
-    .skin-vector .wikitable a:visited,
-    .skin-vector .navbox a:visited,
-    .skin-vector .catlinks a:visited,
-    .skin-vector .mw-globaluserpage-footer a:visited,
-    .skin-vector .mw-footer a:visited {
+    .skin-vector a:visited,
+    .skin-vector .portal li a:visited,
+    .skin-vector .mw-parser-output a:visited {
         color: #b388ff;
     }
-    .skin-vector #content .new {
+    .skin-vector #p-personal .new,
+    .skin-vector .mw-body .new {
         color: #ef5350;
     }
-    .skin-vector #content .new:visited {
+    .skin-vector #p-personal .new:visited,
+    .skin-vector .mw-body .new:visited {
         color: #f44336;
     }
+    .skin-vector .vector-menu-tabs .new a {
+        color: #ef9a9a;
+    }
+    .skin-vector .mw-body .external,
+    .skin-vector .mw-parse-output .external,
+    .skin-vector .mwe-popups .external {
+        color: #90caf9;
+    }
+    .skin-vector .mw-body .external:visited,
+    .skin-vector .mw-parse-output .external:visited,
+    .skin-vector .mwe-popups .external:visited {
+        color: #b39ddb;
+    }
     .skin-vector .mw-parser-output .inline-quote-talk,
-    .skin-vector .mw-plusminus-pos.mw-diff-bytes {
+    .skin-vector .mw-plusminus-pos.mw-diff-bytes,
+    .skin-vector .mw-search-result-data {
         color: #4caf50;
     }
     .skin-vector .mw-plusminus-neg.mw-diff-bytes {
         color: #d32f2f;
     }
+    .skin-vector .mw-babel-box,
+    .skin-vector .mw-babel-box a {
+        color: initial;
+    }
     /* border colors */
     .skin-vector .mw-body,
+    .skin-vector .vector-menu-dropdown .vector-menu-content-list,
+    .skin-vector .vector-menu-dropdown .vector-menu-checkbox:checked ~ .skin-vector .vector-menu-content .vector-menu-content-list,
     .skin-vector .navbox,
+    .skin-vector .gallerybox .thumb,
     .skin-vector .catlinks,
+    .skin-vector .warningbox,
     .skin-vector .mw-globaluserpage-footer,
     .skin-vector.ns-talk dl {
         border-color: #fff;
@@ -837,8 +948,17 @@
     .skin-vector tr + tr > .navbox-list {
         border-color: #616161;
     }
-    .skin-vector .diff-deletedline,
-    .skin-vector .warningbox {
+    .skin-vector .mwe-popups.flipped-y:after,
+    .skin-vector .mwe-popups.flipped-x-y:after {
+        border-top-color: #616161;
+    }
+    .skin-vector .mwe-popups.mwe-popups-no-image-pointer:after {
+        border-bottom-color: #616161;
+    }
+    .skin-vector .wikiEditor-ui-toolbar .group {
+        border-color: #757575;
+    }
+    .skin-vector .diff-deletedline {
         border-color: #ffe57f;
     }
     .skin-vector .diff-addedline {
@@ -848,18 +968,13 @@
     .skin-vector #p-personal {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
-    .skin-vector #pt-userpage a::before,
-    .skin-vector #pt-anonuserpage::before,
-    .skin-vector .vector-menu-dropdown h3:after {
-        filter: invert(1);
-    }
     .skin-vector .oo-ui-icon-bell,
     .skin-vector .mw-ui-icon-bell:before {
-        background-image: linear-gradient(transparent,transparent),url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/OOjs_UI_icon_bell-invert.svg/20px-OOjs_UI_icon_bell-invert.svg.png);
+        background-image: linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8dGl0bGU+CiAgICBiZWxsCiAgPC90aXRsZT48ZyBmaWxsPSIjZmZmIj4KICA8cGF0aCBkPSJNMTYgN2E1LjM4IDUuMzggMCAwIDAtNC40Ni00Ljg1QzExLjYgMS40NiAxMS41MyAwIDEwIDBTOC40IDEuNDYgOC40NiAyLjE1QTUuMzggNS4zOCAwIDAgMCA0IDd2NmwtMiAydjFoMTZ2LTFsLTItMnptLTYgMTNhMyAzIDAgMCAwIDMtM0g3YTMgMyAwIDAgMCAzIDN6Ii8+PC9nPgo8L3N2Zz4K);
     }
     .skin-vector .oo-ui-icon-tray,
     .skin-vector .mw-ui-icon-tray:before {
-        background-image: linear-gradient(transparent,transparent),url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/OOjs_UI_icon_tray-invert.svg/20px-OOjs_UI_icon_tray-invert.svg.png);
+        background-image: linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KCTx0aXRsZT4KCQl0cmF5Cgk8L3RpdGxlPjxnIGZpbGw9IiNmZmYiPgoJPHBhdGggZD0iTTE3IDFIM2EyIDIgMCAwIDAtMiAydjE0YTIgMiAwIDAgMCAyIDJoMTRhMiAyIDAgMCAwIDItMlYzYTIgMiAwIDAgMC0yLTJ6bTAgMTJoLTRsLTEgMkg4bC0xLTJIM1YzaDE0eiIvPgo8L2c+PC9zdmc+Cg==);
     }
     /* code / diff comment */
     .skin-vector code {
@@ -878,8 +993,27 @@
     .skin-vector .jquery-tablesorter th.headerSortDown {
         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNMTQuNSAwbC00IDQtNC00eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==) !important;
     }
+    /* pictures */
+    .skin-vector .mw-content-ltr .magnify a {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
+    }
     /* history edit page */
     .skin-vector #pagehistory li.selected {
         outline: 1px dashed #fff;
+    }
+    /* invert filter */
+    .skin-vector #pt-userpage a::before,
+    .skin-vector #pt-anonuserpage::before,
+    .skin-vector .vector-menu-dropdown h3:after,
+    .skin-vector .mwe-popups .mw-ui-icon:before,
+    .skin-vector .oo-ui-popupToolGroup-handle .oo-ui-indicatorElement-indicator,
+    .skin-vector .oo-ui-fieldsetLayout.mw-collapsible .mw-collapsible-toggle .oo-ui-iconElement-icon,
+    .skin-vector .wikiEditor-ui .oo-ui-iconElement-icon,
+    .skin-vector .wikiEditor-ui-toolbar .group .tool-select .label:after {
+        filter: invert(1);
+    }
+    /* opacity */
+    .skin-vector .tool.oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {
+        opacity: 1;
     }
 }

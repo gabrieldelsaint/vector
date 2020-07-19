@@ -10,18 +10,18 @@
 /* infocaixas */
 .infobox_v2 {
     background-color: #fff;
-    color: rgba(0,0,0,.87);
-    border: 1px solid rgba(0,0,0,.12);
+    color: rgba(0, 0, 0, .87);
+    border: 1px solid rgba(0, 0, 0, .12);
     border-radius: 4px;
     border-collapse: collapse;
 }
 .infobox_v2 tr {
-    border-top-color: rgba(0,0,0,.12);
+    border-top-color: rgba(0, 0, 0, .12);
     border-top-width: 1px;
     border-top-style: solid;
 }
 .infobox_v2 tr:hover {
-    background-color: rgba(0,0,0,.04);
+    background-color: rgba(0, 0, 0, .04);
 }
 .infobox_v2 tr .floatnone img {
     margin: 8px 0;
@@ -52,7 +52,7 @@
 .infobox_v2 .topo {
     background-color: transparent !important;
     background-image: none !important;
-    color: rgba(0,0,0,.87) !important;
+    color: rgba(0, 0, 0, .87) !important;
     padding-right: 8px !important;
     padding-left: 8px !important;
     height: 52px;
@@ -87,7 +87,7 @@
 /* gadget: fastbuttons */
 .fastb-button {
     background-color: #3366cc !important;
-    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
     display: inline-block;
     font-size: .875rem;
     font-weight: 500;
@@ -105,16 +105,16 @@
     letter-spacing: .0892857143em;
 }
 .fastb-button:active {
-    background-color: hsla(0,0%,60%,.4);
+    background-color: hsla(0, 0%, 60%, .4);
     background-image: none;
-    box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 3px rgba(0,0,0,.12),0 4px 15px 0 rgba(0,0,0,.2);
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 3px rgba(0, 0, 0, .12), 0 4px 15px 0 rgba(0, 0, 0, .2);
 }
 .fastb-button:focus,
 .fastb-button:hover {
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
 }
 .fastb-button:hover {
-    background-image: linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.12));
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .12), rgba(0, 0, 0, .12));
 }
 #fastb-menu .fastb-button:active {
     background-color: #7b1fa2;
@@ -138,8 +138,8 @@
 .fastb-disabled-button,
 .fastb-disabled-button:active,
 .fastb-disabled-button:hover {
-    background-color: rgba(0,0,0,.12) !important;
-    color: rgba(0,0,0,.26) !important;
+    background-color: rgba(0, 0, 0, .12) !important;
+    color: rgba(0, 0, 0, .26) !important;
     box-shadow: none;
     background-image: none;
     font-size: small;
