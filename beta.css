@@ -1,0 +1,49 @@
+.skin-vector .mw-body {
+    background-color: #fff;
+}
+.skin-vector .mw-page-container {
+    background-color: transparent;
+}
+.skin-vector .mw-content-container {
+    max-width: 100%;
+}
+.skin-vector #p-personal {
+    margin-left: 0;
+}
+.skin-vector #mw-panel {
+    background: none;
+}
+.skin-vector #mw-sidebar-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 45;
+    margin: 10px 20px;
+}
+.skin-vector div#simpleSearch {
+    margin-left: 50px;
+}
+.skin-vector #searchButton {
+    background-size: 16px;
+    margin: 0 4px;
+}
+.skin-vector #left-navigation,
+.skin-vector #right-navigation,
+.skin-vector #mw-panel {
+    padding-top: 0 !important;
+}
+.skin-vector .mw-article-toolbar-container {
+    max-width: none;
+}
+@media (prefers-color-scheme: dark) {
+    .skin-vector #mw-sidebar-button::before,
+    .skin-vector .mw-logo-container{
+        filter: invert(1);
+    }
+    .skin-vector .mw-body {
+        background-color: #424242;
+    }
+    /* .skin-vector .mw-page-container {
+        background-image: linear-gradient(to bottom, #424242 50%, #212121 100%);
+    } */
+}
