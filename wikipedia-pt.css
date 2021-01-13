@@ -204,6 +204,10 @@
     .infobox_v2 a.external:visited {
         color: #b388ff;
     }
+    /* caixa de sucessão */
+    .skin-vector .toccolours {
+        background-color: #616161;
+    }
     /* páginas de discussão */
     .skin-vector.ns-talk dl dl,
     .skin-vector.ns-talk dl dl dl dl,
