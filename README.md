@@ -6,9 +6,11 @@ Modified CSS of [MediaWiki](https://www.mediawiki.org/)'s default skin [Vector](
 
 ## Files
 
+* [`beta.css`](beta.css) - support for the [new Vector](https://www.mediawiki.org/wiki/Reading/Web/Desktop_Improvements)
 * [`global.css`](global.css) - global stylesheet used in all wikis with Vector skin
 * [`material-vector.user.css`](material-vector.user.css) - to use with [Stylish](#stylish) / [Stylus](#stylus) browser extension
 * [`mozilla-wiki.css`](mozilla-wiki.css) - applies only to [MozillaWiki](https://wiki.mozilla.org/)
+* [`wiktionary.css`](wiktionary.css) - applies only to [´Wiktionary](https://www.wiktionary.org/)
 * [`wikidata.css`](wikidata.css) - applies only to [Wikidata](https://www.wikidata.org/)
 * [`wikimedia-commons.css`](wikimedia-commons.css) - applies only to [Wikimedia Commons](https://commons.wikimedia.org/)
 * [`wikipedia.css`](wikipedia.css) - invert the [Wikipedia logo](https://commons.wikimedia.org/wiki/File:Wikipedia-logo-v2-en.svg) for the dark mode (the code can be reused with other wikis, but it can't get the same effect like it does on the Wikipedia logo)
@@ -63,8 +65,9 @@ If you don't care about this issue, your system default font will be displayed i
 ### Setting under browser
 
 * __Chrome__: dark mode must be enabled on the OS settings ([support page](https://support.google.com/chrome/answer/9275525))
-* __Firefox__: dark mode must be enabled on the OS settings or using `ui.systemUsesDarkTheme` property of `about:config`, setting "1" (without quotes) number value ([support page for `about:config`](http://mzl.la/1U8c8gM))
 * __Edge__: open the menu "Settings and more" (<kbd>Alt</kbd>+<kbd>F</kbd>), choose "Settings", then "Appearance", and select "Dark" option on "Default theme" section ([support page](https://support.microsoft.com/help/4533310))
+* __Firefox__: dark mode must be enabled on the OS settings or using `ui.systemUsesDarkTheme` property of `about:config`, setting "1" (without quotes) number value ([support page for `about:config`](http://mzl.la/1U8c8gM))
+
 
 ### Setting under OS
 
@@ -72,7 +75,7 @@ _To work correctly within Microsoft Edge, use "System default" option on the bro
 
 * __Windows 10__ <small>(version 1607 (Anniversary Update) or latter)</small>: open Settings (<kbd>Win</kbd>+<kbd>I</kbd>), then "Personalization" > "Colors", and select "Dark" option on "Choose your default Windows mode" section ([support page](https://support.microsoft.com/help/17144))
 * __macOS__ <small>(version 10.14 (Mojave) or latter)</small>: open Apple menu ([![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/10px-Apple_logo_black.svg.png "Apple logo")](https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg)), then "System Preferences", click on "General" and select "Dark" on "Appearance options" section ([support page](https://support.apple.com/HT208976))
-* __Linux__: Firefox and Chrome don't support dark mode on Linux by the OS settings and Edge doesn't have a Linux version
+* __Linux__: Edge ([Dev](https://www.microsoftedgeinsider.com/download?platform=linux)), Firefox and Chrome don't support dark mode on Linux by the OS settings
 
 ## Compatibility
 
@@ -126,8 +129,8 @@ _These wikis don't use Vector as their default skin and doesn't have an option t
 Material Vector was been tested in the latest versions of the following desktop browsers (no mobile support, since [Minerva](https://www.mediawiki.org/wiki/Special:MyLanguage/Skin:Minerva_Neue) is the default mobile skin for Wikimedia and possibility others MediaWiki-based wikis)
 
 * [Google Chrome](https://www.google.com/chrome/)
-* [Mozilla Firefox](https://www.mozilla.org/firefox/new/)
 * [Microsoft Edge](https://www.microsoft.com/edge)
+* [Mozilla Firefox](https://www.mozilla.org/firefox/new/)
 
 ## License
 
