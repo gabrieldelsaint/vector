@@ -17,7 +17,8 @@
 .skin-vector .mw-editfont-sans-serif,
 .skin-vector .mw-diff-movedpara-left:after,
 .skin-vector .mw-diff-movedpara-right:after,
-.skin-vector .diff-currentversion-title {
+.skin-vector .diff-currentversion-title,
+.skin-vector .mw-number-text h3 {
     font-family: Roboto, sans-serif;
     font-style: normal;
 }
@@ -54,7 +55,7 @@
     font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 }
 .skin-vector .mw-body-content {
-    font-size: .95rem;
+    font-size: .925rem;
 }
 .skin-vector .mw-body-content table {
     font-size: .875rem;
@@ -146,7 +147,8 @@
 }
 .skin-vector b,
 .skin-vector strong,
-.skin-vector .suggestions-result .highlight {
+.skin-vector .suggestions-result .highlight,
+.skin-vector .mw-number-text h3 {
     font-weight: 700;
 }
 .skin-vector .mw-datatable,
@@ -182,7 +184,9 @@
 .skin-vector span.comment {
     color: #222;
 }
-.skin-vector #p-personal a {
+.skin-vector #p-personal a,
+.skin-vector #p-personal .new,
+.skin-vector #p-personal .new:visited {
     color: #000;
 }
 .skin-vector .suggestions-result-current,
@@ -238,15 +242,15 @@
     flex-direction: column;
     box-sizing: border-box;
 }
+.skin-vector .mw-portlet li {
+    line-height: inherit;
+}
 .skin-vector #p-personal a {
     text-decoration: none;
 }
 .skin-vector #p-personal ul {
-    padding: 16px;
-    height: 56px;
-    width: 100%;
+    padding: 14px;
     display: flex;
-    box-sizing: border-box;
     justify-content: flex-end;
 }
 .skin-vector #pt-uls {
@@ -255,13 +259,6 @@
 .skin-vector #pt-userpage a,
 .skin-vector #pt-anonuserpage {
     background-image: none;
-    display: inline-flex;
-}
-.skin-vector #pt-userpage a::before,
-.skin-vector #pt-anonuserpage::before {
-    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/14px-OOjs_UI_icon_userAvatar.svg.png);
-    display: inline-flex;
-    padding: 0 .25rem;
 }
 .skin-vector #pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read,
 .skin-vector #pt-notifications-notice .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {
@@ -440,6 +437,9 @@
     text-decoration-line: underline;
 }
 /* external links */
+.skin-vector .mw-parser-output .external {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iIzM2YiI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
+}
 .skin-vector #content a[href$=".pdf"].external,
 .skin-vector #content a[href*=".pdf?"].external,
 .skin-vector #content a[href*=".pdf#"].external,
@@ -730,6 +730,7 @@
     .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited,
     .skin-vector .wikiEditor-ui-toolbar .sections .section,
     .skin-vector .wikiEditor-ui-toolbar .group .tool-select .options,
+    .skin-vector .wikiEditor-ui-toolbar .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle,
     .skin-vector .editOptions,
     .skin-vector.mw-special-Preferences .oo-ui-tabPanelLayout-active {
         background-color: #616161;
@@ -779,6 +780,8 @@
     .skin-vector .portal h3,
     .skin-vector .vector-menu-portal h3,
     .skin-vector #p-personal a,
+    .skin-vector #p-personal .new,
+    .skin-vector #p-personal .new:visited, 
     .skin-vector .cx-callout a,
     .skin-vector .cx-callout a:visited,
     .skin-vector .vector-menu-tabs a,
@@ -855,7 +858,9 @@
     .skin-vector .wikiEditor-ui-toolbar .page-table th,
     .skin-vector .wikiEditor-ui-toolbar .page-table .cell,
     .skin-vector #wpTextbox1,
-    .skin-vector .editOptions {
+    .skin-vector .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle,
+    .skin-vector .editOptions,
+    .skin-vector .mw-number-text {
         color: #fff;
     }
     .skin-vector #p-cactions .vector-menu-content-list li.selected a:hover,
@@ -875,16 +880,19 @@
     .skin-vector .autocomment a {
         color: #b0bec5 !important;
     }
+    .skin-vector #pt-anonuserpage,
     .skin-vector #siteSub,
     .skin-vector #contentSub,
     .skin-vector #contentSub2,
     .skin-vector .oo-ui-labelWidget.oo-ui-inline-help,
+    .skin-vector .CategoryTreeEmptyBullet,
     .skin-vector .results-info {
         color: #9e9e9e;
     }
     .skin-vector a,
     .skin-vector .portal li a,
-    .skin-vector .mw-parser-output a {
+    .skin-vector .mw-parser-output a,
+    .skin-vector .CategoryTreeToggle {
         color: #82b1ff;
     }
     .skin-vector a:visited,
@@ -892,11 +900,9 @@
     .skin-vector .mw-parser-output a:visited {
         color: #b388ff;
     }
-    .skin-vector #p-personal .new,
     .skin-vector .mw-body .new {
         color: #ef5350;
     }
-    .skin-vector #p-personal .new:visited,
     .skin-vector .mw-body .new:visited {
         color: #f44336;
     }
@@ -915,7 +921,8 @@
     }
     .skin-vector .mw-parser-output .inline-quote-talk,
     .skin-vector .mw-plusminus-pos.mw-diff-bytes,
-    .skin-vector .mw-search-result-data {
+    .skin-vector .mw-search-result-data,
+    .skin-vector .mw-ui-feature-user-count {
         color: #4caf50;
     }
     .skin-vector .mw-plusminus-neg.mw-diff-bytes {
@@ -957,6 +964,9 @@
     }
     .skin-vector .wikiEditor-ui-toolbar .group {
         border-color: #757575;
+    }
+    .skin-vector .wikiEditor-ui .wikiEditor-ui-top {
+        border-bottom: 1px solid #616161;
     }
     .skin-vector .diff-deletedline {
         border-color: #ffe57f;
@@ -1006,14 +1016,24 @@
     .skin-vector #pt-anonuserpage::before,
     .skin-vector .vector-menu-dropdown h3:after,
     .skin-vector .mwe-popups .mw-ui-icon:before,
-    .skin-vector .oo-ui-popupToolGroup-handle .oo-ui-indicatorElement-indicator,
+    .skin-vector .wikiEditor-ui-toolbar .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon,
+    .skin-vector .wikiEditor-ui-toolbar .oo-ui-popupToolGroup-handle .oo-ui-indicatorElement-indicator,
     .skin-vector .oo-ui-fieldsetLayout.mw-collapsible .mw-collapsible-toggle .oo-ui-iconElement-icon,
-    .skin-vector .wikiEditor-ui .oo-ui-iconElement-icon,
-    .skin-vector .wikiEditor-ui-toolbar .group .tool-select .label:after {
+    .skin-vector .wikiEditor-ui .oo-ui-buttonElement-button,
+    .skin-vector .wikiEditor-ui-toolbar .group .tool-select .label:after,
+    .skin-vector .ve-init-mw-editSwitch .oo-ui-popupToolGroup.oo-ui-iconElement .oo-ui-popupToolGroup-handle .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon {
         filter: invert(1);
     }
     /* opacity */
     .skin-vector .tool.oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {
         opacity: 1;
+    }
+    /* hidden items */
+    .skin-vector #pt-darkmode-link {
+        display: none;
+    }
+    /* external links */
+    .skin-vector .mw-parser-output .external {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iIzkwY2FmOSI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
     }
 }
