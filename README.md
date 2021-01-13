@@ -10,7 +10,7 @@ Modified CSS of [MediaWiki](https://www.mediawiki.org/)'s default skin [Vector](
 * [`global.css`](global.css) - global stylesheet used in all wikis with Vector skin
 * [`material-vector.user.css`](material-vector.user.css) - to use with [Stylish](#stylish) / [Stylus](#stylus) browser extension
 * [`mozilla-wiki.css`](mozilla-wiki.css) - applies only to [MozillaWiki](https://wiki.mozilla.org/)
-* [`wiktionary.css`](wiktionary.css) - applies only to [´Wiktionary](https://www.wiktionary.org/)
+* [`wiktionary.css`](wiktionary.css) - applies only to [Wiktionary](https://www.wiktionary.org/)
 * [`wikidata.css`](wikidata.css) - applies only to [Wikidata](https://www.wikidata.org/)
 * [`wikimedia-commons.css`](wikimedia-commons.css) - applies only to [Wikimedia Commons](https://commons.wikimedia.org/)
 * [`wikipedia.css`](wikipedia.css) - invert the [Wikipedia logo](https://commons.wikimedia.org/wiki/File:Wikipedia-logo-v2-en.svg) for the dark mode (the code can be reused with other wikis, but it can't get the same effect like it does on the Wikipedia logo)
@@ -75,7 +75,7 @@ _To work correctly within Microsoft Edge, use "System default" option on the bro
 
 * __Windows 10__ <small>(version 1607 (Anniversary Update) or latter)</small>: open Settings (<kbd>Win</kbd>+<kbd>I</kbd>), then "Personalization" > "Colors", and select "Dark" option on "Choose your default Windows mode" section ([support page](https://support.microsoft.com/help/17144))
 * __macOS__ <small>(version 10.14 (Mojave) or latter)</small>: open Apple menu ([![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/10px-Apple_logo_black.svg.png "Apple logo")](https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg)), then "System Preferences", click on "General" and select "Dark" on "Appearance options" section ([support page](https://support.apple.com/HT208976))
-* __Linux__: Edge ([Dev](https://www.microsoftedgeinsider.com/download?platform=linux)), Firefox and Chrome don't support dark mode on Linux by the OS settings
+* __Linux__: Chrome, Edge ([Dev](https://www.microsoftedgeinsider.com/download?platform=linux)) and Firefox don't support dark mode on Linux by the OS settings
 
 ## Compatibility
 
