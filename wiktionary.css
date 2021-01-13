@@ -1,0 +1,33 @@
+@media (prefers-color-scheme: dark) {
+    .skin-vector .NavFrame .NavHead,
+    .skin-vector .NavFrame .NavHead:hover {
+        background: #757575;
+    }
+    .skin-vector .NavFrame .NavContent,
+    .skin-vector .translations {
+        background-color: #616161;
+    }
+    .skin-vector .translations-cell,
+    .skin-vector .checktrans,
+    .skin-vector .derivedterms.term-list.ul-column-count {
+        background-color: #757575 !important;
+    }
+    .skin-vector .ttbc,
+    .skin-vector .trreq {
+        background-color: #8c9eff;
+    }
+    .skin-vector .tpos a,
+    .skin-vector .tpos a .extiw {
+        color: #82b1ff !important;
+    }
+    .skin-vector .tpos a:visited,
+    .skin-vector .tpos a:visited .extiw {
+        color: #b388ff !important;
+    }
+    .skin-vector .ttbc,
+    .skin-vector .ttbc a,
+    .skin-vector .trreq,
+    .skin-vector .trreq a {
+        color: #212121;
+    }
+}
