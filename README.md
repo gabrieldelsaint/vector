@@ -6,9 +6,9 @@ Modified CSS of [MediaWiki](https://www.mediawiki.org/)'s default skin [Vector](
 
 ## Files
 
-* [`beta.css`](beta.css) - support for the [new Vector](https://www.mediawiki.org/wiki/Reading/Web/Desktop_Improvements)
+* [`beta.css`](beta.css) - support for the [new Vector](#new-vector)
 * [`global.css`](global.css) - global stylesheet used in all wikis with Vector skin
-* [`material-vector.user.css`](material-vector.user.css) - to use with [Stylish](#stylish) / [Stylus](#stylus) browser extension
+* [`material-vector.user.css`](material-vector.user.css) - to use with [Stylus](#stylus) browser extension
 * [`mozilla-wiki.css`](mozilla-wiki.css) - applies only to [MozillaWiki](https://wiki.mozilla.org/)
 * [`wiktionary.css`](wiktionary.css) - applies only to [Wiktionary](https://www.wiktionary.org/)
 * [`wikidata.css`](wikidata.css) - applies only to [Wikidata](https://www.wikidata.org/)
@@ -125,6 +125,26 @@ _These wikis don't use Vector as their default skin and doesn't have an option t
 * `*.fandom.com`
 * `*.wikihow.com`
 
+#### New Vector
+
+The wikis listed below are testing the new Vector skin by default. Logged users of these wikis can opt-out, and the users of the other wikis can opt-in for the new skin. See [Reading/Web/Desktop Improvements](https://www.mediawiki.org/wiki/Special:MyLanguage/Reading/Web/Desktop_Improvements) page on MediaWiki wiki for aditional information.
+
+* `incubator.wikimedia.org`
+* `office.wikimedia.org`
+* `bn.wikipedia.org`
+* `eu.wikipedia.org`
+* `fa.wikipedia.org`
+* `fr.wikipedia.org`
+* `he.wikipedia.org`
+* `ko.wikipedia.org`
+* `pt.wikipedia.org`
+* `sr.wikipedia.org`
+* `tr.wikipedia.org`
+* `vec.wikipedia.org`
+* `fr.wiktionary.org`
+* `pt.wikiversity.org`
+* `de.wikivoyage.org`
+
 ### Browsers
 Material Vector was been tested in the latest versions of the following desktop browsers (no mobile support, since [Minerva](https://www.mediawiki.org/wiki/Special:MyLanguage/Skin:Minerva_Neue) is the default mobile skin for Wikimedia and possibility others MediaWiki-based wikis)
 
@@ -136,7 +156,7 @@ Material Vector was been tested in the latest versions of the following desktop 
 
 Material Vector: 
 
-* Files on [this list](#files): [MIT](https://github.com/gabrieldelsaint/material-vector/blob/master/LICENSE)
+* Files on [this list](#files): [MIT](https://github.com/gabrielpereiradossantos/material-vector/blob/master/LICENSE)
 
 Icons used: 
 
