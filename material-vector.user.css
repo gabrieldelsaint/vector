@@ -1,360 +1,241 @@
 /* ==UserStyle==
 @name         Material Vector
 @description  Vector skin with inspiration in Material Design
-@version      0.0.1
-@namespace    github.com/gabrieldelsaint/material-vector
-@homepageURL  https://pages.gabrieldossantos.xyz/material-vector/
-@supportURL   https://github.com/gabrieldelsaint/material-vector/issues
-@updateURL    https://raw.githubusercontent.com/gabrieldelsaint/material-vector/master/material-vector.user.css
+@version      0.0.2
+@namespace    github.com/gabrielpereiradossantos/material-vector
+@homepageURL  https://pages.gabrieldossantos.net/material-vector/
+@supportURL   https://github.com/gabrielpereiradossantos/material-vector/issues
+@updateURL    https://raw.githubusercontent.com/gabrielpereiradossantos/material-vector/master/material-vector.user.css
 @author       Gabriel dos Santos <gabrieldossantos@programmer.net> (https://www.gabrieldossantos.net/)
 @license      MIT
 ==/UserStyle== */
 @-moz-document domain("mediawiki.org"), domain("miraheze.org"), domain("wikibooks.org"), domain("wikidata.org"), domain("wikimedia.org"), domain("wikinews.org"), domain("wikipedia.org"), domain("wikiquote.org"), domain("wikisource.org"), domain("wikiversity.org"), domain("wikivoyage.org"), domain("wiktionary.org") {
-    body.skin-vector,
-    body.skin-vector html,
-    body.skin-vector input,
-    body.skin-vector select  {
-        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    /* text: fonts, sizes, colors and aligns */
+    .skin-vector,
+    .skin-vector input,
+    .skin-vector select,
+    .skin-vector .mw-body,
+    .skin-vector .mw-body h1,
+    .skin-vector .mw-body-content h1,
+    .skin-vector .mw-body-content h2,
+    .skin-vector .firstHeading,
+    .skin-vector .toctitle h2,
+    .skin-vector .mw-headline,
+    .skin-vector .mw-editsection,
+    .skin-vector .mw-editsection-like,
+    .skin-vector .cx-column__title,
+    .skin-vector .mw-editfont-sans-serif,
+    .skin-vector .mw-diff-movedpara-left:after,
+    .skin-vector .mw-diff-movedpara-right:after,
+    .skin-vector .diff-currentversion-title,
+    .skin-vector .mw-number-text h3 {
+        font-family: Roboto, sans-serif;
         font-style: normal;
-        font-weight: 400;
     }
-    body.skin-vector {
-        position: absolute;
-        width: 100%;
-        height: 100%;
+    .skin-vector .mw-continue-editing,
+    .skin-vector .ui-dialog,
+    .skin-vector .ui-dialog .ui-dialog-buttonpane button {
+        font-family: Roboto, sans-serif !important;
     }
-    body.skin-vector,
-    body.skin-vector #left-navigation,
-    body.skin-vector #right-navigation,     
-    body.skin-vector #mw-panel {
-        padding-top: 64px !important;
+    .skin-vector textarea,
+    .skin-vector pre,
+    .skin-vector code,
+    .skin-vector tt,
+    .skin-vector kbd,
+    .skin-vector samp,
+    .skin-vector .mw-code,
+    .skin-vector .monospaced,
+    .skin-vector span.comment,
+    .skin-vector .wikEdFrameBodySyntax,
+    .skin-vector .ace_editor,
+    .skin-vector #wpSummary,
+    .skin-vector .mw-editfont-monospace,
+    .skin-vector .CodeMirror,
+    .skin-vector .diff-context,
+    .skin-vector .diff-deletedline,
+    .skin-vector .diff-addedline,
+    .skin-vector .wikiEditor-ui-toolbar .page-characters,
+    .skin-vector .wikiEditor-ui-toolbar .section-help .page-table td.cell-syntax,
+    .skin-vector #editpage-specialchars a,
+    .skin-vector #proveit-logo {
+        font-family: "Roboto Mono", monospace;
     }
-    body.skin-vector .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
-        margin-top: 64px;
-        z-index: 45;
+    .skin-vector .mw-editfont-serif,
+    .skin-vector .inline-quote-talk {
+        font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
     }
-    @media print {
-        body.skin-vector,
-        body.skin-vector #left-navigation,
-        body.skin-vector #right-navigation,     
-        body.skin-vector #mw-panel {
-            padding-top: 0 !important;
-        }
+    .skin-vector .mw-body-content {
+        font-size: .925rem;
     }
-    body.skin-vector .mw-body-content {
-        text-align: justify;
+    .skin-vector .mw-body-content table {
+        font-size: .875rem;
+        line-height: 1.375rem;
+        letter-spacing: .03125em;
     }
-    body.skin-vector .mw-body-content p {
-        hyphens: auto;
+    .skin-vector #siteSub,
+    .skin-vector .toc {
+        font-size: inherit;
     }
-    body.skin-vector .mw-body-content p,
-    body.skin-vector .mw-body-content ul,
-    body.skin-vector .mw-body-content ol,
-    body.skin-vector .hatnote {
-        font-size: 0.95rem;
-    }
-    body.skin-vector b,
-    body.skin-vector strong {
-        font-weight: 700;
-    }
-    body.skin-vector textarea,
-    body.skin-vector pre,
-    body.skin-vector code,
-    body.skin-vector tt,
-    body.skin-vector kbd,
-    body.skin-vector samp,
-    body.skin-vector .mw-code,
-    body.skin-vector span.comment,
-    body.skin-vector .wikEdFrameBodySyntax,
-    body.skin-vector .ace_editor,
-    body.skin-vector #wpSummary,
-    body.skin-vector .mw-editfont-monospace,
-    body.skin-vector .CodeMirror,
-    body.skin-vector .diff-context,
-    body.skin-vector .diff-deletedline,
-    body.skin-vector .diff-addedline,
-    body.skin-vector .wikiEditor-ui-toolbar .page-characters,
-    body.skin-vector .wikiEditor-ui-toolbar .section-help .page-table td.cell-syntax,
-    body.skin-vector #editpage-specialchars a,
-    body.skin-vector #proveit-logo {
-        font-family: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-    }
-    body.skin-vector code {
-        background-color: #f5f5f5;
-        border-radius: 2px;
-        padding: .2rem .4rem;
-        font-size: 87.5%;
-        color: #555;
-        border: 0;
-    }
-    body.skin-vector code a {
-        color: #555;
-        text-decoration-line: underline;
-    }
-    body.skin-vector .portal h3,
-    body.skin-vector .vector-menu-portal h3 {
-        background: none;
-    }
-    body.skin-vector .mw-headline,
-    body.skin-vector .mw-continue-editing,
-    body.skin-vector .mw-body .mw-editsection,
-    body.skin-vector .mw-body .mw-editsection-like {
-        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
-    }
-    body.skin-vector h2 span.mw-headline {
-        font-size: 24px !important;
-        font-weight: 400;
-        line-height: 32px;
-    }
-    body.skin-vector  .mw-body-content h2,
-    body.skin-vector .diff-currentversion-title {
-        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
-    }
-    body.skin-vector .diff-currentversion-title {
-        font-size: 24px !important;
-        font-weight: 400 !important;
-        line-height: 32px !important;
-    }
-    body.skin-vector firstHeading,
-    body.skin-vector .mw-body h1,
-    body.skin-vector .cx-column__title {
+    .skin-vector .firstHeading,
+    .skin-vector .mw-body h1,
+    .skin-vector .cx-column__title {
         margin-top: 48px;
-        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-        font-weight: 400;
         font-size: 34px;
         line-height: 40px;
         margin: 24px 0;
         padding: 0;
     }
-    body.skin-vector .mw-headline,
-    body.skin-vector #mw-previewheader {
-        font-size: 1.25em !important;
-        font-weight: 500;
-    }
-    body.skin-vector .mw-body fieldset {
-        border: 0px none;
-        padding: 24px 16px !important;
-        margin: 0 !important;
-    }
-    body.skin-vector .mw-body form {
-        box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
-        margin-bottom: 24px;
-        border-radius: 2px;
-        text-align: left;
-    }
-    body.skin-vector .mw-changeslist-legend,
-    body.skin-vector .hatnote img {
-        display: none;
-    }
-    body.skin-vector span.updatedmarker {
-        font-style: italic;
-        background-color: transparent !important;
-        color: #000 !important;
-    }
-    body.skin-vector .wikitable,
-    body.skin-vector .mw-datatable,
-    body.skin-vector .gallerytext,
-    body.skin-vector .special {
-        text-align: left;
-    }
-    body.skin-vector .ui-dialog .ui-widget-header {
-        background: none !important;
-    }
-    body.skin-vector .ui-dialog .ui-dialog-titlebar {
-        padding-bottom: 15px !important;
-        padding-right: 24px !important;
-        padding-left: 24px !important;
-        border-bottom: 1px solid rgba(0,0,0,.12) !important;
-    }
-    body.skin-vector .ui-dialog .ui-dialog-buttonpane {
-        padding: 0 !important;
-    }
-    body.skin-vector .ui-widget-header {
-        border: none !important;
-        background: none !important;
-    }
-    body.skin-vector .ui-widget-content {
-        background-color: #fff !important;
-        background-image: none !important;
-    }
-    .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
-        border-top: 1px solid rgba(0,0,0,.12) !important;
-    }
-    body.skin-vector .ui-dialog .ui-dialog-buttonpane button {
-    background-color: #fff !important;
-        background-image: none !important;
-        border: 0px none !important;
-        border-radius: 2px;
-        box-shadow: none;
-        color: inherit;
-        font-size: .875rem;
-        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
-        font-weight: 500;
-        white-space: nowrap;
-        letter-spacing: .0892857143em;
-        text-transform: uppercase;
-        margin-left: 8px;
-        margin-right: 0;
-        max-width: 100%;
-        text-align: right;
-    }
-    body.skin-vector .ui-dialog-title {
-        font-size: 1.25rem !important;
-        font-weight: 500 !important;
-        letter-spacing: .02em;
-        line-height: 1.4 !important;
-        margin: 0 !important;
-    }
-    body.skin-vector .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
-        border: none;
-    }
-    body.skin-vector .ui-dialog {
-        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
-        font-weight: 400;
-    }
-    body.skin-vector .ui-dialog {
-        box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
-        border: 0px none !important;
-        margin-top: 24px !important;
-        margin-bottom: 24px !important;
-        text-align: left;
-        border-radius: 4px !important;
-    }
-    body.skin-vector .mw-body legend {
-        font-size: 20px;
-        font-weight: 400;
-        display: block;
-        line-height: 28px;
-        padding: 24px 0 0 !important;
-    }
-    body.skin-vector #mw-watchlist-resetbutton,
-    body.skin-vector #mw-history-compare {
-        box-shadow: none;
-        padding: 0;
-    }
-    body.skin-vector #toc,
-    body.skin-vector .toc {
-        background-color: #fff;
-        color: rgba(0,0,0,.87);
-        border: 1px solid rgba(0,0,0,.1);
-        margin: 0;
-        padding: 8px 0;
-    }
-    body.skin-vector .toc ul ul {
-        margin: 0;
-    }
-    body.skin-vector .toctitle {
-        padding: 0 16px;
-        display: block;
-        align-content: center;
-    }
-    body.skin-vector .toctitle #mw-toc-heading {
-        font-weight: 500;
-        color: rgba(0,0,0,.87);
-        line-height: 2rem;
-        letter-spacing: .0125em;
-    }
-    body.skin-vector .toctogglelabel {
-        color: rgba(0,0,0,.87);
-        text-decoration: none;
-    }
-    body.skin-vector .toc {
-        background-color: transparent;
-        color: rgba(0,0,0,.87);
-        border: 1px solid rgba(0,0,0,.1);
-        margin: 0;
-        padding: 8px 0;
-    }
-    body.skin-vector .toc li::before,
-    body.skin-vector .toc li::after {
-        content: "";
-    }
-    body.skin-vector .toc li a {
-        padding: 0 16px;
-        display: flex;
-        text-decoration: none;
-        color: rgba(0, 0, 0, 0.87);
-        height: 48px;
-        align-items: center;
-    }
-    body.skin-vector .tocnumber,
-    body.skin-vector .toctext {
-        letter-spacing: .009375em;
-        text-transform: inherit;
-        line-height: 1.5rem;
-        color: rgba(0, 0, 0, 0.87);
-    }
-    body.skin-vector .toc li a:hover {
-        background-color: rgba(0,0,0,.04);
-    }
-    body.skin-vector #toctitle {
-        color: #555555 !important;
-    }
-    body.skin-vector #toctitle h2 {
-        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
-        font-weight: 500;
-        color: #555555 !important;
-    }
-    body.skin-vector .oo-ui-layout.oo-ui-panelLayout.oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
-        border: 0;
-        box-shadow: unset;
-        margin: 0;
-        padding: 0;
-    }
-    body.skin-vector span.comment {
-        color: #222;
-        font-size: 0.75em;
-        background-color: #f8f8f8;
-        border: 1px solid #eaecf0;
-        border-radius: 2px;
-        padding: 0.25em;
-        white-space: pre-wrap;
-    }
-    body.skin-vector .mw-tag-markers {
-        font-size: smaller;
-    }
-    body.skin-vector .mw-htmlform-submit {
-        margin: 0 0 20px 15px !important;
-    }
-        #siteSub {
-        display: block;
-        font-size: inherit;
-        color: #9e9e9e;
-        font-style: italic;
-    }
-    body.skin-vector h1,
-    body.skin-vector h2,
-    body.skin-vector h3,
-    body.skin-vector h4,
-    body.skin-vector h5,
-    body.skin-vector h6 {
-        border-bottom: none;
-    }
-    body.skin-vector h3 span.mw-headline {
-        font-size: 20px !important;
-        font-weight: 500;
-        line-height: 1;
-        letter-spacing: .02em;
-    }
-    body.skin-vector h4 span.mw-headline,
-    body.skin-vector h5 span.mw-headline,
-    body.skin-vector h6 span.mw-headline {
-        font-weight: 500;
-    }
-    body.skin-vector .toctoggle {
-        font-size: smaller;
-        font-weight: 400;
-    }
-    body.skin-vector #contentSub,
-    body.skin-vector #contentSub2 {
-        line-height: inherit !important;
+    .skin-vector #contentSub,
+    .skin-vector #contentSub2 {
         letter-spacing: 0;
         margin: 0.5em 0;
     }
-    body.skin-vector #editform {
-        box-shadow: none;
+    .skin-vector #siteSub {
+        color: #9e9e9e;
+        font-style: italic;
     }
-    body.skin-vector #p-personal {
+    .skin-vector h2 .mw-headline {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .skin-vector h3 .mw-headline {
+        font-size: 20px;
+        line-height: 1;
+        letter-spacing: .02em;
+    }
+    .skin-vector .mw-body legend {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .skin-vector #contentSub,
+    .skin-vector #contentSub2,
+    .skin-vector .reflist,
+    .skin-vector .references,
+    .skin-vector #proveit-logo {
+        font-size: small;
+    }
+    .skin-vector .infobox,
+    .skin-vector .navbox,
+    .skin-vector .navbox table,
+    .skin-vector .navbox div {
+        font-size: small !important;
+    }
+    .skin-vector code,
+    .skin-vector .toctoggle,
+    
+    .skin-vector .comment,
+    .skin-vector .mw-tag-markers,
+    .skin-vector #editpage-specialchars a {
+        font-size: smaller;
+    }
+    .skin-vector .firstHeading,
+    .skin-vector .mw-body h1,
+    .skin-vector .cx-column__title,
+    .skin-vector h2 span.mw-headline,
+    .skin-vector .toctoggle,
+    .skin-vector .mw-body legend,
+    .skin-vector .ui-dialog {
+        font-weight: 400;
+    }
+    .skin-vector #p-personal,
+    .skin-vector .mw-headline,
+    .skin-vector #mw-previewheader,
+    .skin-vector h3 span.mw-headline,
+    .skin-vector h4 span.mw-headline,
+    .skin-vector h5 span.mw-headline,
+    .skin-vector h6 span.mw-headline,
+    .skin-vector .toctitle #mw-toc-heading,
+    .skin-vector #toctitle h2,
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited,
+    .skin-vector #wpSave,
+    .skin-vector #wpPreview,
+    .skin-vector #wpDiff,
+    .skin-vector .ui-dialog .ui-dialog-buttonpane button,
+    .skin-vector #proveit-logo {
+        font-weight: 500;
+    }
+    .skin-vector b,
+    .skin-vector strong,
+    .skin-vector .suggestions-result .highlight,
+    .skin-vector .mw-number-text h3 {
+        font-weight: 700;
+    }
+    .skin-vector .mw-datatable,
+    .skin-vector .gallerytext,
+    .skin-vector .special {
+        text-align: left;
+    }
+    .skin-vector .mw-body-content,
+    .skin-vector .mwe-popups-extract {
+        text-align: justify;
+    }
+    .skin-vector .mw-body-content p,
+    .skin-vector .mwe-popups-extract {
+        hyphens: auto;
+    }
+    .skin-vector #toc,
+    .skin-vector .toc,
+    .skin-vector .toctitle #mw-toc-heading,
+    .skin-vector .toctogglelabel,
+    .skin-vector .toc li a,
+    .skin-vector .tocnumber,
+    .skin-vector .toctext {
+        color: rgba(0, 0, 0, .87);
+    }
+    .skin-vector code,
+    .skin-vector code a {
+        color: #555;
+    }
+    .skin-vector #toctitle,
+    .skin-vector #toctitle h2 {
+        color: #555 !important;
+    }
+    .skin-vector span.comment {
+        color: #222;
+    }
+    .skin-vector #p-personal a,
+    .skin-vector #p-personal .new,
+    .skin-vector #p-personal .new:visited {
+        color: #000;
+    }
+    .skin-vector .suggestions-result-current,
+    .skin-vector div.vectorMenu li a:hover,
+    .skin-vector .vectorMenu #ca-wikilove a:hover,
+    .skin-vector #p-cactions .vector-menu-content-list li a:hover {
+        color: #fff;
+    }
+    .skin-vector #ca-view.selected a,
+    .skin-vector #ca-edit.selected a,
+    .skin-vector #ca-ve-edit.selected a,
+    .skin-vector #ca-addsection.selected a,
+    .skin-vector #ca-viewsource.selected a,
+    .skin-vector #ca-history.selected a,
+    .skin-vector #ca-watch.selected a,
+    .skin-vector #ca-unwatch.selected a {
+        color: #0645ad;
+    }
+    .skin-vector #p-cactions .vector-menu-content-list li.selected a:hover {
+        color: #0645ad !important;
+    }
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
+        color: #202021;
+    }
+    .skin-vector .ui-dialog .ui-dialog-buttonpane button {
+        color: inherit;
+    }
+    /* pseudo-navbar */
+    .skin-vector,
+    .skin-vector #left-navigation,
+    .skin-vector #right-navigation,
+    .skin-vector #mw-panel {
+        padding-top: 64px !important;
+    }
+    .skin-vector.mw-special-ContentTranslation {
+        padding-top: 0 !important;
+    }
+    .skin-vector #p-personal {
         right: 0;
         background-color: #eaecf0;
         width: 100%;
@@ -362,7 +243,6 @@
         position: fixed;
         height: 64px;
         padding-top: 4px;
-        font-weight: 500;
         letter-spacing: 0.04em;
         line-height: 1.5rem;
         top: 0;
@@ -372,50 +252,44 @@
         flex-direction: column;
         box-sizing: border-box;
     }
-    body.skin-vector #p-personal a {
-        color: #000;
+    .skin-vector .mw-portlet li {
+        line-height: inherit;
+    }
+    .skin-vector #p-personal a {
         text-decoration: none;
     }
-    body.skin-vector #p-personal ul {
-        padding: 16px;
-        height: 56px;
-        width: 100%;
+    .skin-vector #p-personal ul {
+        padding: 14px;
         display: flex;
-        box-sizing: border-box;
         justify-content: flex-end;
     }
-    body.skin-vector #pt-uls {
+    .skin-vector #pt-uls {
         display: none;
     }
-    body.skin-vector #pt-userpage a,
-    body.skin-vector #pt-anonuserpage {
+    .skin-vector #pt-userpage a,
+    .skin-vector #pt-anonuserpage {
         background-image: none;
-        display: inline-flex;
     }
-    body.skin-vector #pt-userpage a::before,
-    body.skin-vector #pt-anonuserpage::before {
-        content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/14px-OOjs_UI_icon_userAvatar.svg.png);
-        display: inline-flex;
-        padding: 0 .25rem;
-    }
-    body.skin-vector #pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read,
-    body.skin-vector #pt-notifications-notice .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {
+    .skin-vector #pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read,
+    .skin-vector #pt-notifications-notice .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {
         opacity: 1 !important;
     }
-    body.skin-vector .wikEdLogo {
+    .skin-vector .wikEdLogo {
         cursor: pointer;
         position: relative;
         display: block;
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
+        margin: 0 2px;
         top: -5px;
-        margin-left: 0;
+        line-height: normal;
+        box-sizing: border-box;
     }
-    body.skin-vector .ltr .mw-rtrc-navtoggle {
+    .skin-vector .ltr .mw-rtrc-navtoggle {
         border-width: 0 !important;
         padding-top: 120px;
     }
-    body.skin-vector div#simpleSearch {
+    .skin-vector div#simpleSearch {
         position: fixed;
         width: auto;
         max-width: none;
@@ -429,380 +303,930 @@
         left: 2em;
         top: 5px;
     }
-    body.skin-vector #left-navigation {
-        margin-right: -1px;
-    }
-    body.skin-vector #right-navigation {
-        float: left;
-    }
-    body.skin-vector div#simpleSearch,
-    body.skin-vector .suggestions {
+    .skin-vector div#simpleSearch,
+    .skin-vector .suggestions {
         box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     }
-    body.skin-vector #searchInput,
-    body.skin-vector #searchInput:hover,
-    body.skin-vector #searchInput:focus {
+    .skin-vector #searchInput,
+    .skin-vector #searchInput:hover,
+    .skin-vector #searchInput:focus {
         border: 0;
         box-shadow: none;
         height: 32px;
         padding: 0 12px;
     }
-    body.skin-vector #searchButton {
+    .skin-vector #searchButton {
         margin: 0 6px;
     }
-    body.skin-vector div.thumbinner {
+    .skin-vector .suggestions {
+        border-top: 1px #a2a9b1 solid;
+    }
+    .skin-vector .suggestions-results,
+    .skin-vector .suggestions-result-current {
+        border: 0;
+    }
+    .skin-vector .suggestions-result-current {
+        background-color: #36c;
+    }
+    .skin-vector .suggestions-special {
+        border: 0;
+        border-top: 1px solid #a2a9b1;
+    }
+    /* page actions */
+    .skin-vector #left-navigation {
+        margin-right: -1px;
+    }
+    .skin-vector #right-navigation {
+        float: left;
+    }
+    .skin-vector div.vectorMenu li a:hover,
+    .skin-vector .vectorMenu #ca-wikilove a:hover {
+        background-color: #36c !important;
+        background-image: none;
+        text-decoration: none;
+    }
+    .skin-vector .vectorMenu #ca-wikilove a {
+        background: none;
+    }
+    .skin-vector #p-cactions .vector-menu-content-list li.selected a:hover {
+        background-color: #fff !important;
+    }
+    .skin-vector #p-cactions .vector-menu-content-list li a:hover {
+        background: #36c;
+        text-decoration: none;
+    }
+    .skin-vector #ca-watch,
+    .skin-vector #ca-unwatch,
+    .skin-vector #ca-history {
+        display: inline-block !important;
+    }
+    /* page indicators */
+    .skin-vector .mw-body .mw-indicators {
+        bottom: 3.5rem;
+        z-index: 35;
+    }
+    /* table of contents */
+    .skin-vector #toc,
+    .skin-vector .toc {
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, .1);
+        margin: 0;
+        padding: 8px 0;
+    }
+    .skin-vector .toc ul ul {
+        margin: 0;
+    }
+    .skin-vector .toctitle {
+        padding: 0 16px;
+        display: block;
+        align-content: center;
+    }
+    .skin-vector .toctitle #mw-toc-heading {
+        line-height: 2rem;
+        letter-spacing: .0125em;
+    }
+    .skin-vector .toctogglelabel {
+        text-decoration: none;
+    }
+    .skin-vector .toc {
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, .1);
+        margin: 0;
+        padding: 8px 0;
+    }
+    .skin-vector .toc li::before,
+    .skin-vector .toc li::after,
+    .skin-vector .comment::before,
+    .skin-vector .comment::after {
+        content: "";
+    }
+    .skin-vector .toc li a {
+        padding: 0 16px;
+        display: flex;
+        text-decoration: none;
+        height: 48px;
+        align-items: center;
+    }
+    .skin-vector .tocnumber,
+    .skin-vector .toctext {
+        letter-spacing: .009375em;
+        text-transform: inherit;
+        line-height: 1.5rem;
+    }
+    .skin-vector .toc li a:hover {
+        background-color: rgba(0, 0, 0, .04);
+    }
+    .skin-vector .oo-ui-layout.oo-ui-panelLayout.oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
+        border: 0;
+        box-shadow: unset;
+        margin: 0;
+        padding: 0;
+    }
+    /* pictures */
+    .skin-vector html .thumbcaption {
+        padding: 8px 16px;
+    }
+    .skin-vector div.thumbinner {
         border: 0;
         padding: 0;
         overflow: hidden;
         box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     }
-    body.skin-vector img,
-    body.skin-vector html .thumbimage {
+    .skin-vector .mw-content-ltr .magnify a {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGc+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
+        width: 11px;
+    }
+    /* code */
+    .skin-vector code {
+        background-color: #f5f5f5;
+        border-radius: 2px;
+        padding: .2rem .4rem;
         border: 0;
     }
-    body.skin-vector html .thumbcaption {
-        padding: 8px 16px;
+    .skin-vector code a {
+        text-decoration-line: underline;
     }
-    body.skin-vector .mw-body .mw-indicators {
-        bottom: 3.25rem;
-        z-index: 35;
+    /* external links */
+    .skin-vector .mw-parser-output .external {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iIzM2YiI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
     }
-    body.skin-vector .referencetooltip li {
+    .skin-vector #content a[href$=".pdf"].external,
+    .skin-vector #content a[href*=".pdf?"].external,
+    .skin-vector #content a[href*=".pdf#"].external,
+    .skin-vector #content a[href$=".PDF"].external,
+    .skin-vector #content a[href*=".PDF?"].external,
+    .skin-vector #content a[href*=".PDF#"].external,
+    .skin-vector .mw-parser-output  a[href$=".pdf"].external,
+    .skin-vector .mw-parser-output  a[href*=".pdf?"].external,
+    .skin-vector .mw-parser-output  a[href*=".pdf#"].external,
+    .skin-vector .mw-parser-output  a[href$=".PDF"].external,
+    .skin-vector .mw-parser-output  a[href*=".PDF?"].external,
+    .skin-vector .mw-parser-output  a[href*=".PDF#"].external {
+        background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTYiIHdpZHRoPSIxNiI+PHBhdGggZD0iTTAgMGgxNnYxNkgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMi42MzIgMy44ODVMMTAuNDQ3IDEuN2ExLjI1IDEuMjUgMCAwMC0uODgyLS4zNjdINC4yNUMzLjU2IDEuMzM2IDMgMS44OTYgMyAyLjU4NnYxMC44M2MwIC42OS41NiAxLjI1IDEuMjUgMS4yNWg3LjQ5OGMuNjkgMCAxLjI1LS41NiAxLjI1LTEuMjVWNC43N2MwLS4zMy0uMTMzLS42NS0uMzY3LS44ODV6IiBmaWxsPSIjZDMyZjJmIi8+PHBhdGggZD0iTTQuMjUgMi41ODZ2MTAuODNoNy41VjUuOTE5SDkuMDRhLjYyMy42MjMgMCAwMS0uNjI0LS42MjRWMi41ODZ6bTUuNDE2LjEwMVY0LjY3aDEuOTgyeiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik03LjY3NiA2LjMzN2MtLjIzMi4wMDctLjQ1Ni4xMzYtLjUxNC4zNTItLjExNS40Mi0uMDEgMS4wMDIuMTgyIDEuNzQ3LS4yNi42MjItLjY0OCAxLjQ1OC0uOTIyIDEuOTM3LS41Mi4yNjgtMS4yMjQuNjgyLTEuMzI4IDEuMjAzLS4wODYuNDExLjY3NyAxLjQzNyAxLjk4Mi0uODEyLjU4My0uMTkzIDEuMjE4LS40MyAxLjc4LS41MjQuNDkzLjI2NiAxLjA2OC40NDMgMS40NTMuNDQzLjY2NCAwIC43My0uNzM0LjQ1Ni0xLjAwOC0uMzE4LS4zMTItMS4yMjQtLjIyNi0xLjY3Ny0uMTY5LS40NDctLjI3My0uNzQ3LS42NS0uOTU4LTEuMjA1LjEwMi0uNDIuMjYzLTEuMDU3LjE0LTEuNDU4YS41NjYuNTY2IDAgMDAtLjU5NC0uNTA2em0uMDU2LjQwMmMuMTkzIDAgLjE3NC44MzUuMDQ3IDEuMDYyLS4xMTUtLjM2Mi0uMTEyLTEuMDYyLS4wNDctMS4wNjJ6TTcuNzQgOC44N2MuMjE2LjM5My40OTIuNzA4Ljc4My45MjQtLjU0MS4xMTItMS4wMTIuMzQxLTEuNDI2LjUuMjUyLS40NC40NjgtLjk2My42NDMtMS40MjR6bTIuMTIgMS4wNzhjLjY0LS4wMDUuNzQ1LjE2MS42NjMuMjE2IDAgMC0uMTMuMTU2LS45NzEtLjIwMy4xMTQtLjAwOS4yMTYtLjAxMy4zMDgtLjAxM3ptLTMuNDYxLjg0Yy0uNDk1Ljc5LS43OTIuOTMtLjc5Mi45MTIuMTMzLS4zNTcuNjM4LS43NjguNzkyLS45MTF6IiBmaWxsPSIjZDMyZjJmIi8+PC9zdmc+) center right no-repeat;
+    }
+    /* references */
+    .skin-vector .referencetooltip li {
         border: 0;
     }
-    body.skin-vector .referencetooltip li + li {
+    .skin-vector .referencetooltip li + li {
         border-top: 12px #fff solid;
     }
-    body.skin-vector .wikiEditor-ui-toolbar {
+    /* dialogs */
+    .skin-vector .ui-dialog .ui-widget-header {
+        background: none !important;
+    }
+    .skin-vector .ui-dialog .ui-dialog-titlebar {
+        padding-bottom: 15px !important;
+        padding-right: 24px !important;
+        padding-left: 24px !important;
+        border-bottom: 1px solid rgba(0, 0, 0, .12) !important;
+    }
+    .skin-vector .ui-dialog .ui-dialog-buttonpane {
+        padding: 0 !important;
+    }
+    .skin-vector .ui-widget-header {
+        border: none !important;
+        background: none !important;
+    }
+    .skin-vector .ui-widget-content {
+        background-color: #fff !important;
+        background-image: none !important;
+    }
+    .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
+        border-top: 1px solid rgba(0, 0, 0, .12) !important;
+    }
+    .skin-vector .ui-dialog .ui-dialog-buttonpane button {
+        background-color: #fff !important;
+        background-image: none !important;
+        border: 0px none !important;
+        border-radius: 2px;
+        box-shadow: none;
+        font-size: .875rem;
+        white-space: nowrap;
+        letter-spacing: .0892857143em;
+        text-transform: uppercase;
+        margin-left: 8px;
+        margin-right: 0;
+        max-width: 100%;
+        text-align: right;
+    }
+    .skin-vector .ui-dialog-title {
+        font-size: 1.25rem !important;
+        font-weight: 500 !important;
+        letter-spacing: .02em;
+        line-height: 1.4 !important;
+        margin: 0 !important;
+    }
+    .skin-vector .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
+        border: none;
+    }
+    .skin-vector .ui-dialog {
+        box-shadow: 0px -1px 0px rgb(229, 229, 229), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
+        border: 0px none !important;
+        margin-top: 24px !important;
+        margin-bottom: 24px !important;
+        text-align: left;
+        border-radius: 4px !important;
+    }
+    /* diff comment */
+    .skin-vector .comment {
+        background-color: #f8f8f8;
+        border: 1px solid #eaecf0;
+        border-radius: 2px;
+        padding: 0.25em;
+        white-space: pre-wrap;
+    }
+    .skin-vector .mw-htmlform-submit {
+        margin: 0 0 20px 15px !important;
+    }
+    /* wikieditor */
+    .skin-vector .wikiEditor-ui-toolbar {
         background-color: #eaecf0;
     }
-    body.skin-vector .wikiEditor-ui .wikiEditor-ui-top {
+    .skin-vector .wikiEditor-ui .wikiEditor-ui-top {
         border-bottom: 1px solid #c8ccd1;
-        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
         z-index: 2;
     }
-    body.skin-vector .wikiEditor-ui-toolbar .sections .section {
+    .skin-vector .wikiEditor-ui-toolbar .sections .section {
         border-top: 0;
         background-color: #fff;
     }
-    body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
-    body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
-        color: #202021;
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited {
         background-image: none;
         font-weight: normal;
         padding-left: 12px;
+        height: 35px;
     }
-    body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
-    body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited {
-        font-weight: 500;
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited {
         background-color: #fff;
     }
-    body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:hover {
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:hover {
         text-decoration: none;
     }
-    body.skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:before {
+    .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:before {
         background: none;
     }
-    body.skin-vector .wikiEditor-ui-toolbar .group-format,
-    body.skin-vector .wikiEditor-ui-toolbar .group-insert,
-    body.skin-vector .wikiEditor-ui-toolbar .group-codemirror {
+    .skin-vector .wikiEditor-ui-toolbar .group-format,
+    .skin-vector .wikiEditor-ui-toolbar .group-insert,
+    .skin-vector .wikiEditor-ui-toolbar .group-codemirror {
         border: 0;
     }
-    body.skin-vector #editpage-specialchars a {
-        font-size: smaller;
-    }
-    body.skin-vector .wikEdButtonBarWrapper {
+    .skin-vector .wikEdButtonBarWrapper {
         background-color: #d4d0cc;
     }
-    body.skin-vector .editHelp,
-    body.skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled input,
-    body.skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled textarea {
+    .skin-vector .editHelp,
+    .skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled input,
+    .skin-vector .oo-ui-textInputWidget.oo-ui-widget-enabled textarea {
         text-transform: none;
     }
-    body.skin-vector .suggestions {
-        border-top: 1px #a2a9b1 solid;
-    }
-    body.skin-vector .suggestions-results,
-    body.skin-vector .suggestions-result-current {
+    .skin-vector div.vectorMenu:hover div.menu,
+    .skin-vector div.vectorMenu.menuForceShow div.menu {
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
         border: 0;
     }
-    body.skin-vector .suggestions-result-current {
-        background-color: #36c;
-        color: #fff;
-    }
-    body.skin-vector .suggestions-special {
-        border: 0;
-        border-top: 1px solid #a2a9b1;
-    }
-    body.skin-vector div.vectorMenu:hover div.menu,
-    body.skin-vector div.vectorMenu.menuForceShow div.menu {
-        box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
-        border: 0;
-    }
-    body.skin-vector div.vectorMenu li a:hover, body.skin-vector .vectorMenu #ca-wikilove a:hover {
-        background-color: #36c !important;
-        background-image: none;
-        color: #fff;
-        text-decoration: none;
-    }
-    body.skin-vector .vectorMenu #ca-wikilove a {
-        background: none;
-    }
-    body.skin-vector #ca-view.selected a,
-    body.skin-vector #ca-edit.selected a,
-    body.skin-vector #ca-ve-edit.selected a, 
-    body.skin-vector #ca-addsection.selected a,
-    body.skin-vector #ca-viewsource.selected a,
-    body.skin-vector #ca-history.selected a,
-    body.skin-vector #ca-watch.selected a,
-    body.skin-vector #ca-unwatch.selected a {
-        color: #0645ad;
-    }
-    body.skin-vector #p-cactions .vector-menu-content-list li.selected a:hover {
-        background-color: #fff !important;
-        color: #0645ad !important;
-    }
-    body.skin-vector #p-cactions .vector-menu-content-list li a:hover {
-        color: #fff !important;
-        background: #36c;
-        text-decoration: none;
-    }
-    body.skin-vector .selected a:hover {
+    .skin-vector .selected a:hover {
         background-color: transparent !important;
     }
-    body.skin-vector .mwe-popups-extract {
-        hyphens: auto;
-        text-align: justify;
-    }
-    body.skin-vector table ul,
-    body.skin-vector table ol,
-    body.skin-vector table p,
-    body.skin-vector .reflist ul,
-    body.skin-vector .reflist ol,
-    body.skin-vector ul.references,
-    body.skin-vector ol.references,
-    body.skin-vector .toc,
-    body.skin-vector .toc ul,
-    body.skin-vector .catlinks,
-    body.skin-vector .catlinks ul {
-        font-size: inherit !important
-    }
-    body.skin-vector .cx-header__title {
+    .skin-vector .cx-header__title {
         position: fixed;
         left: 10px;
         top: 12px;
         z-index: 45;
     }
-    body.skin-vector .cx-header__bar {
+    .skin-vector .cx-header__bar {
         margin-top: 30px;
         border-top: none !important;
     }
-    body.skin-vector #ca-watch,
-    body.skin-vector #ca-unwatch,
-    body.skin-vector #ca-history {
-        display: inline-block !important;
+    /* visualeditor */
+    .skin-vector .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
+        margin-top: 64px;
+        z-index: 45;
     }
-    body.skin-vector #proveit-logo {
-        font-size: small;
-        font-weight: 500;
+    /* hidden items */
+    .skin-vector .mw-changeslist-legend,
+    .skin-vector .hatnote img {
+        display: none;
     }
-    body.skin-vector .suggestions-result .highlight {
-        font-weight: 700;
+    /* no background */
+    .skin-vector .portal h3,
+    .skin-vector .vector-menu-portal h3,
+    .skin-vector .mw-tag-markers {
+        background: none;
     }
-    body.skin-vector #wpSave,
-    body.skin-vector #wpPreview,
-    body.skin-vector #wpDiff {
-        font-weight: 500;
+    /* no borders */
+    .skin-vector h1,
+    .skin-vector h2,
+    .skin-vector h3,
+    .skin-vector h4,
+    .skin-vector h5,
+    .skin-vector h6 {
+        border-bottom: none;
     }
-    body.skin-vector .mw-diff-movedpara-left:after,
-    body.skin-vector .mw-diff-movedpara-right:after {
-        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    .skin-vector img,
+    .skin-vector html .thumbimage {
+        border: 0;
     }
+    /* no shadow */
+    .skin-vector #editform,
+    .skin-vector #mw-watchlist-resetbutton,
+    .skin-vector #mw-history-compare {
+        box-shadow: none;
+    }
+    /* print screen items */
     @media print {
-        body.skin-vector .printfooter,
-        body.skin-vector .mw-footer,
-        body.skin-vector .thumb,
-        body.skin-vector table,
-        body.skin-vector ol,
-        body.skin-vector dl,
-        body.skin-vector ul,
-        body.skin-vector h3,
-        body.skin-vector h4,
-        body.skin-vector h5,
-        body.skin-vector h6 {
-            font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        /* font */
+        .skin-vector .printfooter,
+        .skin-vector .mw-footer,
+        .skin-vector .thumb,
+        .skin-vector table,
+        .skin-vector ol,
+        .skin-vector dl,
+        .skin-vector ul,
+        .skin-vector h3,
+        .skin-vector h4,
+        .skin-vector h5,
+        .skin-vector h6 {
+            font-family: Roboto, sans-serif;
         }
-        body.skin-vector .toctitle #mw-toc-heading {
+        /* no pseudo-navbar, no padding */
+        .skin-vector,
+        .skin-vector #left-navigation,
+        .skin-vector #right-navigation,
+        .skin-vector #mw-panel {
+            padding-top: 0 !important;
+        }
+        /* table of contents */
+        .skin-vector #toc,
+        .skin-vector .toc {
+            width: 100%;
+            border: none;
+        }
+        .skin-vector .tocnumber {
+            display: block;
+        }
+        .skin-vector .toctitle #mw-toc-heading {
             font-size: 1rem !important;
             font-weight: 700;
         }
-        body.skin-vector .toc li a {
+        .skin-vector .toc li a {
             padding: 0 16px !important;
         }
-        body.skin-vector #proveit {
+        /* hidden items */
+        .skin-vector #proveit {
             display: none;
         }
     }
+    /* dark mode items */
     @media (prefers-color-scheme: dark) {
-        body.skin-vector #p-personal {
-            color: #fff;
-            background-color: #212121;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        body.skin-vector .portal h3,
-        body.skin-vector .vector-menu-portal h3,
-        body.skin-vector #p-personal a,
-        body.skin-vector .catlinks {
-            color: #fff;
-        }
-        body.skin-vector #pt-userpage a::before, body.skin-vector #pt-anonuserpage::before,
-        body.skin-vector #pt-notifications-alert,
-        body.skin-vector #pt-notifications-notice,
-        body.skin-vector .vector-menu-dropdown h3:after {
-            filter: invert(1);
-        }
-        body.skin-vector {
+        /* backgrounds */
+        .skin-vector,
+        .skin-vector #p-personal {
             background: #212121;
         }
-        body.skin-vector #mw-page-base,
-        body.skin-vector #content,
-        body.skin-vector .vector-menu-tabs .selected {
-            background: #424242;
-        }  
-        body.skin-vector.ns-talk dl dl,
-        body.skin-vector.ns-talk dl dl dl dl,
-        body.skin-vector.ns-talk dl dl dl dl dl dl,
-        body.skin-vector.ns-talk dl dl dl dl dl dl dl dl,
-        body.skin-vector.ns-talk dl dl dl dl dl dl dl dl dl dl {
+        .skin-vector #mw-page-base,
+        .skin-vector .mw-body,
+        .skin-vector .vector-menu-tabs .selected,
+        .skin-vector .vector-menu-tabs li.new.selected {
             background: #424242;
         }
-        
-        body.skin-vector.ns-talk dl,
-        body.skin-vector.ns-talk dl dl dl,
-        body.skin-vector.ns-talk dl dl dl dl dl,
-        body.skin-vector.ns-talk dl dl dl dl dl dl dl,
-        body.skin-vector.ns-talk dl dl dl dl dl dl dl dl dl {
-            background: #616161;
-        } 
-        body.skin-vector .mw-body,
-        body.skin-vector.ns-talk dl,
-        body.skin-vector .catlinks {
-            border-color: #fff;
-        }
-        body.skin-vector .vector-menu-tabs,
-        body.skin-vector .vector-menu-tabs a,
-        body.skin-vector #mw-head .vector-menu-dropdown h3 {
-            background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0) 0,#fff 100%);
-        }
-        body.skin-vector #mw-page-base {
-            background-image: linear-gradient(to bottom,#424242 50%, #212121 100%);
-        }
-        body.skin-vector .vector-menu-tabs li {
-            background-image: linear-gradient(to top,#ffffff 0,#757575 1px,#424242 100%);
-        }
-        body.skin-vector .vector-menu-tabs a,
-        body.skin-vector .vector-menu-tabs .selected a,
-        body.skin-vector #p-cactions-label,
-        body.skin-vector .mw-indicator a,
-        body.skin-vector #firstHeading,
-        body.skin-vector .mw-headline,
-        body.skin-vector #content p,
-        body.skin-vector #content ul,
-        body.skin-vector #content ol,
-        body.skin-vector #content dl,
-        body.skin-vector .hatnote,
-        body.skin-vector .mw-diff-movedpara-left:after,
-        body.skin-vector .mw-diff-movedpara-right:after,
-        body.skin-vector #pagehistory li.selected,
-        body.skin-vector .diff,
-        body.skin-vector .diff .diff-context {
-            color: #fff;
-        }
-        body.skin-vector .mw-footer li {
-            color: #fff !important;
-        }
-        body.skin-vector #content p a,
-        body.skin-vector #content ul a,
-        body.skin-vector #content ol a,
-        body.skin-vector #content dl a,
-        body.skin-vector .mw-editsection a,
-        body.skin-vector .hatnote a,
-        body.skin-vector #mw-panel a,
-        body.skin-vector .catlinks a,
-        body.skin-vector .mw-footer a {
-            color: #82b1ff;
-        }
-        body.skin-vector #content p a:visited,
-        body.skin-vector #content ul a:visited,
-        body.skin-vector #content ol a:visited,
-        body.skin-vector #content dl a:visited,
-        body.skin-vector .mw-editsection a:visited,
-        body.skin-vector .hatnote a:visited,
-        body.skin-vector #mw-panel a:visited,
-        body.skin-vector .catlinks a:visited,
-        body.skin-vector .mw-footer a:visited {
-            color: #b388ff;
-        }
-        body.skin-vector #content .new {
-            color: #ef5350;
-        }
-        body.skin-vector #content .new:visited {
-            color: #f44336;
-        }
-        body.skin-vector #pagehistory li.selected {
-            background-color: #212121;
-            outline: 1px dashed #fff;
-        }
-        body.skin-vector span.comment a,
-        body.skin-vector .navbox,
-        body.skin-vector .navbox a,
-        body.skin-vector .navbox ul,
-        body.skin-vector .navbox ol,
-        body.skin-vector .navbox-list,
-        body.skin-vector .navbox-list a {
-            color: initial !important;
-        }
-        body.skin-vector .warningbox {
-            background-color: rgba(255, 193, 7, 0.5);
-            border-color: #ffe57f;
-        }
-        body.skin-vector .catlinks {
-            background-color: #616161;
-        }
-        body.skin-vector .mw-plusminus-pos.mw-diff-bytes {
-            color: #4caf50;
-        }
-        body.skin-vector .mw-plusminus-neg.mw-diff-bytes {
-            color: #d32f2f;
-        }
-        body.skin-vector .diff .diff-addedline,
-        body.skin-vector .diff .diff-deletedline,
-        body.skin-vector .diff .diff-context,
-        body.skin-vector #editpage-specialchars {
+        .skin-vector .warningbox,
+        .skin-vector .diff .diff-addedline,
+        .skin-vector .diff .diff-deletedline,
+        .skin-vector .diff .diff-context,
+        .skin-vector #editpage-specialchars {
             background: #757575;
         }
-        body.skin-vector .diff-deletedline  {
-            border-color: #ffe57f;
-        }
-        body.skin-vector .diff-deletedline .diffchange-inline {
+        .skin-vector .diff-deletedline .diffchange-inline {
             background: #ffe57f;
         }
-        body.skin-vector .diff-addedline {
-            border-color: #82b1ff;
-        }
-        body.skin-vector .diffchange-inline {
+        .skin-vector .diffchange-inline {
             background: #82b1ff;
         }
-        body.skin-vector .diff-deletedline .diffchange-inline,
-        body.skin-vector .diffchange-inline {
+        .skin-vector .vector-menu-tabs,
+        .skin-vector .vector-menu-tabs a,
+        .skin-vector #mw-head .vector-menu-dropdown h3 {
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+        }
+        .skin-vector #mw-page-base {
+            background-image: linear-gradient(to bottom, #424242 50%, #212121 100%);
+        }
+        .skin-vector .vector-menu-tabs li {
+            background-image: linear-gradient(to top, #ffffff 0, #757575 1px, #424242 100%);
+        }
+        .skin-vector .vector-menu-dropdown .vector-menu-content-list,
+        .skin-vector .vector-menu-dropdown .vector-menu-checkbox:checked ~ .skin-vector .vector-menu-content .vector-menu-content-list,
+        .skin-vector #p-cactions .vector-menu-content-list li.selected a:hover,
+        .skin-vector .wikiEditor-ui-toolbar .booklet > .index > .current,
+        .skin-vector #wpTextbox1 {
+            background-color: #424242;
+        }
+        .skin-vector #p-cactions .vector-menu-content-list li.selected a:hover {
+            background-color: #424242 !important;
+        }
+        .skin-vector #p-cactions .vector-menu-content-list li a:hover,
+        .skin-vector .cx-callout,
+        .skin-vector .mw-body .mw-parser-output .ambox,
+        .skin-vector .ombox tbody,
+        .skin-vector .infobox,
+        .skin-vector #toc,
+        .skin-vector .toc,
+        .skin-vector .toccolours,
+        .skin-vector .mwe-popups,
+        .skin-vector .mwe-popups-container,
+        .skin-vector .rt-tooltip,
+        .skin-vector .rt-tooltipTail:after,
+        .skin-vector .thumbinner,
+        .skin-vector .gallerybox .thumb,
+        .skin-vector .wikitable,
+        .skin-vector .navbox,
+        .skin-vector .navbox-subgroup,
+        .skin-vector .catlinks,
+        .skin-vector .mw-babel-wrapper,
+        .skin-vector .mw-globaluserpage-footer,
+        .skin-vector #pagehistory li.selected,
+        .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
+        .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited,
+        .skin-vector .wikiEditor-ui-toolbar .sections .section,
+        .skin-vector .wikiEditor-ui-toolbar .group .tool-select .options,
+        .skin-vector .wikiEditor-ui-toolbar .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle,
+        .skin-vector .editOptions,
+        .skin-vector.mw-special-Preferences .oo-ui-tabPanelLayout-active {
+            background-color: #616161;
+        }
+        .skin-vector table[style*=background],
+        .skin-vector #documentation-meta-data {
+            background-color: #616161 !important;
+        }
+        .skin-vector .cx-callout a:hover,
+        .skin-vector .wikitable > tr > th,
+        .skin-vector .wikitable > * > tr > th,
+        .skin-vector .navbox th,
+        .skin-vector .navbox-title,
+        .skin-vector .navbox-even,
+        .skin-vector .navbox-abovebelow,
+        .skin-vector th.navbox-group,
+        .skin-vector .navbox-subgroup .navbox-title,
+        .skin-vector .wikiEditor-ui-toolbar,
+        .skin-vector .wikiEditor-ui-toolbar .group .tool-select .menu .options .option:hover,
+        .skin-vector .wikiEditor-ui-toolbar .booklet > .index > :hover,
+        .skin-vector .wikiEditor-ui-toolbar .page-characters div span:hover {
+            background-color: #757575;
+        }
+        .skin-vector .template-documentation {
+            background-color: #546e7a;
+        }
+        .skin-vector .mwe-popups .mwe-popups-extract[dir='ltr']:after {
+            background-image: linear-gradient(to right,rgba(255,255,255,0),#616161 50%);
+        }
+        .skin-vector ol.references li:target,
+        .skin-vector sup.reference:target {
+            background-color: #3949ab;
+        }
+        .skin-vector code {
+            background-color: rgba(117, 117, 117, 0.5);
+        }
+        .skin-vector .comment {
+            background-color: rgba(117, 117, 117, 0.5) !important;
+        }
+        .skin-vector .tmbox {
+            background-color: rgba(255, 193, 7, 0.5) !important;
+        }
+        .skin-vector .tmbox td,
+        .skin-vector .boilerplate,
+        .skin-vector .boilerplate.metadata,
+        .skin-vector.ns-talk .mw-body div:not([class]),
+        .skin-vector.ns-talk .mw-body span:not([class]) {
+            background-color: transparent !important;
+        }
+        /* font colors */
+        .skin-vector #p-personal,
+        .skin-vector .portal h3,
+        .skin-vector .vector-menu-portal h3,
+        .skin-vector #p-personal a,
+        .skin-vector #p-personal .new,
+        .skin-vector #p-personal .new:visited, 
+        .skin-vector .cx-callout a,
+        .skin-vector .cx-callout a:visited,
+        .skin-vector .vector-menu-tabs a,
+        .skin-vector .vector-menu-tabs a:visited,
+        .skin-vector .vector-menu-tabs .selected a,
+        .skin-vector .vector-menu-tabs .new.selected a,
+        .skin-vector #p-cactions-label,
+        .skin-vector #p-cactions .vector-menu-content-list li a,
+        .skin-vector #xtools,
+        .skin-vector .mw-indicator a,
+        .skin-vector .mw-body-content,
+        .skin-vector .mw-body .ve-ui-surface,
+        .skin-vector #firstHeading,
+        .skin-vector .mw-content-ltr .mw-editsection-bracket:first-of-type,
+        .skin-vector .mw-content-rtl .mw-editsection-bracket:not(:first-of-type),
+        .skin-vector .mw-editsection-divider,
+        .skin-vector .mw-content-rtl .mw-editsection-bracket:first-of-type,
+        .skin-vector .mw-content-ltr .mw-editsection-bracket:not(:first-of-type),
+        .skin-vector .mw-body h1,
+        .skin-vector .mw-body-content h1,
+        .skin-vector .mw-body-content h2,
+        .skin-vector .mw-body h3,
+        .skin-vector .mw-body h4,
+        .skin-vector .mw-body h5,
+        .skin-vector .mw-body h6,
+        .skin-vector .mw-body p,
+        .skin-vector .mw-body ul,
+        .skin-vector .mw-body ol,
+        .skin-vector .mw-body dl,
+        .skin-vector .mw-headline,
+        .skin-vector .hatnote,
+        .skin-vector .infobox,
+        .skin-vector #toc,
+        .skin-vector .toc,
+        .skin-vector .toctitle #mw-toc-heading,
+        .skin-vector .toctogglelabel,
+        .skin-vector .toc li a,
+        .skin-vector .tocnumber,
+        .skin-vector .toctext,
+        .skin-vector .mwe-popups-extract,
+        .skin-vector .mwe-popups-extract:visited,
+        .skin-vector .mwe-popups-title,
+        .skin-vector .mwe-popups-container .citation,
+        .skin-vector .rt-tooltip,
+        .skin-vector .wikitable,
+        .skin-vector .wikitable > tr > th,
+        .skin-vector .wikitable > * > tr > th,
+        .skin-vector .navbox,
+        .skin-vector .navbox th,
+        .skin-vector .navbox-title,
+        .skin-vector .catlinks,
+        .skin-vector .messagebox,
+        .skin-vector .errorbox,
+        .skin-vector .warningbox,
+        .skin-vector .successbox,
+        .skin-vector form,
+        .skin-vector #pagehistory li.selected,
+        .skin-vector .diff,
+        .skin-vector .diff .diff-context,
+        .skin-vector .diff-currentversion-title,
+        .skin-vector .mw-diff-movedpara-left:after,
+        .skin-vector .mw-diff-movedpara-right:after,
+        .skin-vector .watchlistDetails,
+        .skin-vector .mw-changeslist h4,
+        .skin-vector .wikiEditor-ui-toolbar .group .tool-select .options .option,
+        .skin-vector .wikiEditor-ui-toolbar .group .tool-select .menu .options .option:hover,
+        .skin-vector .wikiEditor-ui-toolbar .booklet > .index > .current,
+        .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a,
+        .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a:visited,
+        .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current,
+        .skin-vector .wikiEditor-ui-toolbar .tabs span.tab a.current:visited,
+        .skin-vector .wikiEditor-ui-toolbar .label,
+        .skin-vector .wikiEditor-ui-toolbar .group .tool-select .label,
+        .skin-vector .wikiEditor-ui-toolbar .page-characters div span,
+        .skin-vector .wikiEditor-ui-toolbar .page-table th,
+        .skin-vector .wikiEditor-ui-toolbar .page-table .cell,
+        .skin-vector #wpTextbox1,
+        .skin-vector .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle,
+        .skin-vector .editOptions,
+        .skin-vector .mw-number-text {
+            color: #fff;
+        }
+        .skin-vector #p-cactions .vector-menu-content-list li.selected a:hover,
+        .skin-vector code,
+        .skin-vector code a,
+        .skin-vector .selflink,
+        .skin-vector .mw-selflink,
+        .skin-vector .mw-footer li,
+        .skin-vector .comment,
+        .skin-vector.ns-talk .mw-body div:not([class]),
+        .skin-vector.ns-talk .mw-body span:not([class]) {
+            color: #fff !important;
+        }
+        .skin-vector .wikitable td[style*=background],
+        .skin-vector .wikitable tr[style*=background],
+        .skin-vector .wikitable th[style*=background],
+        .skin-vector .diff-deletedline .diffchange-inline,
+        .skin-vector .diffchange-inline {
             color: #212121;
         }
-        body.skin-vector .mw-parser-output .inline-quote-talk {
+        .skin-vector .autocomment a {
+            color: #b0bec5 !important;
+        }
+        .skin-vector #pt-anonuserpage,
+        .skin-vector #siteSub,
+        .skin-vector #contentSub,
+        .skin-vector #contentSub2,
+        .skin-vector .oo-ui-labelWidget.oo-ui-inline-help,
+        .skin-vector .CategoryTreeEmptyBullet,
+        .skin-vector .results-info {
+            color: #9e9e9e;
+        }
+        .skin-vector a,
+        .skin-vector .portal li a,
+        .skin-vector .mw-parser-output a,
+        .skin-vector .CategoryTreeToggle {
+            color: #82b1ff;
+        }
+        .skin-vector .wikitable td[style*=background] a,
+        .skin-vector .wikitable tr[style*=background] a,
+        .skin-vector .wikitable th[style*=background] a {
+            color: #0d47a1;
+        }
+        .skin-vector a:visited,
+        .skin-vector .portal li a:visited,
+        .skin-vector .mw-parser-output a:visited {
+            color: #b388ff;
+        }
+        .skin-vector .wikitable td[style*=background] a:visited,
+        .skin-vector .wikitable tr[style*=background] a:visited,
+        .skin-vector .wikitable th[style*=background] a:visited {
+            color: #311b92;
+        }
+        .skin-vector .mw-body .new {
+            color: #ef5350;
+        }
+        .skin-vector .mw-body .new:visited {
+            color: #f44336;
+        }
+        .skin-vector .vector-menu-tabs .new a {
+            color: #ef9a9a;
+        }
+        .skin-vector .mw-body .external,
+        .skin-vector .mw-parse-output .external,
+        .skin-vector .mwe-popups .external {
+            color: #90caf9;
+        }
+        .skin-vector .wikitable td[style*=background] .external,
+        .skin-vector .wikitable tr[style*=background] .external,
+        .skin-vector .wikitable th[style*=background] .external {
+            color: #283593;
+        }
+        .skin-vector .mw-body .external:visited,
+        .skin-vector .mw-parse-output .external:visited,
+        .skin-vector .mwe-popups .external:visited {
+            color: #b39ddb;
+        }
+        .skin-vector .wikitable td[style*=background] .external:visited,
+        .skin-vector .wikitable tr[style*=background] .external:visited,
+        .skin-vector .wikitable th[style*=background] .external:visited {
+            color: #4527a0;
+        }
+        .skin-vector .mw-parser-output .inline-quote-talk,
+        .skin-vector .mw-plusminus-pos.mw-diff-bytes,
+        .skin-vector .mw-search-result-data,
+        .skin-vector .mw-ui-feature-user-count {
             color: #4caf50;
+        }
+        .skin-vector .mw-plusminus-neg.mw-diff-bytes {
+            color: #d32f2f;
+        }
+        .skin-vector .mw-babel-box,
+        .skin-vector .mw-babel-box a {
+            color: initial;
+        }
+        /* border colors */
+        .skin-vector .mw-body,
+        .skin-vector .vector-menu-dropdown .vector-menu-content-list,
+        .skin-vector .vector-menu-dropdown .vector-menu-checkbox:checked ~ .skin-vector .vector-menu-content .vector-menu-content-list,
+        .skin-vector .navbox,
+        .skin-vector .gallerybox .thumb,
+        .skin-vector .catlinks,
+        .skin-vector .warningbox,
+        .skin-vector .mw-globaluserpage-footer,
+        .skin-vector.ns-talk dl {
+            border-color: #fff;
+        }
+        .skin-vector #pt-notifications-alert .mw-echo-notifications-badge:after,
+        .skin-vector #pt-notifications-notice .mw-echo-notifications-badge:after {
+            border-color: #212121;
+        }
+        .skin-vector .navbox-list,
+        .skin-vector tr + tr > .navbox-abovebelow,
+        .skin-vector tr + tr > .navbox-group,
+        .skin-vector tr + tr > .navbox-image,
+        .skin-vector tr + tr > .navbox-list,
+        .skin-vector .rt-tooltip {
+            border-color: #616161;
+        }
+        .skin-vector .mwe-popups.flipped-y:after,
+        .skin-vector .mwe-popups.flipped-x-y:after{
+            border-top-color: #616161;
+        }
+        .skin-vector .mwe-popups.mwe-popups-no-image-pointer:after {
+            border-bottom-color: #616161;
+        }
+        .skin-vector .wikiEditor-ui-toolbar .group {
+            border-color: #757575;
+        }
+        .skin-vector .wikiEditor-ui .wikiEditor-ui-top {
+            border-bottom: 1px solid #616161;
+        }
+        .skin-vector .diff-deletedline {
+            border-color: #ffe57f;
+        }
+        .skin-vector .diff-addedline {
+            border-color: #82b1ff;
+        }
+        /* pseudo-navbar */
+        .skin-vector #p-personal {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .skin-vector .oo-ui-icon-bell,
+        .skin-vector .mw-ui-icon-bell:before {
+            background-image: linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8dGl0bGU+CiAgICBiZWxsCiAgPC90aXRsZT48ZyBmaWxsPSIjZmZmIj4KICA8cGF0aCBkPSJNMTYgN2E1LjM4IDUuMzggMCAwIDAtNC40Ni00Ljg1QzExLjYgMS40NiAxMS41MyAwIDEwIDBTOC40IDEuNDYgOC40NiAyLjE1QTUuMzggNS4zOCAwIDAgMCA0IDd2NmwtMiAydjFoMTZ2LTFsLTItMnptLTYgMTNhMyAzIDAgMCAwIDMtM0g3YTMgMyAwIDAgMCAzIDN6Ii8+PC9nPgo8L3N2Zz4K);
+        }
+        .skin-vector .oo-ui-icon-tray,
+        .skin-vector .mw-ui-icon-tray:before {
+            background-image: linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KCTx0aXRsZT4KCQl0cmF5Cgk8L3RpdGxlPjxnIGZpbGw9IiNmZmYiPgoJPHBhdGggZD0iTTE3IDFIM2EyIDIgMCAwIDAtMiAydjE0YTIgMiAwIDAgMCAyIDJoMTRhMiAyIDAgMCAwIDItMlYzYTIgMiAwIDAgMC0yLTJ6bTAgMTJoLTRsLTEgMkg4bC0xLTJIM1YzaDE0eiIvPgo8L2c+PC9zdmc+Cg==);
+        }
+        /* code / diff comment */
+        .skin-vector code {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .skin-vector .comment {
+            border: 1px solid rgba(0, 0, 0, 0.2) !important;
+        }
+        /* wikitable */
+        .skin-vector .jquery-tablesorter th.headerSort {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjkiIHZpZXdCb3g9IjAgMCAyMSA5Ij48cGF0aCBkPSJNMTQuNSA1bC00IDQtNC00em0wLTFsLTQtNC00IDR6IiBmaWxsPSIjZmZmIi8+PC9zdmc+) !important;
+        }
+        .skin-vector .jquery-tablesorter th.headerSortUp {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNNi41IDRsNC00IDQgNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=) !important;
+        }
+        .skin-vector .jquery-tablesorter th.headerSortDown {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNMTQuNSAwbC00IDQtNC00eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==) !important;
+        }
+        /* pictures */
+        .skin-vector .mw-content-ltr .magnify a {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
+        }
+        /* history edit page */
+        .skin-vector #pagehistory li.selected {
+            outline: 1px dashed #fff;
+        }
+        /* invert filter */
+        .skin-vector #pt-userpage a::before,
+        .skin-vector #pt-anonuserpage::before,
+        .skin-vector .vector-menu-dropdown h3:after,
+        .skin-vector .mwe-popups .mw-ui-icon:before,
+        .skin-vector .wikiEditor-ui-toolbar .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon,
+        .skin-vector .wikiEditor-ui-toolbar .oo-ui-popupToolGroup-handle .oo-ui-indicatorElement-indicator,
+        .skin-vector .oo-ui-fieldsetLayout.mw-collapsible .mw-collapsible-toggle .oo-ui-iconElement-icon,
+        .skin-vector .wikiEditor-ui .oo-ui-buttonElement-button,
+        .skin-vector .wikiEditor-ui-toolbar .group .tool-select .label:after,
+        .skin-vector .ve-init-mw-editSwitch .oo-ui-popupToolGroup.oo-ui-iconElement .oo-ui-popupToolGroup-handle .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon {
+            filter: invert(1);
+        }
+        /* opacity */
+        .skin-vector .tool.oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {
+            opacity: 1;
+        }
+        /* hidden items */
+        .skin-vector #pt-darkmode-link {
+            display: none;
+        }
+        /* external links */
+        .skin-vector .mw-parser-output .external {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iIzkwY2FmOSI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
+        }
+        .skin-vector .wikitable td[style*=background] .external,
+        .skin-vector .wikitable tr[style*=background] .external,
+        .skin-vector .wikitable th[style*=background] .external {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iIzI4MzU5MyI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
+        }
+        /* commons */
+        .skin-vector.ns-6 #filetoc {
+            background-color: #616161;
+            border-color: #fff;
+        }
+        .skin-vector #mw-sharedupload {
+            background-color: #616161 !important;
+            border-color: #fff !important;
+        }
+        .skin-vector.ns-6 .fileinfo-paramfield,
+        .skin-vector.ns-6 .mw-parser-output .taxontree-lcell,
+        .skin-vector.ns-6 .mw-parser-output .wikidatainfobox-lcell {
+            background-color: #757575;
+        }
+        .skin-vector.ns-6 .licensetpl_wrapper {
+            background-color: #757575 !important;
+        }
+        .skin-vector.ns-6 .layouttemplate {
+            background-color: #616161 !important;
+            border-color: #fff !important;
+        }
+        .skin-vector.ns-6 .mw_metadata th,
+        .skin-vector.ns-6 .mw_metadata td {
+            background-color: #616161;
         }
     }
 }
-    
+
+@-moz-document domain("wikidata.org") {
+    .skin-vector #improvedsearch-toggle {
+        position: fixed;
+        cursor: pointer;
+        width: auto;
+        max-width: none;
+        height: 32px;
+        border: 0;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        z-index: 50;
+        right: 65%;
+        left: 2em;
+        top: 22px;
+    }
+    .skin-vector #searchInput,
+    .skin-vector #searchInput:hover,
+    .skin-vector #searchInput:focus {
+        padding-left: 40px;
+    }
+    .skin-vector .suggestions {
+        right: 65% !important;
+        left: 2em !important;
+        top: 50px !important;
+    }
+    @media (prefers-color-scheme: dark) {
+        .skin-vector #improvedsearch-toggle {
+            filter: invert(0);
+        }
+    }
+}
+
+@-moz-document domain("commons.wikimedia.org") {
+    @media (prefers-color-scheme: dark) {
+        .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget {
+            color: #9e9e9e;
+            box-shadow: inset 0 -2px 0 0 #9e9e9e;
+        }
+        .oo-ui-tabSelectWidget-frameless:hover .oo-ui-tabOptionWidget:hover,
+        .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
+            color: #fff;
+            box-shadow: inset 0 -2px 0 0 #fff;
+        }
+        .wbmi-entityview-captionsPanel {
+            background: #616161;
+            color: #fff;
+        }
+        .wbmi-entityview-captionsPanel .wbmi-caption-value.wbmi-entityview-emptyCaption {
+            color: #bdbdbd;
+        }
+        .description,
+        .mw-filepage-resolutioninfo,
+        .wbmi-entityview-captions-header,
+        #wdinfobox .mw-collapsible-text,
+        #filehistory,
+        #filelinks,
+        #globalusage,
+        #metadata,
+        .mw_metadata {
+            color: #fff;
+        }
+        .mw-category-media h2 {
+            color: #fff !important;
+        }
+        .fileinfotpl-type-information {
+            color: #fff;
+            background-color: #616161;
+        }
+        .createdwithtemplate {
+            color: #fff !important;
+        }
+        .layouttemplate {
+            background-color: #616161 !important;
+            color: #fff;
+            border-color: #fff !important;
+        }
+        .mw-filepage-resolutioninfo a,
+        .layouttemplate a,
+        .mw_metadata a {
+            color: #82b1ff;
+        }
+        a.extiw {
+            color: #82b1ff !important;
+        }
+        .mw-filepage-resolutioninfo a:visited,
+        .layouttemplate a:visited,
+        .mw_metadata a:visited {
+            color: #b388ff;
+        }
+        a.extiw:visited {
+            color: #b388ff !important;
+        }
+        #wdinfoboxcaption {
+            background-color: transparent !important;
+        }
+        .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning {
+            background-color: #ff9800;
+            border-color: #f57c00;
+        }
+        .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning .oo-ui-labelElement-label {
+            color: #212121;
+        }
+    }
+}
+
 @-moz-document domain("wikipedia.org") {
     @media (prefers-color-scheme: dark) {
         .mw-wiki-logo {
@@ -812,23 +1236,30 @@
 }
 
 @-moz-document domain("pt.wikipedia.org") {
+    /* fonte: roboto */
+    .fastb-button,
+    #lastEditUser {
+        font-family: Roboto, sans-serif !important;
+    }
+    /* remove sublinhado ao passar o mouse num link de userbox */
     .wikipediauserbox a {
         text-decoration: none;
     }
+    /* infocaixas */
     .infobox_v2 {
         background-color: #fff;
-        color: rgba(0,0,0,.87);
-        border: 1px solid rgba(0,0,0,.12);
+        color: rgba(0, 0, 0, .87);
+        border: 1px solid rgba(0, 0, 0, .12);
         border-radius: 4px;
         border-collapse: collapse;
     }
     .infobox_v2 tr {
-        border-top-color: rgba(0,0,0,.12);
+        border-top-color: rgba(0, 0, 0, .12);
         border-top-width: 1px;
         border-top-style: solid;
     }
     .infobox_v2 tr:hover {
-        background-color: rgba(0,0,0,.04);
+        background-color: rgba(0, 0, 0, .04);
     }
     .infobox_v2 tr .floatnone img {
         margin: 8px 0;
@@ -837,7 +1268,7 @@
         background-color: transparent !important;
         text-align: left !important;
         font-weight: 500;
-        color: initial !important;
+        color: inherit !important;
         font-family: inherit !important;
         padding-right: 8px !important;
         padding-left: 8px !important;
@@ -859,7 +1290,7 @@
     .infobox_v2 .topo {
         background-color: transparent !important;
         background-image: none !important;
-        color: rgba(0,0,0,.87) !important;
+        color: rgba(0, 0, 0, .87) !important;
         padding-right: 8px !important;
         padding-left: 8px !important;
         height: 52px;
@@ -872,34 +1303,33 @@
     .infobox_v2 .topo small span {
         font-weight: 400;
     }
-    #lastEditUser {
-        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
-        font-weight: 400 !important;
-        font-size: 12px !important;
+    /* blocos de citações */
+    .mw-parser-output .flexquote {
+        background-color: #616161;
     }
-    .bkl-link {
-        background: none;
+    /* gadget: detector de desambiguações */
+    /** remove o fundo amarelo **/
+    .mw-disambig {
+        background: transparent;
     }
-    .bkl-link-sup {
-        vertical-align: text-top;
+    /** define margem e itálico **/
+    .mw-disambig::after {
         margin-left: 0.2rem;
         font-style: italic;
     }
-    .bkl-link-sup::before {
-        content: "(";
-    }
-    .bkl-link-sup::after {
-        content: ")";
-    }
-    .hatnote .bkl-link-sup,
+    /* itens que não serão mostrados */
+    /** inativa o gadget detector de desambiguações na predefinição ver desambig **/
+    .hatnote .mw-disambig::after,
+    /** remove ícones de bandeiras **/
     .flagicon,
+    /** remove aviso de cópia na página de edição **/
     #editpage-copywarn {
         display: none;
     }
+    /* gadget: fastbuttons */
     .fastb-button {
-        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
         background-color: #3366cc !important;
-        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
         display: inline-block;
         font-size: .875rem;
         font-weight: 500;
@@ -917,16 +1347,16 @@
         letter-spacing: .0892857143em;
     }
     .fastb-button:active {
-        background-color: hsla(0,0%,60%,.4);
+        background-color: hsla(0, 0%, 60%, .4);
         background-image: none;
-        box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 3px rgba(0,0,0,.12),0 4px 15px 0 rgba(0,0,0,.2);
+        box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 3px rgba(0, 0, 0, .12), 0 4px 15px 0 rgba(0, 0, 0, .2);
     }
     .fastb-button:focus,
     .fastb-button:hover {
-        box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
     }
     .fastb-button:hover {
-        background-image: linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.12));
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, .12), rgba(0, 0, 0, .12));
     }
     #fastb-menu .fastb-button:active {
         background-color: #7b1fa2;
@@ -950,8 +1380,8 @@
     .fastb-disabled-button,
     .fastb-disabled-button:active,
     .fastb-disabled-button:hover {
-        background-color: rgba(0,0,0,.12) !important;
-        color: rgba(0,0,0,.26) !important;
+        background-color: rgba(0, 0, 0, .12) !important;
+        color: rgba(0, 0, 0, .26) !important;
         box-shadow: none;
         background-image: none;
         font-size: small;
@@ -967,49 +1397,73 @@
     .fastb-button.fastb-link-button {
         margin-right: 0.25em;
     }
-    .noprint.plainlinksneverexpand.navbar {
-        display: inline-flex;
-    }
-    .NavHead {
-        font-weight: 500 !important;
-    }
+    /* script: ajustes automáticos */
     #Ajustes\ automáticos {
         margin-left: 0.5em;
     }
-    #diff-tools > ul > li:before, #diff-tools > ul > li:after, #diff-tools > ul > li > ul > li:not(:first-child):before,
-    #diff-tools > ul > li > ul > li > ul > li:not(:first-child)::before {
-        font-size: 0;
-    }
-    #diff-tools li,
-    #diff-tools ul {
-        font-size: small;
-    }
-    .diff-tools-subsection a {
-        border-radius: 1em;
-        background-color: #9c27b0;
-        color: #fff;
-        align-items: center;
-        display: inline-flex;
-        font-weight: 500;
-        padding-left: .5em;
-        padding-right: .5em;
-        text-align: center;
-        vertical-align: baseline;
-        white-space: nowrap;
-        margin: .1rem .05rem;
-        text-transform: lowercase;
-    }
-    .diff-tools-subsection a:active,
-    .diff-tools-subsection a:focus,
-    .diff-tools-subsection a:hover {
-        background-color: #7b1fa2;
-        color: #fff;
-        text-decoration: none;
-    }
+    /* itens da tela de impressão */
     @media print {
+        /* itens que não serão mostrados */
         #fastb-menu,
         #fastb-submenu {
             display: none;
+        }
+    }
+    /* itens do modo escuro */
+    @media (prefers-color-scheme: dark) {
+        /* página principal */
+        .skin-vector.page-Wikipédia_Página_principal .mw-body-content div,
+        .skin-vector.page-Wikipédia_Página_principal .hp div,
+        .skin-vector.page-Wikipédia_Página_principal .hp-portalen {
+            background: none !important;
+            box-shadow: none !important;
+        }
+        .skin-vector.page-Wikipédia_Página_principal .hp table {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+        .skin-vector.page-Wikipédia_Página_principal .main-page-block-heading,
+        .infobox_v2 {
+            color: #fff;
+        }
+        .skin-vector.page-Wikipédia_Página_principal .hp-welkom-1,
+        .skin-vector.page-Wikipédia_Página_principal .hp-welkom-1 a,
+        .skin-vector.page-Wikipédia_Página_principal .hp-welkom-1 a span,
+        .skin-vector.page-Wikipédia_Página_principal .hp-welkom-2,
+        .skin-vector.page-Wikipédia_Página_principal .hp-welkom-2 a,
+        .skin-vector.page-Wikipédia_Página_principal .hp-kop td span,
+        .infobox_v2 .topo {
+            color: #fff !important;
+        }
+        /* infocaixas */
+        .infobox_v2 {
+            background-color: #616161;
+        }
+        .infobox_v2 a,
+        .infobox_v2 a.external {
+            color: #82b1ff;
+        }
+        .infobox_v2 a:visited,
+        .infobox_v2 a.external:visited {
+            color: #b388ff;
+        }
+        /* caixa de sucessão */
+        .skin-vector .toccolours {
+            background-color: #616161;
+        }
+        /* páginas de discussão */
+        .skin-vector.ns-talk dl dl,
+        .skin-vector.ns-talk dl dl dl dl,
+        .skin-vector.ns-talk dl dl dl dl dl dl,
+        .skin-vector.ns-talk dl dl dl dl dl dl dl dl,
+        .skin-vector.ns-talk dl dl dl dl dl dl dl dl dl dl {
+            background: #424242;
+        }
+        .skin-vector.ns-talk dl,
+        .skin-vector.ns-talk dl dl dl,
+        .skin-vector.ns-talk dl dl dl dl dl,
+        .skin-vector.ns-talk dl dl dl dl dl dl dl,
+        .skin-vector.ns-talk dl dl dl dl dl dl dl dl dl {
+            background: #616161;
         }
     }
 }

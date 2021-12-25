@@ -1,31 +1,72 @@
+/* New Vector */
 .skin-vector .mw-body {
     background-color: #fff;
+    padding: 1.25em 1.5em 1.5em 1.5em;
 }
 .skin-vector .mw-page-container {
-    background-color: transparent;
+    background-image: linear-gradient(to bottom, #fff 4em, #f6f6f6 7em);
+}
+.skin-vector .mw-content-container {
+    border-color: #a7d7f9;
+    border-style: solid;
+    border-top: 0;
+    border-width: 1px;
 }
 .skin-vector .mw-content-container {
     max-width: 100%;
 }
+.skin-vector #p-search {
+    z-index: 45;
+    position: fixed;
+}
 .skin-vector #p-personal {
     margin-left: 0;
 }
+.skin-vector #simpleSearch {
+    margin-left: 3em !important;
+}
+.skin-vector #searchInput,
+.skin-vector #searchInput:hover,
+.skin-vector #searchInput:focus {
+    padding: 0 !important;
+    padding-left: 3.5em !important;
+}
+.skin-vector #searchInput,
+.skin-vector #searchButton,
+.skin-vector #mw-searchButton,
+.skin-vector .wvui-input__input {
+    font-size: 1em;
+}
+.skin-vector .wvui-typeahead-search.wvui-typeahead-search--show-thumbnail {
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin: 1.2em;
+    margin-left: 4.8em !important;
+    background-color: #fff;
+}
+.skin-vector .wvui-typeahead-search--show-thumbnail .wvui-input__input:focus,
+.skin-vector .wvui-typeahead-search--show-thumbnail .wvui-input__input:focus + .wvui-input__start-icon,
+.skin-vector .wvui-typeahead-search--show-thumbnail .wvui-typeahead-search__suggestions {
+    left: 0;
+}
+.skin-vector .wvui-typeahead-search--show-thumbnail .wvui-input__input:focus {
+    padding-left: 3em;
+}
+.skin-vector .wvui-button:not([disabled]),
+.skin-vector .wvui-button:not([disabled]):focus {
+    z-index: 55;
+}
 .skin-vector #mw-panel {
     background: none;
+    /* margin-top: 2em; */
 }
 .skin-vector #mw-sidebar-button {
+    z-index: 45;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 45;
-    margin: 10px 20px;
-}
-.skin-vector div#simpleSearch {
-    margin-left: 50px;
-}
-.skin-vector #searchButton {
-    background-size: 16px;
-    margin: 0 4px;
+    margin: 0.625em;
 }
 .skin-vector #left-navigation,
 .skin-vector #right-navigation,
@@ -35,6 +76,40 @@
 .skin-vector .mw-article-toolbar-container {
     max-width: none;
 }
+.skin-vector .mw-workspace-container.mw-footer-container > .mw-content-container {
+    border: 0;
+}
+.skin-vector #p-personal ul {
+    padding: initial;
+    display: initial;
+    justify-content: inherit;
+}
+.skin-vector #p-personal-label {
+    left: 94%;
+    position: fixed;
+    top: 0;
+    margin: 0.625em;
+}
+.skin-vector .mw-body #p-lang-btn {
+    top: -5.5rem;
+}
+.skin-vector #p-namespaces .mw-list-item:nth-child(1) {
+    background-image: linear-gradient(to bottom, rgba(167, 215, 249, 0) 0, #a7d7f9 100%);
+    background-repeat: no-repeat;
+    background-size: 1px;
+}
+/* .skin-vector #p-personal-more {
+    position: fixed;
+    top: 0;
+    left: 59%;
+    margin: 0.625em;
+    z-index: 45;
+} */
+@media print {
+    .skin-vector .mw-content-container {
+        border-color: transparent;
+    }
+}
 @media (prefers-color-scheme: dark) {
     .skin-vector #mw-sidebar-button::before,
     .skin-vector .mw-logo-container{
@@ -43,7 +118,61 @@
     .skin-vector .mw-body {
         background-color: #424242;
     }
-    /* .skin-vector .mw-page-container {
-        background-image: linear-gradient(to bottom, #424242 50%, #212121 100%);
-    } */
+    .skin-vector .mw-page-container {
+        background-image: linear-gradient(to bottom, #424242 4em, #212121 7em);
+    }
+    .skin-vector .mw-content-container {
+        border-color: #fff;
+    }
+    .skin-vector .vector-user-links .vector-user-menu-more .vector-menu-content-list li a {
+        color: #fff;
+    }
+    .skin-vector .vector-menu-dropdown .vector-menu-content {
+        background-color: #424242;
+    }
+    .skin-vector .vector-user-links .vector-user-menu .vector-menu-content-item:hover,
+    .skin-vector .vector-user-links .vector-user-menu .mw-list-item > a:hover {
+        background-color: #616161;
+    }
+    .skin-vector #p-namespaces .mw-list-item:nth-child(1) {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+    }
+    .skin-vector .vector-user-links .vector-user-menu .vector-user-menu-anon-editor {
+        color: #bdbdbd;
+    }
+    .skin-vector #uls-settings-block,
+    .skin-vector .uls-lcd,
+    .skin-vector .uls-search,
+    .skin-vector .uls-filtersuggestion {
+        background-color: #424242;  
+    }
+    .skin-vector .uls-lcd-region-title,
+    .skin-vector #uls-settings-block > button,
+    .skin-vector .uls-languagefilter {
+        color: #fff;
+    }
+    .skin-vector .wb-langlinks-link a.wbc-editpage {
+        color: #82b1ff !important;
+    }
+    .skin-vector .mw-ui-icon-wikimedia-logIn:before,
+    .skin-vector .mw-ui-icon-wikimedia-ellipsis:before,
+    .skin-vector .mw-ui-icon-wikimedia-language:before,
+    .skin-vector .vector-user-links .vector-user-menu-logged-in h3:before,
+    .skin-vector .mw-ui-icon-wikimedia-userTalk:before,
+    .skin-vector .mw-ui-icon-wikimedia-markup:before,
+    .skin-vector .mw-ui-icon-wikimedia-settings:before,
+    .skin-vector .mw-ui-icon-wikimedia-labFlask:before,
+    .skin-vector .mw-ui-icon-wikimedia-unStar:before,
+    .skin-vector .mw-ui-icon-wikimedia-userContributions:before,
+    .skin-vector .mw-ui-icon-vector-gadget-cx-language:before,
+    .skin-vector .mw-ui-icon-vector-gadget-cx-imageGallery:before,
+    .skin-vector .mw-ui-icon-vector-gadget-cx-imageGallery:before,
+    .skin-vector .mw-ui-icon-wikimedia-logOut:before,
+    .skin-vector aaa {
+        filter: invert(1);
+    }
+    /* new messages */
+    .skin-vector .mw-echo-alert a span {
+        color: #212121;
+    }
 }

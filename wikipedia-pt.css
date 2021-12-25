@@ -1,32 +1,34 @@
-﻿/* fonte: roboto */
+﻿/* Wikipédia em português */
+/* fonte: roboto */
 .fastb-button,
-#lastEditUser {
-    font-family: Roboto, sans-serif !important;
+.skin-vector #lastEditUser {
+    font-family: var(--font-sans-serif) !important;
 }
 /* remove sublinhado ao passar o mouse num link de userbox */
 .wikipediauserbox a {
     text-decoration: none;
 }
 /* infocaixas */
-.infobox_v2 {
+.skin-vector .infobox_v2 {
     background-color: #fff;
     color: rgba(0, 0, 0, .87);
     border: 1px solid rgba(0, 0, 0, .12);
     border-radius: 4px;
     border-collapse: collapse;
 }
-.infobox_v2 tr {
+.skin-vector .infobox_v2 tr {
     border-top-color: rgba(0, 0, 0, .12);
     border-top-width: 1px;
     border-top-style: solid;
 }
-.infobox_v2 tr:hover {
+.skin-vector .infobox_v2 tr:hover {
     background-color: rgba(0, 0, 0, .04);
 }
-.infobox_v2 tr .floatnone img {
+.skin-vector .infobox_v2 tr .floatnone img {
     margin: 8px 0;
 }
-.infobox_v2 th {
+.skin-vector .infobox_v2 th,
+.skin-vector .infobox_v2 th[style*=background] {
     background-color: transparent !important;
     text-align: left !important;
     font-weight: 500;
@@ -37,7 +39,7 @@
     height: 52px;
     vertical-align: middle;
 }
-.infobox_v2 td {
+.skin-vector .infobox_v2 td {
     background-color: transparent !important;
     font-weight: 400 !important;
     padding-right: 8px;
@@ -45,11 +47,11 @@
     height: 52px;
     vertical-align: middle !important;
 }
-.infobox_v2 td[scope ^="row"] {
+.skin-vector .infobox_v2 td[scope ^="row"] {
     background-color: transparent !important;
     font-weight: 500 !important;
 }
-.infobox_v2 .topo {
+.skin-vector .infobox_v2 .topo {
     background-color: transparent !important;
     background-image: none !important;
     color: rgba(0, 0, 0, .87) !important;
@@ -58,11 +60,11 @@
     height: 52px;
     vertical-align: middle;
 }
-.infobox_v2 .topo span {
+.skin-vector .infobox_v2 .topo span {
     text-align: left !important;
     font-weight: 500;
 }
-.infobox_v2 .topo small span {
+.skin-vector .infobox_v2 .topo small span {
     font-weight: 400;
 }
 /* gadget: detector de desambiguações */
@@ -180,7 +182,7 @@
         background-color: rgba(255, 255, 255, 0.25);
     }
     .skin-vector.page-Wikipédia_Página_principal .main-page-block-heading,
-    .infobox_v2 {
+    .skin-vector .infobox_v2 {
         color: #fff;
     }
     .skin-vector.page-Wikipédia_Página_principal .hp-welkom-1,
@@ -189,24 +191,49 @@
     .skin-vector.page-Wikipédia_Página_principal .hp-welkom-2,
     .skin-vector.page-Wikipédia_Página_principal .hp-welkom-2 a,
     .skin-vector.page-Wikipédia_Página_principal .hp-kop td span,
-    .infobox_v2 .topo {
+    .skin-vector .infobox_v2 .topo {
         color: #fff !important;
     }
+    .skin-vector.page-Wikipédia_Página_principal .hp-kop {
+        background-color: transparent;
+    }
+    .skin-vector.page-Wikipédia_Página_principal .hp-kop td {
+        background-color: #424242 !important;
+    }
+    /* resultados da pesquisa */
+    .skin-vector .mw-search-results li,
+    .skin-vector .mw-searchresults-has-iw .iw-resultset {
+        background-color: transparent;
+    }
     /* infocaixas */
-    .infobox_v2 {
+    .skin-vector .infobox_v2 {
         background-color: #616161;
     }
-    .infobox_v2 a,
-    .infobox_v2 a.external {
+    .skin-vector .infobox_v2 a,
+    .skin-vector .infobox_v2 a.external {
         color: #82b1ff;
     }
-    .infobox_v2 a:visited,
-    .infobox_v2 a.external:visited {
+    .skin-vector .infobox_v2 th[style*="background"] a {
+        color: #82b1ff !important;
+    }
+    .skin-vector .infobox_v2 a:visited,
+    .skin-vector .infobox_v2 a.external:visited {
         color: #b388ff;
+    }
+    .skin-vector .infobox_v2 th[style*="background"] a:visited {
+        color: #b388ff !important;
+    }
+    /* blocos de citações */
+    .mw-parser-output .flexquote {
+        background-color: #616161;
     }
     /* caixa de sucessão */
     .skin-vector .toccolours {
         background-color: #616161;
+    }
+    /* predefinição portal3 */
+    .skin-vector ul[style*="#F9F9F9"] {
+        background-color: #616161 !important;
     }
     /* páginas de discussão */
     .skin-vector.ns-talk dl dl,
@@ -222,5 +249,12 @@
     .skin-vector.ns-talk dl dl dl dl dl dl dl,
     .skin-vector.ns-talk dl dl dl dl dl dl dl dl dl {
         background: #616161;
+    }
+    /* página inexistentes */
+    .skin-vector .plainlinks#noarticletext {
+        background-color: #424242 !important;
+    }
+    .skin-vector .plainlinks#noarticletext #sisterproject {
+        background-color: #616161 !important;
     }
 }

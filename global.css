@@ -1,5 +1,26 @@
+/* Main */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Mono:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic|Cabin:400,400italic,500,500italic,600,600italic,700,700italic&subset=latin,greek,cyrillic,greek-ext,vietnamese,cyrillic-ext,latin-ext");
-
+/* variables */
+:root {
+    /* fonts */
+    --font-sans-serif: Roboto, sans-serif;
+    --font-monospace: "Roboto Mono", monospace;
+    --font-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+    /* icons */
+    --icon-bell-invert: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8dGl0bGU+CiAgICBiZWxsCiAgPC90aXRsZT48ZyBmaWxsPSIjZmZmIj4KICA8cGF0aCBkPSJNMTYgN2E1LjM4IDUuMzggMCAwIDAtNC40Ni00Ljg1QzExLjYgMS40NiAxMS41MyAwIDEwIDBTOC40IDEuNDYgOC40NiAyLjE1QTUuMzggNS4zOCAwIDAgMCA0IDd2NmwtMiAydjFoMTZ2LTFsLTItMnptLTYgMTNhMyAzIDAgMCAwIDMtM0g3YTMgMyAwIDAgMCAzIDN6Ii8+PC9nPgo8L3N2Zz4K"); /* file name: OOjs_UI_icon_bell-invert.svg (MIT) */
+    --icon-file-pdf: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTYiIHdpZHRoPSIxNiI+PHBhdGggZD0iTTAgMGgxNnYxNkgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMi42MzIgMy44ODVMMTAuNDQ3IDEuN2ExLjI1IDEuMjUgMCAwMC0uODgyLS4zNjdINC4yNUMzLjU2IDEuMzM2IDMgMS44OTYgMyAyLjU4NnYxMC44M2MwIC42OS41NiAxLjI1IDEuMjUgMS4yNWg3LjQ5OGMuNjkgMCAxLjI1LS41NiAxLjI1LTEuMjVWNC43N2MwLS4zMy0uMTMzLS42NS0uMzY3LS44ODV6IiBmaWxsPSIjZDMyZjJmIi8+PHBhdGggZD0iTTQuMjUgMi41ODZ2MTAuODNoNy41VjUuOTE5SDkuMDRhLjYyMy42MjMgMCAwMS0uNjI0LS42MjRWMi41ODZ6bTUuNDE2LjEwMVY0LjY3aDEuOTgyeiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik03LjY3NiA2LjMzN2MtLjIzMi4wMDctLjQ1Ni4xMzYtLjUxNC4zNTItLjExNS40Mi0uMDEgMS4wMDIuMTgyIDEuNzQ3LS4yNi42MjItLjY0OCAxLjQ1OC0uOTIyIDEuOTM3LS41Mi4yNjgtMS4yMjQuNjgyLTEuMzI4IDEuMjAzLS4wODYuNDExLjY3NyAxLjQzNyAxLjk4Mi0uODEyLjU4My0uMTkzIDEuMjE4LS40MyAxLjc4LS41MjQuNDkzLjI2NiAxLjA2OC40NDMgMS40NTMuNDQzLjY2NCAwIC43My0uNzM0LjQ1Ni0xLjAwOC0uMzE4LS4zMTItMS4yMjQtLjIyNi0xLjY3Ny0uMTY5LS40NDctLjI3My0uNzQ3LS42NS0uOTU4LTEuMjA1LjEwMi0uNDIuMjYzLTEuMDU3LjE0LTEuNDU4YS41NjYuNTY2IDAgMDAtLjU5NC0uNTA2em0uMDU2LjQwMmMuMTkzIDAgLjE3NC44MzUuMDQ3IDEuMDYyLS4xMTUtLjM2Mi0uMTEyLTEuMDYyLS4wNDctMS4wNjJ6TTcuNzQgOC44N2MuMjE2LjM5My40OTIuNzA4Ljc4My45MjQtLjU0MS4xMTItMS4wMTIuMzQxLTEuNDI2LjUuMjUyLS40NC40NjgtLjk2My42NDMtMS40MjR6bTIuMTIgMS4wNzhjLjY0LS4wMDUuNzQ1LjE2MS42NjMuMjE2IDAgMC0uMTMuMTU2LS45NzEtLjIwMy4xMTQtLjAwOS4yMTYtLjAxMy4zMDgtLjAxM3ptLTMuNDYxLjg0Yy0uNDk1Ljc5LS43OTIuOTMtLjc5Mi45MTIuMTMzLS4zNTcuNjM4LS43NjguNzkyLS45MTF6IiBmaWxsPSIjZDMyZjJmIi8+PC9zdmc+"); /* file name: file-pdf.svg (CC-BY 4.0), modified */
+    --icon-new-window: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGc+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg=="); /* file name: OOjs_UI_icon_newWindow-ltr.svg (MIT) */
+    --icon-new-window-blue: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iIzM2YiI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg=="); /* file name: OOjs_UI_icon_newWindow-ltr.svg (MIT), modified */
+    --icon-new-window-invert: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg=="); /* file name: OOjs_UI_icon_newWindow-ltr-invert.svg (MIT), modified */
+    --icon-new-window-blue-invert: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iIzkwY2FmOSI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg=="); /* file name: OOjs_UI_icon_newWindow-ltr.svg (MIT), modified */
+    --icon-new-window-blue-reverse: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iIzI4MzU5MyI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg=="); /* file name: OOjs_UI_icon_newWindow-ltr.svg (MIT), modified */
+    --icon-sort-both: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjkiIHZpZXdCb3g9IjAgMCAyMSA5Ij48cGF0aCBkPSJNMTQuNSA1bC00IDQtNC00em0wLTFsLTQtNC00IDR6IiBmaWxsPSIjZmZmIi8+PC9zdmc+"); /* file name: sort_both.svg (public domain), modified */
+    --icon-sort-up: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNNi41IDRsNC00IDQgNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="); /* file name: sort_up.svg (public domain), modified */
+    --icon-sort-down: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNMTQuNSAwbC00IDQtNC00eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="); /* file name: sort_down.svg (public domain), modified */
+    --icon-tray-invert: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KCTx0aXRsZT4KCQl0cmF5Cgk8L3RpdGxlPjxnIGZpbGw9IiNmZmYiPgoJPHBhdGggZD0iTTE3IDFIM2EyIDIgMCAwIDAtMiAydjE0YTIgMiAwIDAgMCAyIDJoMTRhMiAyIDAgMCAwIDItMlYzYTIgMiAwIDAgMC0yLTJ6bTAgMTJoLTRsLTEgMkg4bC0xLTJIM1YzaDE0eiIvPgo8L2c+PC9zdmc+Cg=="); /* file name:OOjs_UI_icon_tray-invert.svg (MIT), modified */
+    /* lists */
+    --icon-bullet-invert: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='13'%3E%3Ccircle cx='2.5' cy='9' r='2.5' fill='%23d3dae0'/%3E%3C/svg%3E"); /* file name: bullet-icon.svg (public domain), modified */
+}
 /* text: fonts, sizes, colors and aligns */
 .skin-vector,
 .skin-vector input,
@@ -18,20 +39,21 @@
 .skin-vector .mw-diff-movedpara-left:after,
 .skin-vector .mw-diff-movedpara-right:after,
 .skin-vector .diff-currentversion-title,
-.skin-vector .mw-number-text h3 {
-    font-family: Roboto, sans-serif;
+.skin-vector .mw-number-text h3,
+.skin-vector .k-player .time-disp,
+.skin-vector .k-player .k-options {
+    font-family: var(--font-sans-serif);
     font-style: normal;
 }
 .skin-vector .mw-continue-editing,
 .skin-vector .ui-dialog,
 .skin-vector .ui-dialog .ui-dialog-buttonpane button {
-    font-family: Roboto, sans-serif !important;
+    font-family: var(--font-sans-serif) !important;
 }
 .skin-vector textarea,
 .skin-vector pre,
 .skin-vector code,
 .skin-vector tt,
-.skin-vector kbd,
 .skin-vector samp,
 .skin-vector .mw-code,
 .skin-vector .monospaced,
@@ -48,11 +70,11 @@
 .skin-vector .wikiEditor-ui-toolbar .section-help .page-table td.cell-syntax,
 .skin-vector #editpage-specialchars a,
 .skin-vector #proveit-logo {
-    font-family: "Roboto Mono", monospace;
+    font-family: var(--font-monospace);
 }
 .skin-vector .mw-editfont-serif,
 .skin-vector .inline-quote-talk {
-    font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+    font-family: var(--font-sans-serif);
 }
 .skin-vector .mw-body-content {
     font-size: .925rem;
@@ -69,7 +91,6 @@
 .skin-vector .firstHeading,
 .skin-vector .mw-body h1,
 .skin-vector .cx-column__title {
-    margin-top: 48px;
     font-size: 34px;
     line-height: 40px;
     margin: 24px 0;
@@ -111,8 +132,8 @@
     font-size: small !important;
 }
 .skin-vector code,
+.skin-vector pre,
 .skin-vector .toctoggle,
-
 .skin-vector .comment,
 .skin-vector .mw-tag-markers,
 .skin-vector #editpage-specialchars a {
@@ -353,7 +374,7 @@
 /* page indicators */
 .skin-vector .mw-body .mw-indicators {
     bottom: 3.5rem;
-    z-index: 35;
+    z-index: 1;
 }
 /* table of contents */
 .skin-vector #toc,
@@ -423,7 +444,7 @@
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 .skin-vector .mw-content-ltr .magnify a {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGc+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
+    background-image: var(--icon-new-window);
     width: 11px;
 }
 /* code */
@@ -438,15 +459,21 @@
 }
 /* external links */
 .skin-vector .mw-parser-output .external {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iIzM2YiI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
+    background-image: var(--icon-new-window-blue);
 }
 .skin-vector #content a[href$=".pdf"].external,
 .skin-vector #content a[href*=".pdf?"].external,
 .skin-vector #content a[href*=".pdf#"].external,
 .skin-vector #content a[href$=".PDF"].external,
 .skin-vector #content a[href*=".PDF?"].external,
-.skin-vector #content a[href*=".PDF#"].external {
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTYiIHdpZHRoPSIxNiI+PHBhdGggZD0iTTAgMGgxNnYxNkgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMi42MzIgMy44ODVMMTAuNDQ3IDEuN2ExLjI1IDEuMjUgMCAwMC0uODgyLS4zNjdINC4yNUMzLjU2IDEuMzM2IDMgMS44OTYgMyAyLjU4NnYxMC44M2MwIC42OS41NiAxLjI1IDEuMjUgMS4yNWg3LjQ5OGMuNjkgMCAxLjI1LS41NiAxLjI1LTEuMjVWNC43N2MwLS4zMy0uMTMzLS42NS0uMzY3LS44ODV6IiBmaWxsPSIjZDMyZjJmIi8+PHBhdGggZD0iTTQuMjUgMi41ODZ2MTAuODNoNy41VjUuOTE5SDkuMDRhLjYyMy42MjMgMCAwMS0uNjI0LS42MjRWMi41ODZ6bTUuNDE2LjEwMVY0LjY3aDEuOTgyeiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik03LjY3NiA2LjMzN2MtLjIzMi4wMDctLjQ1Ni4xMzYtLjUxNC4zNTItLjExNS40Mi0uMDEgMS4wMDIuMTgyIDEuNzQ3LS4yNi42MjItLjY0OCAxLjQ1OC0uOTIyIDEuOTM3LS41Mi4yNjgtMS4yMjQuNjgyLTEuMzI4IDEuMjAzLS4wODYuNDExLjY3NyAxLjQzNyAxLjk4Mi0uODEyLjU4My0uMTkzIDEuMjE4LS40MyAxLjc4LS41MjQuNDkzLjI2NiAxLjA2OC40NDMgMS40NTMuNDQzLjY2NCAwIC43My0uNzM0LjQ1Ni0xLjAwOC0uMzE4LS4zMTItMS4yMjQtLjIyNi0xLjY3Ny0uMTY5LS40NDctLjI3My0uNzQ3LS42NS0uOTU4LTEuMjA1LjEwMi0uNDIuMjYzLTEuMDU3LjE0LTEuNDU4YS41NjYuNTY2IDAgMDAtLjU5NC0uNTA2em0uMDU2LjQwMmMuMTkzIDAgLjE3NC44MzUuMDQ3IDEuMDYyLS4xMTUtLjM2Mi0uMTEyLTEuMDYyLS4wNDctMS4wNjJ6TTcuNzQgOC44N2MuMjE2LjM5My40OTIuNzA4Ljc4My45MjQtLjU0MS4xMTItMS4wMTIuMzQxLTEuNDI2LjUuMjUyLS40NC40NjgtLjk2My42NDMtMS40MjR6bTIuMTIgMS4wNzhjLjY0LS4wMDUuNzQ1LjE2MS42NjMuMjE2IDAgMC0uMTMuMTU2LS45NzEtLjIwMy4xMTQtLjAwOS4yMTYtLjAxMy4zMDgtLjAxM3ptLTMuNDYxLjg0Yy0uNDk1Ljc5LS43OTIuOTMtLjc5Mi45MTIuMTMzLS4zNTcuNjM4LS43NjguNzkyLS45MTF6IiBmaWxsPSIjZDMyZjJmIi8+PC9zdmc+) center right no-repeat;
+.skin-vector #content a[href*=".PDF#"].external,
+.skin-vector .mw-parser-output  a[href$=".pdf"].external,
+.skin-vector .mw-parser-output  a[href*=".pdf?"].external,
+.skin-vector .mw-parser-output  a[href*=".pdf#"].external,
+.skin-vector .mw-parser-output  a[href$=".PDF"].external,
+.skin-vector .mw-parser-output  a[href*=".PDF?"].external,
+.skin-vector .mw-parser-output  a[href*=".PDF#"].external {
+    background: var(--icon-file-pdf) center right no-repeat;
 }
 /* references */
 .skin-vector .referencetooltip li {
@@ -471,6 +498,10 @@
 .skin-vector .ui-widget-header {
     border: none !important;
     background: none !important;
+}
+.skin-vector .mwPlayerContainer.k-player .ui-widget-header /* player */ {
+    background-color: #c8c8c8 !important;
+    border: 1px solid #c8c8c8 !important;
 }
 .skin-vector .ui-widget-content {
     background-color: #fff !important;
@@ -571,7 +602,8 @@
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border: 0;
 }
-.skin-vector .selected a:hover {
+.skin-vector .selected a:hover,
+[bgcolor] {
     background-color: transparent !important;
 }
 .skin-vector .cx-header__title {
@@ -596,7 +628,8 @@
 }
 /* no background */
 .skin-vector .portal h3,
-.skin-vector .vector-menu-portal h3 {
+.skin-vector .vector-menu-portal h3,
+.skin-vector .mw-tag-markers {
     background: none;
 }
 /* no borders */
@@ -632,7 +665,7 @@
     .skin-vector h4,
     .skin-vector h5,
     .skin-vector h6 {
-        font-family: Roboto, sans-serif;
+        font-family: var(--font-sans-serif);
     }
     /* no pseudo-navbar, no padding */
     .skin-vector,
@@ -716,10 +749,16 @@
     .skin-vector .infobox,
     .skin-vector #toc,
     .skin-vector .toc,
+    .skin-vector .toccolours,
     .skin-vector .mwe-popups,
+    .skin-vector .mwe-popups-container,
+    .skin-vector .rt-tooltip,
+    .skin-vector .rt-tooltipTail:after,
+    .skin-vector .referencetooltip li,
     .skin-vector .thumbinner,
     .skin-vector .gallerybox .thumb,
     .skin-vector .wikitable,
+    .skin-vector .mw-datatable td,
     .skin-vector .navbox,
     .skin-vector .navbox-subgroup,
     .skin-vector .catlinks,
@@ -732,20 +771,29 @@
     .skin-vector .wikiEditor-ui-toolbar .group .tool-select .options,
     .skin-vector .wikiEditor-ui-toolbar .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle,
     .skin-vector .editOptions,
-    .skin-vector.mw-special-Preferences .oo-ui-tabPanelLayout-active {
+    .skin-vector.mw-special-Preferences .oo-ui-tabPanelLayout-active,
+    .skin-vector .mw-parser-output .portal-bar-bordered,
+    .skin-vector pre,
+    .skin-vector code,
+    .skin-vector .mw-code {
         background-color: #616161;
     }
-    .skin-vector #documentation-meta-data {
+    .skin-vector table[style*=background],
+    .skin-vector #documentation-meta-data,
+    .skin-vector .ui-widget-content,
+    .skin-vector .k-player .credits_box {
         background-color: #616161 !important;
     }
     .skin-vector .cx-callout a:hover,
     .skin-vector .wikitable > tr > th,
     .skin-vector .wikitable > * > tr > th,
+    .skin-vector .mw-datatable th,
     .skin-vector .navbox th,
     .skin-vector .navbox-title,
     .skin-vector .navbox-even,
     .skin-vector .navbox-abovebelow,
     .skin-vector th.navbox-group,
+    .skin-vector .mw-parser-output .navbox-group,
     .skin-vector .navbox-subgroup .navbox-title,
     .skin-vector .wikiEditor-ui-toolbar,
     .skin-vector .wikiEditor-ui-toolbar .group .tool-select .menu .options .option:hover,
@@ -758,6 +806,17 @@
     }
     .skin-vector .mwe-popups .mwe-popups-extract[dir='ltr']:after {
         background-image: linear-gradient(to right,rgba(255,255,255,0),#616161 50%);
+    }
+    .skin-vector .mw-datatable tr:hover td,
+    .skin-vector ol.references li:target,
+    .skin-vector sup.reference:target {
+        background-color: #3949ab;
+    }
+    .skin-vector .mw-highlight .hll {
+        background-color: #455a64;
+    }
+    .skin-vector .oo-ui-windowManager-modal > .oo-ui-dialog {
+        background-color: rgba(0, 0, 0, 0.5);
     }
     .skin-vector code {
         background-color: rgba(117, 117, 117, 0.5);
@@ -806,7 +865,7 @@
     .skin-vector .mw-body h3,
     .skin-vector .mw-body h4,
     .skin-vector .mw-body h5,
-    .skin-vector .mw-body h6
+    .skin-vector .mw-body h6,
     .skin-vector .mw-body p,
     .skin-vector .mw-body ul,
     .skin-vector .mw-body ol,
@@ -825,6 +884,7 @@
     .skin-vector .mwe-popups-extract:visited,
     .skin-vector .mwe-popups-title,
     .skin-vector .mwe-popups-container .citation,
+    .skin-vector .rt-tooltip,
     .skin-vector .wikitable,
     .skin-vector .wikitable > tr > th,
     .skin-vector .wikitable > * > tr > th,
@@ -860,22 +920,57 @@
     .skin-vector #wpTextbox1,
     .skin-vector .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle,
     .skin-vector .editOptions,
-    .skin-vector .mw-number-text {
+    .skin-vector .mw-number-text,
+    .skin-vector .k-player .ui-widget-content,
+    .skin-vector pre,
+    .skin-vector code,
+    .skin-vector .mw-code,
+    .skin-vector .mw-highlight .linenos {
         color: #fff;
     }
+    .skin-vector .referencetooltip,
     .skin-vector #p-cactions .vector-menu-content-list li.selected a:hover,
     .skin-vector code,
     .skin-vector code a,
-    .skin-vector .navbox .mw-selflink,
+    .skin-vector .selflink,
+    .skin-vector .mw-selflink,
     .skin-vector .mw-footer li,
     .skin-vector .comment,
     .skin-vector.ns-talk .mw-body div:not([class]),
-    .skin-vector.ns-talk .mw-body span:not([class]) {
+    .skin-vector.ns-talk .mw-body span:not([class]),
+    .skin-vector .wikitable tr[style*="inherit"] {
         color: #fff !important;
     }
+    .skin-vector .wikitable td[style*=background],
+    .skin-vector .wikitable td[style*=background] p,
+    .skin-vector .wikitable td[style*=background] li,
+    .skin-vector .wikitable tr[style*=background],
+    .skin-vector .wikitable tr[style*=background] p,
+    .skin-vector .wikitable tr[style*=background] li,
+    .skin-vector .wikitable th[style*=background],
+    .skin-vector .wikitable th[style*=background] p,
+    .skin-vector .wikitable th[style*=background] li,
+    .skin-vector .navbox th[style*=background],
+    .skin-vector .navbox td[style*=background],
+    .skin-vector .navbox tr[style*=background],
+    .skin-vector .navbox th[style*=background] li,
+    .skin-vector .navbox td[style*=background] li,
+    .skin-vector .navbox tr[style*=background] li,
+    .skin-vector .navbox-title[style*=background],
+    .skin-vector .infobox th[style*=background],
     .skin-vector .diff-deletedline .diffchange-inline,
     .skin-vector .diffchange-inline {
         color: #212121;
+    }
+    .skin-vector .navbox th[style*=background] .mw-selflink,
+    .skin-vector .navbox th[style*=background] .selflink,
+    .skin-vector .navbox td[style*=background] .mw-selflink,
+    .skin-vector .navbox td[style*=background] .selflink,
+    .skin-vector .navbox tr[style*=background] .mw-selflink,
+    .skin-vector .navbox tr[style*=background] .selflink,
+    .skin-vector .navbox-title[style*=background] .mw-selflink,
+    .skin-vector .navbox-title[style*=background] .selflink {
+        color: #212121 !important;
     }
     .skin-vector .autocomment a {
         color: #b0bec5 !important;
@@ -895,16 +990,66 @@
     .skin-vector .CategoryTreeToggle {
         color: #82b1ff;
     }
+    .skin-vector .wikitable tr[style*="inherit"] a {
+        color: #82b1ff !important;
+    }
+    .skin-vector .wikitable td[style*=background] a,
+    .skin-vector .wikitable tr[style*=background] a,
+    .skin-vector .wikitable th[style*=background] a,
+    .skin-vector .navbox td[style*=background] a,
+    .skin-vector .navbox tr[style*=background] a,
+    .skin-vector .navbox th[style*=background] a,
+    .skin-vector .navbox th[style*=background] a,
+    .skin-vector .navbox-title[style*=background] a,
+    .skin-vector .infobox th[style*=background] a {
+        color: #0d47a1;
+    }
     .skin-vector a:visited,
     .skin-vector .portal li a:visited,
     .skin-vector .mw-parser-output a:visited {
         color: #b388ff;
     }
+    .skin-vector .wikitable tr[style*="inherit"] a:visited {
+        color: #b388ff !important;
+    }
+    .skin-vector .wikitable td[style*=background] a:visited,
+    .skin-vector .wikitable tr[style*=background] a:visited,
+    .skin-vector .wikitable th[style*=background] a:visited,
+    .skin-vector .navbox td[style*=background] a:visited,
+    .skin-vector .navbox tr[style*=background] a:visited,
+    .skin-vector .navbox th[style*=background] a:visited,
+    .skin-vector .navbox th[style*=background] a:visited,
+    .skin-vector .navbox-title[style*=background] a:visited,
+    .skin-vector .infobox th[style*=background] a:visited {
+        color: #311b92;
+    }
     .skin-vector .mw-body .new {
         color: #ef5350;
     }
+    .skin-vector .wikitable td[style*=background] .new,
+    .skin-vector .wikitable tr[style*=background] .new,
+    .skin-vector .wikitable th[style*=background] .new,
+    .skin-vector .navbox td[style*=background] .new,
+    .skin-vector .navbox tr[style*=background] .new,
+    .skin-vector .navbox th[style*=background] .new,
+    .skin-vector .navbox th[style*=background] .new,
+    .skin-vector .navbox-title[style*=background] .new,
+    .skin-vector .infobox th[style*=background] .new {
+        color: #d50000;
+    }
     .skin-vector .mw-body .new:visited {
         color: #f44336;
+    }
+    .skin-vector .wikitable td[style*=background] .new:visited,
+    .skin-vector .wikitable tr[style*=background] .new:visited,
+    .skin-vector .wikitable th[style*=background] .new:visited,
+    .skin-vector .navbox td[style*=background] .new:visited,
+    .skin-vector .navbox tr[style*=background] .new:visited,
+    .skin-vector .navbox th[style*=background] .new:visited,
+    .skin-vector .navbox th[style*=background] .new:visited,
+    .skin-vector .navbox-title[style*=background] .new:visited,
+    .skin-vector .infobox th[style*=background] .new:visited {
+        color: #b71c1c;
     }
     .skin-vector .vector-menu-tabs .new a {
         color: #ef9a9a;
@@ -914,10 +1059,20 @@
     .skin-vector .mwe-popups .external {
         color: #90caf9;
     }
+    .skin-vector .wikitable td[style*=background] .external,
+    .skin-vector .wikitable tr[style*=background] .external,
+    .skin-vector .wikitable th[style*=background] .external {
+        color: #283593;
+    }
     .skin-vector .mw-body .external:visited,
     .skin-vector .mw-parse-output .external:visited,
     .skin-vector .mwe-popups .external:visited {
         color: #b39ddb;
+    }
+    .skin-vector .wikitable td[style*=background] .external:visited,
+    .skin-vector .wikitable tr[style*=background] .external:visited,
+    .skin-vector .wikitable th[style*=background] .external:visited {
+        color: #4527a0;
     }
     .skin-vector .mw-parser-output .inline-quote-talk,
     .skin-vector .mw-plusminus-pos.mw-diff-bytes,
@@ -928,9 +1083,64 @@
     .skin-vector .mw-plusminus-neg.mw-diff-bytes {
         color: #d32f2f;
     }
+    /* syntax highlight */
+    .skin-vector .mw-highlight .nt {
+        color: #a5d6a7;
+    }
+    .skin-vector .mw-highlight .cp {
+        color: #ffe0b2;
+    }
+    .skin-vector .mw-highlight .na {
+        color: #e6ee9c;
+    }
+    .skin-vector .mw-highlight .s,
+    .skin-vector .mw-highlight .s1,
+    .skin-vector .mw-highlight .s2 {
+        color: #ffebee;
+    }
+    .mw-highlight .si {
+        color: #fce4ec;
+    }
+    .skin-vector .mw-highlight .c,
+    .skin-vector .mw-highlight .c1,
+    .skin-vector .mw-highlight .cm,
+    .skin-vector .mw-highlight .cpf {
+        color: #a7ffeb;
+    }
+    .skin-vector .mw-highlight .k,
+    .skin-vector .mw-highlight .kc,
+    .skin-vector .mw-highlight .kd,
+    .skin-vector .mw-highlight .kn,
+    .skin-vector .mw-highlight .kr,
+    .skin-vector .mw-highlight .nb {
+        color: #c8e6c9;
+    }
+    .skin-vector .mw-highlight .fm,
+    .skin-vector .mw-highlight .nc,
+    .skin-vector .mw-highlight .nf,
+    .skin-vector .mw-highlight .nn,
+    .skin-vector .mw-highlight .nv {
+        color: #b2ebf2;
+    }
+    .skin-vector .mw-highlight .kt {
+        color: #ffee58;
+    }
+    .skin-vector .mw-highlight .mi,
+    .skin-vector .mw-highlight .o {
+        color: #e0e0e0;
+    }
+    .skin-vector .mw-highlight .se {
+        color: #ffe0b2;
+    }
+    .skin-vector .mw-highlight .sc {
+        color: #f3e5f5;
+    }
     .skin-vector .mw-babel-box,
     .skin-vector .mw-babel-box a {
         color: initial;
+    }
+    .skin-vector .multicol[style*=background] {
+        background-color: transparent !important;
     }
     /* border colors */
     .skin-vector .mw-body,
@@ -952,17 +1162,22 @@
     .skin-vector tr + tr > .navbox-abovebelow,
     .skin-vector tr + tr > .navbox-group,
     .skin-vector tr + tr > .navbox-image,
-    .skin-vector tr + tr > .navbox-list {
+    .skin-vector tr + tr > .navbox-list,
+    .skin-vector .rt-tooltip {
         border-color: #616161;
     }
+    .skin-vector .referencetooltip>li+li::after,
     .skin-vector .mwe-popups.flipped-y:after,
-    .skin-vector .mwe-popups.flipped-x-y:after {
+    .skin-vector .mwe-popups.flipped-x-y:after{
         border-top-color: #616161;
     }
     .skin-vector .mwe-popups.mwe-popups-no-image-pointer:after {
         border-bottom-color: #616161;
     }
-    .skin-vector .wikiEditor-ui-toolbar .group {
+    .skin-vector .wikiEditor-ui-toolbar .group,
+    .skin-vector pre,
+    .skin-vector code,
+    .skin-vector .mw-code {
         border-color: #757575;
     }
     .skin-vector .wikiEditor-ui .wikiEditor-ui-top {
@@ -980,11 +1195,11 @@
     }
     .skin-vector .oo-ui-icon-bell,
     .skin-vector .mw-ui-icon-bell:before {
-        background-image: linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8dGl0bGU+CiAgICBiZWxsCiAgPC90aXRsZT48ZyBmaWxsPSIjZmZmIj4KICA8cGF0aCBkPSJNMTYgN2E1LjM4IDUuMzggMCAwIDAtNC40Ni00Ljg1QzExLjYgMS40NiAxMS41MyAwIDEwIDBTOC40IDEuNDYgOC40NiAyLjE1QTUuMzggNS4zOCAwIDAgMCA0IDd2NmwtMiAydjFoMTZ2LTFsLTItMnptLTYgMTNhMyAzIDAgMCAwIDMtM0g3YTMgMyAwIDAgMCAzIDN6Ii8+PC9nPgo8L3N2Zz4K);
+        background-image: linear-gradient(transparent, transparent), var(--icon-bell-invert);
     }
     .skin-vector .oo-ui-icon-tray,
     .skin-vector .mw-ui-icon-tray:before {
-        background-image: linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KCTx0aXRsZT4KCQl0cmF5Cgk8L3RpdGxlPjxnIGZpbGw9IiNmZmYiPgoJPHBhdGggZD0iTTE3IDFIM2EyIDIgMCAwIDAtMiAydjE0YTIgMiAwIDAgMCAyIDJoMTRhMiAyIDAgMCAwIDItMlYzYTIgMiAwIDAgMC0yLTJ6bTAgMTJoLTRsLTEgMkg4bC0xLTJIM1YzaDE0eiIvPgo8L2c+PC9zdmc+Cg==);
+        background-image: linear-gradient(transparent, transparent), var(--icon-tray-invert);
     }
     /* code / diff comment */
     .skin-vector code {
@@ -993,19 +1208,23 @@
     .skin-vector .comment {
         border: 1px solid rgba(0, 0, 0, 0.2) !important;
     }
+    .skin-vector .mw-content-ltr.mw-highlight-lines pre,
+    .skin-vector .mw-content-ltr.content .mw-highlight-lines pre {
+        box-shadow: inset 2.75em 0 0 #757575;
+    }
     /* wikitable */
     .skin-vector .jquery-tablesorter th.headerSort {
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjkiIHZpZXdCb3g9IjAgMCAyMSA5Ij48cGF0aCBkPSJNMTQuNSA1bC00IDQtNC00em0wLTFsLTQtNC00IDR6IiBmaWxsPSIjZmZmIi8+PC9zdmc+) !important;
+        background-image: var(--icon-sort-both) !important;
     }
     .skin-vector .jquery-tablesorter th.headerSortUp {
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNNi41IDRsNC00IDQgNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=) !important;
+        background-image: var(--icon-sort-up) !important;
     }
     .skin-vector .jquery-tablesorter th.headerSortDown {
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCAyMSA0Ij48cGF0aCBkPSJNMTQuNSAwbC00IDQtNC00eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==) !important;
+        background-image: var(--icon-sort-down) !important;
     }
     /* pictures */
     .skin-vector .mw-content-ltr .magnify a {
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
+        background-image: var(--icon-new-window-invert);
     }
     /* history edit page */
     .skin-vector #pagehistory li.selected {
@@ -1021,7 +1240,11 @@
     .skin-vector .oo-ui-fieldsetLayout.mw-collapsible .mw-collapsible-toggle .oo-ui-iconElement-icon,
     .skin-vector .wikiEditor-ui .oo-ui-buttonElement-button,
     .skin-vector .wikiEditor-ui-toolbar .group .tool-select .label:after,
-    .skin-vector .ve-init-mw-editSwitch .oo-ui-popupToolGroup.oo-ui-iconElement .oo-ui-popupToolGroup-handle .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon {
+    .skin-vector .ve-init-mw-editSwitch .oo-ui-popupToolGroup.oo-ui-iconElement .oo-ui-popupToolGroup-handle .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon,
+    .skin-vector .mwe-math-fallback-image-inline,
+    .skin-vector img[alt="double-dagger"],
+    .skin-vector .mw-mmv-filepage-buttons .mw-mmv-view-expanded .mw-ui-icon:before,
+    .mw-mmv-filepage-buttons .mw-mmv-view-config .mw-ui-icon:before{
         filter: invert(1);
     }
     /* opacity */
@@ -1034,6 +1257,100 @@
     }
     /* external links */
     .skin-vector .mw-parser-output .external {
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTEiIHdpZHRoPSIxMSI+PGcgZmlsbD0iIzkwY2FmOSI+PHBhdGggZD0iTTkuMzUgOS4zNWgtNy43di03LjdINC40Vi41NUgxLjY1YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjcuN2ExLjEgMS4xIDAgMDAxLjEgMS4xaDcuN2ExLjEgMS4xIDAgMDAxLjEtMS4xVjYuNmgtMS4xeiIvPjxwYXRoIGQ9Ik0xMC40NS41NWgtNC40bDEuODEgMS44MUw0LjcwOCA1LjUxbC43ODEuNzgxIDMuMTUyLTMuMTUxTDEwLjQ1IDQuOTV6Ii8+PC9nPjwvc3ZnPg==);
+        background-image: var(--icon-new-window-blue-invert);
+    }
+    .skin-vector .wikitable td[style*=background] .external,
+    .skin-vector .wikitable tr[style*=background] .external,
+    .skin-vector .wikitable th[style*=background] .external {
+        background-image: var(--icon-new-window-blue-reverse);
+    }
+    /* commons */
+    .skin-vector.ns-6 #filetoc {
+        background-color: #616161;
+        border-color: #fff;
+    }
+    .skin-vector #mw-sharedupload {
+        background-color: #616161 !important;
+        border-color: #fff !important;
+    }
+    .skin-vector.ns-6 .fileinfo-paramfield,
+    .skin-vector.ns-6 .mw-parser-output .taxontree-lcell,
+    .skin-vector.ns-6 .mw-parser-output .wikidatainfobox-lcell {
+        background-color: #757575;
+    }
+    .skin-vector.ns-6 .licensetpl_wrapper {
+        background-color: #757575 !important;
+    }
+    .skin-vector.ns-6 .layouttemplate {
+        background-color: #616161 !important;
+        border-color: #fff !important;
+    }
+    .skin-vector.ns-6 .mw_metadata th,
+    .skin-vector.ns-6 .mw_metadata td {
+        background-color: #616161;
+    }
+    /* lists */
+    ul {
+        list-style-image: var(--icon-bullet-invert);
+    }
+    /* references */
+    .skin-vector .reference-text cite span[style*="#555"],
+    .skin-vector .mw-parser-output  cite span[style*="#555"] {
+        color: #e0e0e0 !important;
+    }
+    /* new messages */
+    .skin-vector .mw-echo-alert {
+        background-color: #ffc107;
+    }
+    .skin-vector .mw-echo-alert span {
+        color: #212121;
+    }
+    /* track lists */
+    .skin-vector .tracklist caption,
+    .skin-vector .tracklist tr[style*="#fff"] {
+        background-color: #424242 !important;
+    }
+    .skin-vector .tracklist tr[style*="#f7f7f7"] {
+        background-color: #616161 !important;
+    }
+    .skin-vector .tracklist .tlheader[scope="col"],
+    .skin-vector .tracklist th span[style*="#eee"],
+    .skin-vector .tracklist td[style*="#eee"] {
+        background-color: #757575 !important;
+    }
+    /* miniboxes and sidebars */
+    .skin-vector .mbox-small-left,
+    .skin-vector .mbox-small-right,
+    .skin-vector .mbox-small {
+        color: #fff !important;
+    }
+    .skin-vector .mw-parser-output .sidebar,
+    .skin-vector .mw-parser-output .sister-box {
+        background-color: #616161;
+    }
+    .skin-vector .barbox div[style*="white"] {
+        background-color: #616161 !important;
+    }
+    .skin-vector .barbox tr[style*="background"] {
+        background-color: #757575 !important;
+    }
+    /* media */
+    .skin-vector .mw-ui-button.mw-mmv-view-expanded,
+    .skin-vector .mw-ui-button.mw-mmv-view-config {
+        color: #fff;
+        background-color: #424242;
+    }
+    .skin-vector .mw-ui-button.mw-mmv-view-expanded:hover {
+        color: #fff;
+    }
+    /* license boxes */
+    .skin-vector .imbox-license {
+        background-color: #424242;
+    }
+    /* keyboard keys */
+    .skin-vector .keyboard-key {
+        background-color: #616161 !important;
+        background-image: linear-gradient(to bottom, #616161, #757575, #616161) !important;
+        color: #fff !important;
     }
 }
